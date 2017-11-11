@@ -17,7 +17,7 @@ Cara Install Via Android :
 
 Cara Membuka/Mengedit File :
 - Wajib Pakai Keyboard Hacker Download di PS<br>
-- cd LIN3-TCR && nano line-tcr.py<br>
+- cd line-tcr-py && nano line-tcr.py<br>
 - Selesai Edit Save CTRL + X Lalu Y, Dan Enter<br>
 - Keluarkan Termux<br>
 
@@ -26,5 +26,5 @@ Cara Membuka/Mengedit File Via Internal :
 - masuk root/data/data/com.termux/file/home/bank334/line-tcr.py<br>
 
 Cara Menjalankan Bot :
-- cd bank-334 && python2 line-tcr.py<br>
+- cd line-tcr-py && python2 line-tcr.py<br>
 - Loginkan Dengan Akun Bot Kalian Lalu Masukkan MID Admin
