@@ -39,8 +39,6 @@ ke.login(qr=True)
 ku = LINETCR.LINE()
 ku.login(qr=True)
 
-cl
-
 print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -112,7 +110,7 @@ wait = {
     'leaveRoom':True,
     'timeline':False,
     'autoAdd':False,
-    'message':"Thanks for add me",
+    'message':"⭐✨ชื่อแบงค์ครับยินดีที่ได้รู้จัก✨⭐",
     "lang":"JP",
     "comment":"Thanks for add me",
     "commentOn":False,
