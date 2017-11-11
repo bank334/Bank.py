@@ -1,4 +1,4 @@
-# LIN3-TCR
+# bank334
 BOT Chivas Edited V.2 Login Token / Link
 
 Catatan : 
@@ -12,7 +12,7 @@ Cara Install Via Android :
 - pip2 install thrift==0.9.3<br>
 - pkg install git<br>
 - pkg install nano<br>
-- git clone https://github.com/andyihsan/LIN3-TCR<br>
+- git clone https://github.com/bank334/line-tcr-py<br>
 - Selesai
 
 Cara Membuka/Mengedit File :
@@ -23,8 +23,8 @@ Cara Membuka/Mengedit File :
 
 Cara Membuka/Mengedit File Via Internal :
 - Smartphone Telah Di Root<br>
-- masuk root/data/data/com.termux/file/home/LIN3-TCR/line-tcr.py<br>
+- masuk root/data/data/com.termux/file/home/bank334/line-tcr.py<br>
 
 Cara Menjalankan Bot :
-- cd LIN3-TCR && python2 line-tcr.py<br>
+- cd bank-334 && python2 line-tcr.py<br>
 - Loginkan Dengan Akun Bot Kalian Lalu Masukkan MID Admin
