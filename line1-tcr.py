@@ -782,8 +782,6 @@ def bot(op):
                 cl.leaveRoom(op.param1)
         if op.type == 25:
             msg = op.message
-
-
             if msg.toType == 1:
                 if wait["leaveRoom"] == True:
                     cl.leaveRoom(msg.to)
