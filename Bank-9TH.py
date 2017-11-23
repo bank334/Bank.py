@@ -2030,7 +2030,7 @@ def bot(op):
                     cl.sendText(msg.to,"「Leo BOT」\n" + mc +"Total : "+ str(len(Bots)))
                     print "[Command]Whitelist executed"                
                 
-            elif ("Ban " in msg.text):
+            elif msg.text in ("Ban "):
               if msg.from_ in admin:
                 key = eval(msg.contentMetadata["MENTION"])
                 key["MENTIONEES"][0]["M"]
