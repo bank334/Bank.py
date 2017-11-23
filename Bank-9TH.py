@@ -2844,6 +2844,20 @@ def bot(op):
                     for mi_d in wait["blacklist"]:
                         mc += "->" +cl.getContact(mi_d).displayName + "\n"
                     cl.sendText(msg.to,mc)
+            elif msg.text in ["Unban"]:
+              if msg.from_ in admin: 
+                wait["dblacklist"] = True
+                cl.sendText(msg.to,"Kirim Kontak")
+            elif msg.text in ["Banlist"]:
+              if msg.from_ in admin:  
+                if wait["blacklist"] == {}:
+                    cl.sendText(msg.to,"Tidak Ada")
+                else:
+                    cl.sendText(msg.to,"Daftar Blacklist")
+                    mc = ""
+                    for mi_d in wait["blacklist"]:
+                        mc += "->" +cl.getContact(mi_d).displayName + "\n"
+                    cl.sendText(msg.to,mc)
             elif msg.text in ["CekBan"]:
                 if msg.toType == 2:
                     group = cl.getGroup(msg.to)
