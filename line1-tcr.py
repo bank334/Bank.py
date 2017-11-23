@@ -88,7 +88,7 @@ Setgroup =""" Privasi Menu V.1 􀔃􀄆red check mark􏿿
 [No Joinned]
 -- Joinn on/off
 """
-KAC=[cl,ki,kk,kc,ks,ka,kb,ko,ke,ku]
+KAC=[cl,ki,kc,ks,ka,kb,ko,ke,ku]
 DEF=[ka,kb,ko,ke,ku]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
