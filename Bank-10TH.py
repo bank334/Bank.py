@@ -357,7 +357,7 @@ def bot(op):
         if op.type == 19:
             if op.param2 in Bots:
                 return
-            kk.sendText(op.param1,cl.getContact(op.param2).displayName + " Hayoo Kakak Ngapain")
+            kk.sendText(op.param1,cl.getContact(op.param2).displayName + " จุกไหมล่ะมึง( • ̀ω•́  )")
             print "Anggota Grup Di Kick"
         #-----------------NOTIFED MEMBER KICKOUT GROUP
 
