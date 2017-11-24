@@ -125,7 +125,7 @@ Imid = kj.getProfile().mid
 #Jmid = kl.getProfile().mid
 
 Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,Jmid]
-admin=["u2c7f708769a2eb35d9ae9f73cd366e0b"]
+admin=["u801fe367c48e4fe31ab0270933a0616f"]
 
 me = cl.getProfile().mid
 bot1 = cl.getProfile().mid
@@ -153,7 +153,7 @@ autocancel = {}
 autoinvite = []
 autoleaveroom = []
 
-admins = ["u2c7f708769a2eb35d9ae9f73cd366e0b"]
+admins = ["u801fe367c48e4fe31ab0270933a0616f"]
 #Rx10 = ["u33fab009d719040149bce490cfe33929"]
 Rx9 = ["u33fab009d719040149bce490cfe33929"]
 Rx8 = ["u33fab009d719040149bce490cfe33929"]
