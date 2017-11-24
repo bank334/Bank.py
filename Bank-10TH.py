@@ -124,7 +124,7 @@ Hmid = kh.getProfile().mid
 Imid = kj.getProfile().mid
 #Jmid = kl.getProfile().mid
 
-Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,Jmid]
+Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid]
 admin=["u801fe367c48e4fe31ab0270933a0616f"]
 
 me = cl.getProfile().mid
@@ -155,15 +155,15 @@ autoleaveroom = []
 
 admins = ["u801fe367c48e4fe31ab0270933a0616f"]
 #Rx10 = ["u33fab009d719040149bce490cfe33929"]
-Rx9 = ["u33fab009d719040149bce490cfe33929"]
-Rx8 = ["u33fab009d719040149bce490cfe33929"]
-Rx7 = ["u33fab009d719040149bce490cfe33929"]
-Rx6 = ["u33fab009d719040149bce490cfe33929"]
-Rx5 = ["ub4043866b3ce63c9808897c12f4f5f04","u33fab009d719040149bce490cfe33929","uf7975d14fc686523347c83a7d9570332","u2dca8b90516945d563e1cf62d3515be2"]
-Rx4 = ["ub4043866b3ce63c9808897c12f4f5f04","u33fab009d719040149bce490cfe33929","uf7975d14fc686523347c83a7d9570332","u2dca8b90516945d563e1cf62d3515be2"]
-Rx3 = ["ub4043866b3ce63c9808897c12f4f5f04","u33fab009d719040149bce490cfe33929","uf7975d14fc686523347c83a7d9570332","u2dca8b90516945d563e1cf62d3515be2"]
-Rx2 = ["ub4043866b3ce63c9808897c12f4f5f04","u33fab009d719040149bce490cfe33929","uf7975d14fc686523347c83a7d9570332","u2dca8b90516945d563e1cf62d3515be2"]
-Rx1 = ["ub4043866b3ce63c9808897c12f4f5f04","u33fab009d719040149bce490cfe33929","uf7975d14fc686523347c83a7d9570332","u2dca8b90516945d563e1cf62d3515be2"]
+Rx9 = ["uca37262579651b449bc23fbf8e41f2c0"]
+Rx8 = ["u801fe367c48e4fe31ab0270933a0616f"]
+Rx7 = ["u1973ac2400dd6410512b5f3179d4a0a8"]
+Rx6 = ["u1973ac2400dd6410512b5f3179d4a0a8","uca37262579651b449bc23fbf8e41f2c0","u801fe367c48e4fe31ab0270933a0616f"]
+Rx5 = ["uca37262579651b449bc23fbf8e41f2c0","uca37262579651b449bc23fbf8e41f2c0","u1973ac2400dd6410512b5f3179d4a0a8","u801fe367c48e4fe31ab0270933a0616f"]
+Rx4 = ["uca37262579651b449bc23fbf8e41f2c0","uca37262579651b449bc23fbf8e41f2c0","u1973ac2400dd6410512b5f3179d4a0a8","u801fe367c48e4fe31ab0270933a0616f"]
+Rx3 = ["uca37262579651b449bc23fbf8e41f2c0","uca37262579651b449bc23fbf8e41f2c0","u1973ac2400dd6410512b5f3179d4a0a8","u801fe367c48e4fe31ab0270933a0616f"]
+Rx2 = ["uca37262579651b449bc23fbf8e41f2c0","uca37262579651b449bc23fbf8e41f2c0","u1973ac2400dd6410512b5f3179d4a0a8","u801fe367c48e4fe31ab0270933a0616f"]
+Rx1 = ["uca37262579651b449bc23fbf8e41f2c0","uca37262579651b449bc23fbf8e41f2c0","u1973ac2400dd6410512b5f3179d4a0a8","u801fe367c48e4fe31ab0270933a0616f"]
 
 Administrator = admins + Rx9 + Rx8 + Rx7 + Rx6 + Rx5 + Rx4 + Rx3 + Rx2 + Rx1
 AS = Rx2 + Rx1 + Rx3 + Rx4 + Rx5 + Rx6 + Rx7 + Rx8 + Rx9
@@ -178,9 +178,9 @@ wait = {
     'leaveRoom':True,
     'timeline':True,
     'autoAdd':False,
-    'message':"Makasih Kak Udah Add Saya",
+    'message':"⭐✨ชื่อแบงค์ครับยินดีที่ได้รู้จัก✨⭐",
     "lang":"JP",
-    "comment":"Makasih Kak Udah Add Saya",
+    "comment":"⭐✨ชื่อแบงค์ครับยินดีที่ได้รู้จัก✨⭐",
     "commentOn":False,
     "commentBlack":{},
     "wblack":False,
@@ -701,7 +701,7 @@ def bot(op):
                     cl.sendText(msg.to,msg.text)
             elif msg.text is None:
                 return
-            elif msg.text in ["Key"]:
+            elif msg.text in ["คำสั่ง"]:
               if msg.from_ in admin:   
                 if wait["lang"] == "JP":
                     cl.sendText(msg.to,helpMessage)
@@ -979,7 +979,7 @@ def bot(op):
                        kg.sendText(g.mid,"Cie Kena")
                        kh.sendText(g.mid,"Cie Kena")
                        kj.sendText(g.mid,"Cie Kena")
-                       kl.sendText(g.mid,"Cie Kena")
+                       #kl.sendText(g.mid,"Cie Kena")
                        cl.sendText(msg.to, "Berhasil Spam Kontak")
                        print "Berhasil Spam Kontak"
 
@@ -1279,7 +1279,7 @@ def bot(op):
                 kg.sendText(msg.to,Gmid)
                 kh.sendText(msg.to,Hmid)
                 kj.sendText(msg.to,Imid)
-                kl.sendText(msg.to,Jmid)
+              #  kl.sendText(msg.to,Jmid)
             elif "My Mid" == msg.text:
               if msg.from_ in admin:
                 cl.sendText(msg.to,mid)
@@ -1301,8 +1301,8 @@ def bot(op):
                 kh.sendText(msg.to,Hmid)
             elif "Yupi Mid" == msg.text:
                 kj.sendText(msg.to,Imid)
-            elif "Kyla Mid" == msg.text:
-                kl.sendText(msg.to,Jmid)
+           # elif "Kyla Mid" == msg.text:
+           #     kl.sendText(msg.to,Jmid)
             elif msg.text in ["Wkwk"]:
               if msg.from_ in admin:
                 msg.contentType = 7
@@ -2136,7 +2136,7 @@ def bot(op):
                 msgs+="\n\nTotal %i Blocked User(s)" % len(kontak)
                 cl.sendText(msg.to, msgs)                                
                 
-            elif msg.text in ["Masuk"]:
+            elif msg.text in ["เข้ามา"]:
               if msg.from_ in admin:
                         G = cl.getGroup(msg.to)
                         ginfo = cl.getGroup(msg.to)
@@ -2160,8 +2160,8 @@ def bot(op):
                         time.sleep(0.1)
                         kj.acceptGroupInvitationByTicket(msg.to,Ticket)
                         time.sleep(0.1)
-                        kl.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        time.sleep(0.1)
+                 #       kl.acceptGroupInvitationByTicket(msg.to,Ticket)
+                #+        time.sleep(0.1)
                         kc.acceptGroupInvitationByTicket(msg.to,Ticket)
                         time.sleep(0.1)
                         G = cl.getGroup(msg.to)
@@ -2293,7 +2293,7 @@ def bot(op):
 
 #-----------------------------------------------
 	
-            elif msg.text in ["Keluar"]:
+            elif msg.text in ["ออกไป"]:
               if msg.from_ in admin:
                 if msg.toType == 2:
                     ginfo = cl.getGroup(msg.to)
@@ -2306,7 +2306,7 @@ def bot(op):
                         kg.leaveGroup(msg.to)
                         kh.leaveGroup(msg.to)
                         kj.leaveGroup(msg.to)
-                        kl.leaveGroup(msg.to)
+                      #  kl.leaveGroup(msg.to)
                         kc.leaveGroup(msg.to)
                     except:
                         pass
@@ -2569,7 +2569,7 @@ def bot(op):
             elif msg.text in ["Creator"]:
               if msg.from_ in admin:
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': 'ub747db128c45151391e8bef56abba014'}
+                msg.contentMetadata = {'mid': 'u801fe367c48e4fe31ab0270933a0616f'}
                 cl.sendMessage(msg)
                 cl.sendText(msg.to,"Powered By DL")         
 #-----------------------------------------------
@@ -2585,7 +2585,7 @@ def bot(op):
 				kg.sendText(msg.to,(bctxt))
 				kh.sendText(msg.to,(bctxt))
 				kj.sendText(msg.to,(bctxt))
-				kl.sendText(msg.to,(bctxt))
+
 #-----------------------------------------------
             elif msg.text in ["Test"]:
               if msg.from_ in admin:
@@ -2597,7 +2597,7 @@ def bot(op):
                 kg.sendText(msg.to,"Masih Siap Kak")
                 kh.sendText(msg.to,"Masih Siap Kak")
                 kj.sendText(msg.to,"Masih Siap Kak")
-                kl.sendText(msg.to,"Masih Siap Kak")
+               # kl.sendText(msg.to,"Masih Siap Kak")
                 kc.sendText(msg.to,"Masih Siap Kak")
                 
             elif msg.text in ["Baris"]:
@@ -2610,7 +2610,7 @@ def bot(op):
                 kg.sendText(msg.to,"6")
                 kh.sendText(msg.to,"7")
                 kj.sendText(msg.to,"8")
-                kl.sendText(msg.to,"9")
+              #  kl.sendText(msg.to,"9")
                 kc.sendText(msg.to,"10")
 #-----------------------------------------------	
             elif msg.text in ["Shani"]:
@@ -2661,7 +2661,7 @@ def bot(op):
                 kg.sendText(msg.to,"Cinhap")
                 kh.sendText(msg.to,"Jinan")
                 kj.sendText(msg.to,"Yupi")
-                kl.sendText(msg.to,"Kyla")
+            #    kl.sendText(msg.to,"Kyla")
 
             elif msg.text in ["Up"]:
               if msg.from_ in admin:
@@ -2872,6 +2872,13 @@ def bot(op):
                 cl.sendText(msg.to, "Tunggu")
                 elapsed_time = time.time() - start
                 cl.sendText(msg.to, "%s Detik" % (elapsed_time))
+		ki.sendText(msg.to, "%s Detik" % (elapsed_time))
+		kk.sendText(msg.to, "%s Detik" % (elapsed_time))
+		kc.sendText(msg.to, "%s Detik" % (elapsed_time))
+		kd.sendText(msg.to, "%s Detik" % (elapsed_time))
+		ke.sendText(msg.to, "%s Detik" % (elapsed_time))
+		kf.sendText(msg.to, "%s Detik" % (elapsed_time))
+		kg.sendText(msg.to, "%s Detik" % (elapsed_time))
 #------------------------------------------------------------------
             elif msg.text in ["Ban"]:
               if msg.from_ in admin: 
