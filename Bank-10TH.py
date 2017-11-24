@@ -45,9 +45,9 @@ kj = LINETCR.LINE()
 kj.login(qr=True)
 kj.loginResult()
 
-kl = LINETCR.LINE()
-kl.login(token="EmvEEvB0owIRu8VhK8n7.0PhcaDg6BmNNypOZPKzWPW.AwT+5Mc8Tiy4+vg5cBorBKUm3nV6KGA47vYWel/SG/k=")
-kl.loginResult()
+#kl = LINETCR.LINE()
+#kl.login(token="EmvEEvB0owIRu8VhK8n7.0PhcaDg6BmNNypOZPKzWPW.AwT+5Mc8Tiy4+vg5cBorBKUm3nV6KGA47vYWel/SG/k=")
+#kl.loginResult()
 
 print "login success"
 reload(sys)
