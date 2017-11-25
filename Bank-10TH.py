@@ -2535,7 +2535,7 @@ def bot(op):
                                 cl.sendText(msg.to,"Berhasil Ditambahkan")
                             except:
                                 cl.sendText(msg.to,"Gagal")
-            elif "Unban @" in msg.text:
+            elif "แก้ดำ @" in msg.text:
               if msg.from_ in admin:   
                 if msg.toType == 2:
                     print "[Unban]ok"
