@@ -6,35 +6,35 @@ from datetime import datetime
 import time,random,sys,json,codecs,threading,glob
 
 cl = LINETCR.LINE()
-cl.login(token="AuthToken KAMU")
+cl.login(qr=True)
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(token="AuthToken KAMU")
+ki.login(qr=True)
 ki.loginResult()
 
 ki2 = LINETCR.LINE()
-ki2.login(token="AuthToken KAMU")
+ki2.login(qr=True)
 ki2.loginResult()
 
 ki3 = LINETCR.LINE()
-ki3.login(token="AuthToken KAMU")
+ki3.login(qr=True)
 ki3.loginResult()
 
 ki4 = LINETCR.LINE()
-ki4.login(token="AuthToken KAMU")
+ki4.login(qr=True)
 ki4.loginResult()
 
 ki5 = LINETCR.LINE()
-ki5.login(token="AuthToken KAMU")
+ki5.login(qr=True)
 ki5.loginResult()
 
 ki6 = LINETCR.LINE()
-ki6.login(token="AuthToken KAMU")
+ki6.login(qr=True)
 ki6.loginResult()
 
 ki7 = LINETCR.LINE()
-ki7.login(token="AuthToken KAMU")
+ki7.login(qr=True)
 ki7.loginResult()
 
 print u"login success"
