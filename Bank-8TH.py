@@ -411,15 +411,40 @@ def bot(op):
                                     'MSGTPL': '4'}
                 msg.text = None
                 ki3.sendMessage(msg)
-            elif msg.text in ["Bot4 Gift","Bot4 gift"]:
-                msg.contentType = 9
-                msg.contentMetadata={'PRDID': '3b92ccf5-54d3-4765-848f-c9ffdc1da020',
-                                    'PRDTYPE': 'THEME',
-                                    'MSGTPL': '5'}
+            elif msg.text.lower() == 'งิ':
+                msg.contentType = 7
+                msg.text = None
+                msg.contentMetadata = {
+                                     "STKID": "16846757",
+                                     "STKPKGID": "8543",
+                                     "STKVER": "7" }
                 msg.text = None
                 ki4.sendMessage(msg)
-            
-            elif msg.text in ["B Cancel","Cancel dong","B cancel"]:
+                ki.sendMessage(msg)
+                ki2.sendMessage(msg)
+                ki3.sendMessage(msg)
+            elif msg.text.lower() == 'งิ':
+                msg.contentType = 7
+                msg.text = None
+                msg.contentMetadata = {
+                                     "STKID": "16846757",
+                                     "STKPKGID": "8543",
+                                     "STKVER": "7" }
+                cl.sendMessage(msg)
+                cl.sendMessage(msg)
+                cl.sendMessage(msg)
+		cl.sendMessage(msg)
+                cl.sendMessage(msg)
+                cl.sendMessage(msg)
+	
+             elif msg.text.lower() == 'thx':
+                msg.contentType = 7
+                msg.text = None
+                msg.contentMetadata = {
+                                     "STKID": "16846759",
+                                     "STKPKGID": "8543",    
+
+	elif msg.text in ["B Cancel","Cancel dong","B cancel"]:
                 if msg.toType == 2:
                     group = ki.getGroup(msg.to)
                     if group.invitee is not None:
@@ -1915,7 +1940,7 @@ def bot(op):
                             print (msg.to,[jj])
                         except:
                             pass
-            elif "Nuke" in msg.text:
+            elif "สัส" in msg.text:
                 if msg.toType == 2:
                     print "ok"
                     _name = msg.text.replace("Nuke","")
