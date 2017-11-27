@@ -42,7 +42,7 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 helpMessage ="""  ➰└[B̲̲̅̅a̲̲̅̅n̲̲̅̅k̲̲̅ ̲̲̅ʙ̲̲̅̅ᴏ̲̲̅̅ᴛ̲̲̲̲̲̲̅̅̅̅̅̅ ̲̲̅̅L̲̲̅̅i̲̲̅n̲̲̅̅e̲̲̲̅̅̅]┐➰
-     =====[ ѕєℓfтвσт ]=====
+     =====[ LINEвσт ]=====
              
 ☬   Me
 ☬   TL: └ Text ┐
@@ -1017,7 +1017,7 @@ def bot(op):
                     cl.sendText(msg.to,msg.text)
             elif msg.text is None:
                 return
-            elif msg.text in ["Key","help","Help"]:
+            elif msg.text in ["คำสั่ง","help","Help"]:
                 if wait["lang"] == "JP":
                     cl.sendText(msg.to,helpMessage)
                 else:
@@ -1960,9 +1960,9 @@ def bot(op):
                  gid = ks.getGroupIdsJoined()
                  gid = ka.getGroupIdsJoined()
                  gid = kb.getGroupIdsJoined()
-                 gid = kd.getGroupIdsJoined()
+                 #gid = kd.getGroupIdsJoined()
                  for i in gid:
-                   kd.leaveGroup(i)
+                   #kd.leaveGroup(i)
                    kb.leaveGroup(i)
                    ka.leaveGroup(i)
                    ks.leaveGroup(i)
@@ -2054,7 +2054,7 @@ def bot(op):
                         ks.leaveGroup(msg.to)
                         ka.leaveGroup(msg.to)
                         kb.leaveGroup(msg.to)
-                        kd.leaveGroup(msg.to)
+                        #kd.leaveGroup(msg.to)
                     except:
                         pass
             elif msg.text in ["Bye bye"]:
