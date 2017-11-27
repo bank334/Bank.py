@@ -1628,7 +1628,7 @@ def bot(op):
                       cl.sendText(msg.to,"Succes Bosque")
                    except:
                       pass
-            elif "แก้ดำ @" in msg.text:
+             elif "แก้ดำ @" in msg.text:
                 if msg.toType == 2:
                     print "[Unban]ok"
                     _name = msg.text.replace("Unban @","")
@@ -1674,29 +1674,7 @@ def bot(op):
                                 except:
                                     kk.sendText(msg.to,"Error")
 
-            elif "Unban" in msg.text:                  
-                       nk0 = msg.text.replace("Unban","")
-                       nk1 = nk0.lstrip()
-                       nk2 = nk1.replace("","")
-                       nk3 = nk2.rstrip()
-                       _name = nk3
-                       gs = cl.getGroup(msg.to)
-                       targets = []
-                       for s in gs.members:
-                           if _name in s.displayName:
-                              targets.append(s.mid)
-                       if targets == []:
-                           sendMessage(msg.to,"user does not exist")
-                           pass
-                       else:
-                           for target in targets:
-                                try:
-									del wait["blacklist"][target]
-									f=codecs.open('st2__b.json','w','utf-8')
-									json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
-									cl.sendText(msg.to,"Target Unlocked")
-                                except:
-                                    kk.sendText(msg.to,"Error")
+
 #-----------------------------------------------------------
 
             elif "Mycopy @" in msg.text:
@@ -1719,34 +1697,58 @@ def bot(op):
                                     cl.sendText(msg.to, "Succes Copy profile")
                                 except Exception as e:
                                     print e
-                                    
-            elif "Copy @" in msg.text:
-                if msg.toType == 2:
-                    if msg.from_ in admin:
-                        print "[COPY] Ok"
-                        _name = msg.text.replace("Copy @","")
-                        _nametarget = _name.rstrip('  ')
-                        gs = cl.getGroup(msg.to)
-                        targets = []
-                        for g in gs.members:
-                            if _nametarget == g.displayName:
-                                targets.append(g.mid)
-                        if targets == []:
-                            cl.sendText(msg.to, "Not Found...")
-                        else:
+           elif "Unban " in msg.text:
+               if msg.toType == 2:
+                  if msg.from_ in admin:                                        
+                       unb0 = msg.text.replace("Unban ","")
+                       unb1 = unb0.lstrip()
+                       unb2 = unb1.replace("@","")
+                       unb3 = unb2.rstrip()
+                       x_name = unb3
+                       gs = cl.getGroup(msg.to)
+                       targets = []
+                       for s in gs.members:
+                           if x_name in s.displayName:
+                              targets.append(s.mid)
+                       if targets == []:
+                           cl.sendText(msg.to,"ƲƧЄƦ ƊƠЄƧ ƝƠƬ ЄҲƖƧƬ")
+                           pass
+                       else:
                             for target in targets:
                                 try:
-                                    ki.cloneContactProfile(target)
-                                    ki2.cloneContactProfile(target)
-                                    ki3.cloneContactProfile(target)
-                                    ki4.cloneContactProfile(target)
-                                    ki5.cloneContactProfile(target)
-                                    ki6.cloneContactProfile(target)
-                                    ki7.cloneContactProfile(target)
-                                    cl.sendText(msg.to, "Succes Copy profile")
-                                except Exception as e:
-                                    print e
-                                    
+                                    del wait["blacklist"][target]
+                                    f=codecs.open('st2__b.json','w','utf-8')
+                                    json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
+                                    cl.sendText(msg.to,"ヽ( ^ω^)ﾉแก้กำแล้ว􀜁􀇔􏿿")
+                                except:
+                                    cl.sendText(msg.to,"ヽ( ^ω^)ﾉแก้ดำแล้ว􀜁􀇔􏿿")						
+            elif "Copy @" in msg.text:
+                if msg.toType == 2:
+                    print "[COPY] Ok"
+                    _name = msg.text.replace("Copy @","")
+                    _nametarget = _name.rstrip(' ')
+                    gs = cl.getGroup(msg.to)
+                targets = []
+                for g in gs.members:
+                    if _nametarget == g.displayName:
+                        targets.append(g.mid)
+                if targets == []:
+                    sendMessage(msg.to, "Not Found...")
+                else:
+                     for target in targets:
+                         try:
+			      ki.cloneContactProfile(target)
+                              ki2.cloneContactProfile(target)
+                              ki3.cloneContactProfile(target)
+                              ki4.cloneContactProfile(target)
+                              ki5.cloneContactProfile(target)
+                              ki6.cloneContactProfile(target)
+                              ki7.cloneContactProfile(target)
+			      cl.sendText(msg.to, "Succes Copy profile")
+                         except Exception as e:
+                             print e
+#----------------------------------------------          
+            
             elif msg.text in ["Mybackup"]:
                 try:
                     cl.updateDisplayPicture(mybackup.pictureStatus)
