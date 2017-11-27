@@ -305,7 +305,7 @@ def bot(op):
                     cl.sendText(msg.to,msg.text)
             elif msg.text is None:
                 return
-            elif msg.text.lower() == 'help':
+            elif msg.text.lower() == 'คำสั่ง':
                 if wait["lang"] == "JP":
                     cl.sendText(msg.to,helpMessage)
                 else:
@@ -335,7 +335,7 @@ def bot(op):
                 midd = msg.text.replace("Invite:","")
                 cl.findAndAddContactsByMid(midd)
                 cl.inviteIntoGroup(msg.to,[midd])
-            elif "Mabot" == msg.text:
+            elif "คท" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': kimid}
                 cl.sendMessage(msg) 
@@ -1094,7 +1094,7 @@ def bot(op):
                 for i in gid:
                     h += "[%s]:%s\n" % (cl.getGroup(i).name,i)
                 cl.sendText(msg.to,h)
-            elif msg.text in ["Bot out"]:
+            elif msg.text in ["เข้ามา"]:
                 gid = cl.getGroupIdsJoined()
                 gid = ki.getGroupIdsJoined()
                 gid = ki2.getGroupIdsJoined()
@@ -1112,7 +1112,7 @@ def bot(op):
                     ki6.leaveGroup(i)
                     ki7.leaveGroup(i)
                 if wait["lang"] == "JP":
-                    cl.sendText(msg.to,"Bot Sudah Keluar Di semua grup")
+                    ki7.sendText(msg.to,"มาๆแล้ว ครับ")
                 else:
                     cl.sendText(msg.to,"He declined all invitations")
             elif "Album deleted:" in msg.text:
@@ -1987,7 +1987,7 @@ def bot(op):
 #-----------------------------------------------
 
 #-----------------------------------------------
-            elif msg.text.lower() == ["เข้ามา"]:
+            elif msg.text.lower() == ["มาๆ"]:
                         G = cl.getGroup(msg.to)
                         ginfo = cl.getGroup(msg.to)
                         G.preventJoinByTicket = False
@@ -2015,7 +2015,7 @@ def bot(op):
                         random.choice(KAC).updateGroup(G)
                        
 #-----------------------------------------------
-            elif msg.text in ["Masuk","ลง"]:
+            elif msg.text in ["เข้ามา","ลง"]:
                 if msg.from_ in admsa:
                         G = cl.getGroup(msg.to)
                         ginfo = cl.getGroup(msg.to)
@@ -2160,11 +2160,11 @@ def bot(op):
                         G.preventJoinByTicket(G)
                         ki6.updateGroup(G)
 #-----------------------------------------------
-            elif msg.text in ["บอทออก"]:
+            elif msg.text in ["ออก"]:
                 if msg.toType == 2:
                     ginfo = cl.getGroup(msg.to)
                     try:
-                        cl.sendText(msg.to,"ออกแล้ว ครับจุ๊ฟๆ😘 "  +  str(ginfo.name)  + "")
+                        ki.sendText(msg.to,"ออกแล้ว ครับจุ๊ฟๆ😘 "  +  str(ginfo.name)  + "")
                         ki.leaveGroup(msg.to)
                         ki2.leaveGroup(msg.to)
                         ki3.leaveGroup(msg.to)
