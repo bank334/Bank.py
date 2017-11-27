@@ -129,7 +129,7 @@ Dmid = ks.getProfile().mid
 Emid = ka.getProfile().mid
 Fmid = kb.getProfile().mid
 #Gmid = kd.getProfile().mid
-Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid]
+Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid]
 admin=["u62dd9c1d03eb2e34dfc0dc629420fcac"]
 wait = {
     'contact':False,
