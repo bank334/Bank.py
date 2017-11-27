@@ -33,9 +33,9 @@ kb = LINETCR.LINE()
 kb.login(qr=True)
 kb.loginResult()
 
-kd = LINETCR.LINE()
-kd.login(qr=True)
-kd.loginResult()
+#kd = LINETCR.LINE()
+#kd.login(qr=True)
+#kd.loginResult()
 
 print u"login success"
 reload(sys)
@@ -120,7 +120,7 @@ helpMessage ="""  ➰└[B̲̲̅̅a̲̲̅̅n̲̲̅̅k̲̲̅ ̲̲̅ʙ̲̲̅̅ᴏ�
 	
           ===[B̲̲̅̅a̲̲̅̅n̲̲̅̅k̲̲̅ ̲̲̅ʙ̲̲̅̅ᴏ̲̲̅̅ᴛ̲̲̲̲̲̲̅̅̅̅̅̅ ̲̲̅̅L̲̲̅̅i̲̲̅n̲̲̅̅e̲̲̲̅̅̅]===
       F.A.F TEAM BOT"""
-KAC=[cl,ki,kk,kc,ks,ka,kb,kd]
+KAC=[cl,ki,kk,kc,ks,ka,kb]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
@@ -128,7 +128,7 @@ Cmid = kc.getProfile().mid
 Dmid = ks.getProfile().mid
 Emid = ka.getProfile().mid
 Fmid = kb.getProfile().mid
-Gmid = kd.getProfile().mid
+#Gmid = kd.getProfile().mid
 Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid]
 admin=["u62dd9c1d03eb2e34dfc0dc629420fcac"]
 wait = {
