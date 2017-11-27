@@ -77,16 +77,19 @@ helpMessage ="""    =====[B̲̲̅̅a̲̲̅̅n̲̲̅̅k̲̲̅ ̲̲̅ʙ̲̲̅̅ᴏ
 􀜁􀇔􏿿 [Com set]
 􀜁􀇔􏿿 [Mcheck] 
 􀜁􀇔􏿿 [Message Confirmation] 
-􀜁􀇔􏿿 [Mybio: 「Isi Bio」]  
-􀜁􀇔􏿿 [Allbio: 「Isi Bio bot」] 
+􀜁􀇔􏿿 [แก้ตัส: 「พิมพ์ข้อความ」]  
+􀜁􀇔􏿿 [คิกแก้ตัส: 「พิมพ์ขอความ」] 
   
     [B̲̲̅̅a̲̲̅̅n̲̲̅̅k̲̲̅ ̲̲̅ʙ̲̲̅̅ᴏ̲̲̅̅ᴛ̲̲̲̲̲̲̅̅̅̅̅̅ ̲̲̅̅L̲̲̅̅i̲̲̅n̲̲̅̅e̲̲̲̅̅̅]
-
-􀜁􀇔􏿿 [Link on]
-􀜁􀇔􏿿 [Link off] 
+􀜁􀇔􏿿 [ยกเชิน]
+􀜁􀇔􏿿 [ลิ้ง เปิด]
+􀜁􀇔􏿿 [ลิ้ง ปิด] 
 􀜁􀇔􏿿 [Invite「mid」] 
 􀜁􀇔􏿿 [Kmid: Kick by mid] 
-􀜁􀇔􏿿 [Ginfo] 
+􀜁􀇔􏿿 [เช็คกลุ่ม] 
+􀜁􀇔􏿿 [ติดต่อ]
+􀜁􀇔􏿿 [แก้ชื่อ]
+􀜁􀇔􏿿 [1-7แก้ชื่อ]
 􀜁􀇔􏿿 [Cancel]
 􀜁􀇔􏿿 [Copy @]
 􀜁􀇔􏿿 [Backup]
@@ -98,9 +101,11 @@ helpMessage ="""    =====[B̲̲̅̅a̲̲̅̅n̲̲̅̅k̲̲̅ ̲̲̅ʙ̲̲̅̅ᴏ
 􀜁􀇔􏿿 [Nk「nama」]
 􀜁􀇔􏿿 [NK:]
 􀜁􀇔􏿿 [Ban:]
+􀜁􀇔􏿿 [บิน] บินคนดำ
+􀜁􀇔􏿿 [สัส] สับกระจาย
 􀜁􀇔􏿿 [แก้ดำ @]
-􀜁􀇔􏿿 [Panick:on]
-􀜁􀇔􏿿 [Protect on]
+􀜁􀇔􏿿 [ป้องกัน ปิด]
+􀜁􀇔􏿿 [ป้องกัน เปิด]
 􀜁􀇔􏿿 [qrprotect on/off]
 􀜁􀇔􏿿 [Inviteprotect on]
 􀜁􀇔􏿿 [Cancelprotect on]
@@ -423,19 +428,6 @@ def bot(op):
                 ki.sendMessage(msg)
                 ki2.sendMessage(msg)
                 ki3.sendMessage(msg)
-            elif msg.text.lower() == 'งิ':
-                msg.contentType = 7
-                msg.text = None
-                msg.contentMetadata = {
-                                     "STKID": "16846757",
-                                     "STKPKGID": "8543",
-                                     "STKVER": "7" }
-                cl.sendMessage(msg)
-                cl.sendMessage(msg)
-                cl.sendMessage(msg)
-		cl.sendMessage(msg)
-                cl.sendMessage(msg)
-                cl.sendMessage(msg)
 	
              elif msg.text.lower() == 'thx':
                 msg.contentType = 7
@@ -443,6 +435,12 @@ def bot(op):
                 msg.contentMetadata = {
                                      "STKID": "16846759",
                                      "STKPKGID": "8543",    
+                cl.sendMessage(msg)
+                cl.sendMessage(msg)
+                cl.sendMessage(msg)
+		cl.sendMessage(msg)
+                cl.sendMessage(msg)
+                cl.sendMessage(msg)
 
 	elif msg.text in ["B Cancel","Cancel dong","B cancel"]:
                 if msg.toType == 2:
@@ -461,7 +459,7 @@ def bot(op):
                     else:
                         cl.sendText(msg.to,"invitan tidak ada")
 
-            elif msg.text in ["Cancel","cancel"]:
+            elif msg.text in ["ยกเชิน","cancel"]:
                 if msg.toType == 2:
                     group = cl.getGroup(msg.to)
                     if group.invitee is not None:
@@ -469,7 +467,7 @@ def bot(op):
                         cl.cancelGroupInvitation(msg.to, gInviMids)
                     else:
                         if wait["lang"] == "JP":
-                            cl.sendText(msg.to,"No invites👈")
+                            cl.sendText(msg.to,"🚂ไม่มี คำเชิญ💨")
                         else:
                             cl.sendText(msg.to,"Invite people inside not👈")
                 else:
@@ -480,35 +478,35 @@ def bot(op):
             #elif "gurl" == msg.text:
                 #print cl.getGroup(msg.to)
                 ##cl.sendMessage(msg)
-            elif msg.text in ["Link on"]:
+            elif msg.text in ["ลิ้ง เปิด"]:
                 if msg.toType == 2:
                     group = cl.getGroup(msg.to)
                     group.preventJoinByTicket = False
                     cl.updateGroup(group)
                     if wait["lang"] == "JP":
-                        cl.sendText(msg.to,"URL open")
+                        cl.sendText(msg.to,"🚂URL ถูกเปิดแล้ว💨")
                     else:
-                        cl.sendText(msg.to,"URL open")
+                        cl.sendText(msg.to,"🚂URL ถูกเปิดแล้ว💨")
                 else:
                     if wait["lang"] == "JP":
                         cl.sendText(msg.to,"It can not be used outside the group ô€œô€„‰👈")
                     else:
                         cl.sendText(msg.to,"Can not be used for groups other than ô€œô€„‰")
-            elif msg.text in ["Link off"]:
+            elif msg.text in ["ลิ้ง ปิด"]:
                 if msg.toType == 2:
                     group = cl.getGroup(msg.to)
                     group.preventJoinByTicket = True
                     cl.updateGroup(group)
                     if wait["lang"] == "JP":
-                        cl.sendText(msg.to,"URL close👈")
+                        cl.sendText(msg.to,"🚂URL ถูกปิดแล้ว💨")
                     else:
-                        cl.sendText(msg.to,"URL close👈")
+                        cl.sendText(msg.to,"🚂URL ถูกปิดแล้ว💨")
                 else:
                     if wait["lang"] == "JP":
                         cl.sendText(msg.to,"It can not be used outside the group  👈")
                     else:
                         cl.sendText(msg.to,"Can not be used for groups other than ô€œ")
-            elif "Ginfo" == msg.text:
+            elif "เช็คกลุ่ม" == msg.text:
                 ginfo = cl.getGroup(msg.to)
                 try:
                     gCreator = ginfo.creator.displayName
@@ -521,11 +519,11 @@ def bot(op):
                         sinvitee = str(len(ginfo.invitee))
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': ginfo.creator.mid}
-                cl.sendText(msg.to,"[Nama]\n" + str(ginfo.name) + "\n[Group Id]\n" + msg.to + "\n\n[Group Creator]\n" + gCreator + "\n\nAnggota:" + str(len(ginfo.members)) + "\nInvitation:" + sinvitee + "")
+                cl.sendText(msg.to,"⭐✨กลุ่มชื่อ✨⭐\n" + str(ginfo.name) + "\n😯Id กลุ่ม😯\n" + msg.to + "\n\n🔰นี้คนสร้างกลุ่ม🔰\n" + gCreator + "\n\n♐จำนวนสมาชิก:" + str(len(ginfo.members)) + "\n♐ค้างเชิน:" + sinvitee + "")
                 cl.sendMessage(msg)
-            elif "Contact" == msg.text:
+            elif "ติดต่อ" == msg.text:
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': msg.to}
+                msg.contentMetadata = {'u801fe367c48e4fe31ab0270933a0616f': msg.to}
                 cl.sendMessage(msg)
             elif "Mymid" == msg.text:
                 cl.sendText(msg.to,mid)
@@ -581,7 +579,7 @@ def bot(op):
                     profile = ki7.getProfile()
                     profile.displayName = string
                     ki7.updateProfile(profile)
-            elif "Allbio:" in msg.text:
+            elif "คิกแก้ตัส:" in msg.text:
                 string = msg.text.replace("Allbio:","")
                 if len(string.decode('utf-8')) <= 500:
                     profile = ki.getProfile()
@@ -611,13 +609,13 @@ def bot(op):
                     profile = ki7.getProfile()
                     profile.statusMessage = string
                     ki7.updateProfile(profile)    
-            elif "Myname:" in msg.text:
+            elif "แก้ชื่อ:" in msg.text:
                 string = msg.text.replace("Myname:","")
                 if len(string.decode('utf-8')) <= 20:
                     profile = cl.getProfile()
                     profile.displayName = string
                     cl.updateProfile(profile)
-                    cl.sendText(msg.to,"􀜁􀇔􏿿Update Names👉 " + string + "👈")
+                    cl.sendText(msg.to,"􀜁􀇔􏿿เปลี่ยนชื่อ ให้แล้ว􀜁􀇔􏿿\n♻ " + string + "♻")
 
 #-------------Fungsi Tag All Start---------------#
             elif msg.text in ["Cipok","แท็ค"]:
@@ -649,60 +647,60 @@ def bot(op):
 #-------------Fungsi Tag All Finish---------------#
 
 #---------------------------------------------------------
-            elif "1name:" in msg.text:
+            elif "1แก้ชื่อ:" in msg.text:
                 string = msg.text.replace("1name:","")
                 if len(string.decode('utf-8')) <= 20:
                     profile = ki.getProfile()
                     profile.displayName = string
                     ki.updateProfile(profile)
-                    ki.sendText(msg.to,"􀜁􀇔􏿿Update Names👉" + string + "👈")
+                    ki.sendText(msg.to,"􀜁􀇔􏿿เปลี่ยนชื่อ ให้แล้ว􀜁􀇔􏿿\n👉" + string + "👈")
 #--------------------------------------------------------
-            elif "2name:" in msg.text:
+            elif "2แก้ชื่อ:" in msg.text:
                 string = msg.text.replace("2name:","")
                 if len(string.decode('utf-8')) <= 20:
                     profile = ki2.getProfile()
                     profile.displayName = string
                     ki2.updateProfile(profile)
-                    ki2.sendText(msg.to,"􀜁􀇔􏿿Update Names👉" + string + "👈")
+                    ki2.sendText(msg.to,"􀜁􀇔􏿿เปลี่ยนชื่อ ให้แล้ว􀜁􀇔􏿿\n👉" + string + "👈")
 #--------------------------------------------------------
-            elif "3name:" in msg.text:
+            elif "3แก้ชื่อ:" in msg.text:
                 string = msg.text.replace("3name:","")
                 if len(string.decode('utf-8')) <= 20:
                     profile = ki3.getProfile()
                     profile.displayName = string
                     ki3.updateProfile(profile)
-                    ki3.sendText(msg.to,"􀜁􀇔􏿿Update Names👉" + string + "👈")
+                    ki3.sendText(msg.to,"􀜁􀇔􏿿เปลี่ยนชื่อ ให้แล้ว􀜁􀇔􏿿\n👉" + string + "👈")
 #--------------------------------------------------------
-            elif "4name:" in msg.text:
+            elif "4แก้ชื่อ:" in msg.text:
                 string = msg.text.replace("4name:","")
                 if len(string.decode('utf-8')) <= 20:
                     profile = ki4.getProfile()
                     profile.displayName = string
                     ki4.updateProfile(profile)
-                    ki4.sendText(msg.to,"􀜁􀇔􏿿Update Names👉" + string + "👈")
-            elif "Mybio:" in msg.text:
+                    ki4.sendText(msg.to,"􀜁􀇔􏿿เปลี่ยนชื่อ ให้แล้ว􀜁􀇔􏿿\n👉" + string + "👈")
+            elif "แก้ตัส:" in msg.text:
                 string = msg.text.replace("Mybio:","")
                 if len(string.decode('utf-8')) <= 500:
                     profile = cl.getProfile()
                     profile.statusMessage = string
                     cl.updateProfile(profile)
-                    cl.sendText(msg.to,"􀜁􀇔􏿿Update Bio👉" + string + "👈")
+                    cl.sendText(msg.to,"􀜁􀇔􏿿เปลี่ยน ตัสแล้ว􀜁􀇔􏿿\n👉" + string + "👈")
 #--------------------------------------------------------
-            elif "5name:" in msg.text:
+            elif "5แก้ชื่อ:" in msg.text:
                 string = msg.text.replace("5name:","")
                 if len(string.decode('utf-8')) <= 20:
                     profile = ki5.getProfile()
                     profile.displayName = string
                     ki5.updateProfile(profile)
-                    ki5.sendText(msg.to,"􀜁􀇔􏿿Update Names👉" + string + "👈")
+                    ki5.sendText(msg.to,"􀜁􀇔􏿿เปลี่ยนชื่อ ให้แล้ว􀜁􀇔􏿿\n👉" + string + "👈")
 #--------------------------------------------------------
-            elif "6name:" in msg.text:
+            elif "6แก้ชื่อ:" in msg.text:
                 string = msg.text.replace("6name:","")
                 if len(string.decode('utf-8')) <= 20:
                     profile = ki6.getProfile()
                     profile.displayName = string
                     ki6.updateProfile(profile)
-                    ki6.sendText(msg.to,"􀜁􀇔􏿿Update Names👉" + string + "👈")
+                    ki6.sendText(msg.to,"􀜁􀇔􏿿เปลี่ยนชื่อ ให้แล้ว􀜁􀇔􏿿\n👉" + string + "👈")
 #--------------------------------------------------------
             elif "Mid:" in msg.text:
                 mmid = msg.text.replace("Mid:","")
@@ -733,16 +731,16 @@ def bot(op):
                         cl.sendText(msg.to,"off ô€œô€„‰already")
                     else:
                         cl.sendText(msg.to,"already Close ô€œô€„‰👈")
-            elif msg.text.lower() == 'protect on':
+            elif msg.text.lower() == 'ป้องกัน เปิด':
                 if wait["protect"] == True:
                     if wait["lang"] == "JP":
-                        cl.sendText(msg.to,"Ini sudah on 􀜁􀇔􏿿👈")
+                        cl.sendText(msg.to,"􀜁􀇔􏿿โหมดป้องกันเปิดแล้ว􀜁􀇔􏿿")
                     else:
                         cl.sendText(msg.to,"Hal ini sudah terbuka ô€¨👈")
                 else:
                     wait["protect"] = True
                     if wait["lang"] == "JP":
-                        cl.sendText(msg.to,"already ON􀜁􀇔􏿿")
+                        cl.sendText(msg.to,"􀜁􀇔􏿿โหมดป้องกันเปิดแล้ว􀜁􀇔􏿿")
                     else:
                         cl.sendText(msg.to,"It is already On ô€¨")
             elif msg.text.lower() == 'qrprotect on':
@@ -891,16 +889,16 @@ def bot(op):
             elif msg.text.lower() == 'auto join off':
                 if wait["autoJoin"] == False:
                     if wait["lang"] == "JP":
-                        cl.sendText(msg.to,"Auto Join Already Off")
+                        cl.sendText(msg.to,"􀜁􀇔􏿿เข้ากลุ่ม อัตโนมัติ ปิด􀜁􀇔􏿿")
                     else:
-                        cl.sendText(msg.to,"Auto Join set off")
+                        cl.sendText(msg.to,"􀜁􀇔􏿿เข้ากลุ่ม อัตโนมัติ ปิด􀜁􀇔􏿿")
                 else:
                     wait["autoJoin"] = False
                     if wait["lang"] == "JP":
                         cl.sendText(msg.to,"already close")
                     else:
                         cl.sendText(msg.to,"It is already open ô€œ👈")
-            elif msg.text in ["Protect off"]:
+            elif msg.text in ["ป้องกัน ปิด"]:
                 if wait["protect"] == False:
                     if wait["lang"] == "JP":
                         cl.sendText(msg.to,"hall ini sudah off ô€œ👈")
@@ -909,7 +907,7 @@ def bot(op):
                 else:
                     wait["protect"] = False
                     if wait["lang"] == "JP":
-                        cl.sendText(msg.to,"already close")
+                        cl.sendText(msg.to,"􀜁􀇔􏿿โหมดป้องกัน ปิดแล้ว􀜁􀇔􏿿")
                     else:
                         cl.sendText(msg.to,"It is already open ô€œ👈")
             elif msg.text in ["Qrprotect off","qrprotect off"]:
@@ -1033,8 +1031,8 @@ def bot(op):
                 else:md+="􀜁􀇔􏿿 Auto add:off 􀜁􀄰􏿿\n"
                 if wait["commentOn"] == True: md+="􀜁􀇔􏿿 Auto komentar:on 􀜁􀄯􏿿\n"
                 else:md+="􀜁􀇔􏿿 Auto komentar:off 􀜁􀄰􏿿\n"
-                if wait["protect"] == True: md+="􀜁􀇔􏿿 Protect:on 􀜁􀄯􏿿\n"
-                else:md+="􀜁􀇔􏿿 Protect:off 􀜁􀄰􏿿\n"
+                if wait["protect"] == True: md+="􀜁􀇔􏿿 ป้องกัน:เปิด 􀜁􀄯􏿿\n"
+                else:md+="􀜁􀇔􏿿 ป้องกัน:ปิด 􀜁􀄰􏿿\n"
                 if wait["linkprotect"] == True: md+="􀜁􀇔􏿿 Link Protect:on 􀜁􀄯􏿿\n"
                 else:md+="􀜁􀇔􏿿 Link Protect:off 􀜁􀄰􏿿\n"
                 if wait["inviteprotect"] == True: md+="􀜁􀇔􏿿 Invitation Protect:on 􀜁􀄯􏿿\n"
@@ -1049,12 +1047,12 @@ def bot(op):
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': mid}
                 cl.sendMessage(msg)
-            elif cms(msg.text,["creator","Creator"]):
+            elif cms(msg.text,["creator","คนสร้าง"]):
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': admsa}
-                cl.sendText(msg.to,"􀜁􀇔􏿿 My Creator 􀜁􀇔􏿿 ")
+                cl.sendText(msg.to,"􀜁􀇔􏿿  [B̲̲̅̅a̲̲̅̅n̲̲̅̅k̲̲̅ ̲̲̅ʙ̲̲̅̅ᴏ̲̲̅̅ᴛ̲̲̲̲̲̲̅̅̅̅̅̅ ̲̲̅̅L̲̲̅̅i̲̲̅n̲̲̅̅e̲̲̲̅̅̅] 􀜁􀇔􏿿 ")
                 cl.sendMessage(msg)
-                cl.sendText(msg.to,"􀜁􀇔􏿿 Dont Kick out From group 􀜁􀇔􏿿 ")
+                cl.sendText(msg.to,"􀜁􀇔􏿿  [B̲̲̅̅a̲̲̅̅n̲̲̅̅k̲̲̅ ̲̲̅ʙ̲̲̅̅ᴏ̲̲̅̅ᴛ̲̲̲̲̲̲̅̅̅̅̅̅ ̲̲̅̅L̲̲̅̅i̲̲̅n̲̲̅̅e̲̲̲̅̅̅] 􀜁􀇔􏿿 ")
             elif msg.text in ["Cancelall"]:
                 if msg.from_ in admin:
                   gid = cl.getGroupIdsInvited()
@@ -1119,7 +1117,7 @@ def bot(op):
                 for i in gid:
                     h += "[%s]:%s\n" % (cl.getGroup(i).name,i)
                 cl.sendText(msg.to,h)
-            elif msg.text in ["เข้ามา"]:
+            elif msg.text in ["มาดิ"]:
                 gid = cl.getGroupIdsJoined()
                 gid = ki.getGroupIdsJoined()
                 gid = ki2.getGroupIdsJoined()
@@ -1421,7 +1419,7 @@ def bot(op):
                     cl.sendText(msg.to,"Command denied.")
                     cl.sendText(msg.to,"Admin permission required.")
 
-            elif "Add Staff @" in msg.text:
+            elif "เพิ่มแอด @" in msg.text:
                 if msg.from_ in admin:
                     print "[Command]Staff add executing"
                     _name = msg.text.replace("Add Staff @","")
@@ -1676,8 +1674,8 @@ def bot(op):
                                 except:
                                     kk.sendText(msg.to,"Error")
 
-            elif "Unban:" in msg.text:                  
-                       nk0 = msg.text.replace("Unban:","")
+            elif "Unban" in msg.text:                  
+                       nk0 = msg.text.replace("Unban","")
                        nk1 = nk0.lstrip()
                        nk2 = nk1.replace("","")
                        nk3 = nk2.rstrip()
@@ -1795,13 +1793,13 @@ def bot(op):
                 start = time.time()
                 cl.sendText(msg.to, "กำลังคำนวน.......")
                 elapsed_time = time.time() - start
-                cl.sendText(msg.to, "%s🤖🤖" % (elapsed_time))
-                ki.sendText(msg.to, "%s🤖🤖" % (elapsed_time))
-                ki2.sendText(msg.to, "%s🤖🤖" % (elapsed_time))
-                ki3.sendText(msg.to, "%s🤖🤖" % (elapsed_time))
-                ki5.sendText(msg.to, "%s🤖🤖" % (elapsed_time))
-                ki6.sendText(msg.to, "%s🤖🤖" % (elapsed_time))
-                ki7.sendText(msg.to, "%s🤖🤖" % (elapsed_time))
+                cl.sendText(msg.to, "%s􀜁􀇔􏿿" % (elapsed_time))
+                ki.sendText(msg.to, "%s􀜁􀇔􏿿" % (elapsed_time))
+                ki2.sendText(msg.to, "%s􀜁􀇔􏿿" % (elapsed_time))
+                ki3.sendText(msg.to, "%s􀜁􀇔􏿿" % (elapsed_time))
+                ki5.sendText(msg.to, "%s􀜁􀇔􏿿" % (elapsed_time))
+                ki6.sendText(msg.to, "%s􀜁􀇔􏿿" % (elapsed_time))
+                ki7.sendText(msg.to, "%s􀜁􀇔􏿿" % (elapsed_time))
                 
 #-----------------------------------------------------------
             elif msg.text.lower() == 'respons':
