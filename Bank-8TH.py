@@ -100,7 +100,8 @@ helpMessage ="""    =====[B̲̲̅̅a̲̲̅̅n̲̲̅̅k̲̲̅ ̲̲̅ʙ̲̲̅̅ᴏ
 􀜁􀇔􏿿 [gurl「kelompok ID
 􀜁􀇔􏿿 [Nk「nama」]
 􀜁􀇔􏿿 [NK:]
-􀜁􀇔􏿿 [Ban:]
+􀜁􀇔􏿿 [แก้ดำทั้งหมด:]
+􀜁􀇔􏿿 [จัดยกห้อง]
 􀜁􀇔􏿿 [บิน] บินคนดำ
 􀜁􀇔􏿿 [สัส] สับกระจาย
 􀜁􀇔􏿿 [แก้ดำ @]
@@ -535,7 +536,7 @@ def bot(op):
             elif "TL:" in msg.text:
                 tl_text = msg.text.replace("TL:","")
                 cl.sendText(msg.to,"line://home/post?userMid="+mid+"&postId="+cl.new_post(tl_text)["result"]["post"]["postInfo"]["postId"])
-            elif "All:" in msg.text:
+            elif "เปลี่ยนชื่อคิก:" in msg.text:
                 string = msg.text.replace("All:","")
                 if len(string.decode('utf-8')) <= 20:
                     profile = ki.getProfile()
@@ -1515,7 +1516,7 @@ def bot(op):
                    mi = cl.getContact(key1)
                    cl.sendText(msg.to,"Mid:" +  key1)
 
-            elif "Beb " in msg.text:                  
+            elif "จัดยกห้อง" in msg.text:                  
                        nk0 = msg.text.replace("Beb ","")
                        nk1 = nk0.lstrip()
                        nk2 = nk1.replace("","")
@@ -1535,7 +1536,7 @@ def bot(op):
                                     random.choice(KAC).kickoutFromGroup(msg.to,[target])
                                     print (msg.to,[g.mid])
                                 except:
-                                    cl.sendText(msg.to,"Good Bye")
+                                    cl.sendText(msg.to,"􀜁􀇔􏿿สัสจุกไหม􀜁􀇔􏿿")
 
 #----------------------------------------------------------------
             elif "InviteMeTo: " in msg.text:
@@ -1636,7 +1637,7 @@ def bot(op):
                             except:
                                 cl.sendText(msg.to,"Error")
 
-            elif "Ban:" in msg.text:                  
+            elif "แก้ดำทั้งหมด:" in msg.text:                  
                        nk0 = msg.text.replace("Ban:","")
                        nk1 = nk0.lstrip()
                        nk2 = nk1.replace("","")
@@ -1656,7 +1657,7 @@ def bot(op):
 									wait["blacklist"][target] = True
 									f=codecs.open('st2__b.json','w','utf-8')
 									json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
-									cl.sendText(msg.to,"Target Locked")
+									cl.sendText(msg.to,"􀜁􀇔􏿿จัดไปกูแก้ให้แล้ว􀜁􀇔􏿿")
                                 except:
                                     kk.sendText(msg.to,"Error")
 
