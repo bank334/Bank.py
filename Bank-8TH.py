@@ -447,7 +447,7 @@ def bot(op):
                     else:
                         cl.sendText(msg.to,"invitan tidak ada")
 
-            elif msg.text in ["ยกเชิน","cancel"]:
+            elif msg.text in ["ยกเชิน"]:
                 if msg.toType == 2:
                     group = cl.getGroup(msg.to)
                     if group.invitee is not None:
