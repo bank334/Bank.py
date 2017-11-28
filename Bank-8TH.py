@@ -427,10 +427,8 @@ def bot(op):
                 ki4.sendMessage(msg)
                 ki.sendMessage(msg)
                 ki2.sendMessage(msg)
-                ki3.sendMessage(msg)
-	
-             
-	elif msg.text in ["B Cancel","Cancel dong","B cancel"]:
+                ki3.sendMessage(msg)     
+	    elif msg.text in ["B Cancel","Cancel dong","B cancel"]:
                 if msg.toType == 2:
                     group = ki.getGroup(msg.to)
                     if group.invitee is not None:
@@ -447,7 +445,7 @@ def bot(op):
                     else:
                         cl.sendText(msg.to,"invitan tidak ada")
 
-            elif msg.text in ["Cancel","cancel"]:
+            elif msg.text in ["Cancel","cancel","ยกเชิน"]:
                 if msg.toType == 2:
                     group = cl.getGroup(msg.to)
                     if group.invitee is not None:
