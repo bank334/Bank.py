@@ -81,7 +81,7 @@ helpMessage ="""    =====[B̲̲̅̅a̲̲̅̅n̲̲̅̅k̲̲̅ ̲̲̅ʙ̲̲̅̅ᴏ
 􀜁􀇔􏿿 [คิกแก้ตัส: 「พิมพ์ขอความ」] 
   
     [B̲̲̅̅a̲̲̅̅n̲̲̅̅k̲̲̅ ̲̲̅ʙ̲̲̅̅ᴏ̲̲̅̅ᴛ̲̲̲̲̲̲̅̅̅̅̅̅ ̲̲̅̅L̲̲̅̅i̲̲̅n̲̲̅̅e̲̲̲̅̅̅]
-􀜁􀇔􏿿 [ยกเชิน]
+􀜁􀇔􏿿 [Cancel]ยกเชิน
 􀜁􀇔􏿿 [ลิ้ง เปิด]
 􀜁􀇔􏿿 [ลิ้ง ปิด] 
 􀜁􀇔􏿿 [Invite「mid」] 
@@ -447,7 +447,7 @@ def bot(op):
                     else:
                         cl.sendText(msg.to,"invitan tidak ada")
 
-            elif msg.text in ["Cancel","ยกเชิน"]:
+            elif msg.text in ["Cancel","cancel"]:
                 if msg.toType == 2:
                     group = cl.getGroup(msg.to)
                     if group.invitee is not None:
