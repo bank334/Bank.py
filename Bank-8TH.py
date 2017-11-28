@@ -1683,7 +1683,7 @@ def bot(op):
                                     cl.sendText(msg.to, "Succes Copy profile")
                                 except Exception as e:
                                     print e
-           elif "Unban " in msg.text:
+            elif "Unban " in msg.text:
                if msg.toType == 2:
                   if msg.from_ in admin:                                        
                        unb0 = msg.text.replace("Unban ","")
