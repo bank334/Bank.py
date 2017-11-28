@@ -429,12 +429,13 @@ def bot(op):
                 ki2.sendMessage(msg)
                 ki3.sendMessage(msg)
 	
-             elif msg.text.lower() == 'thx':
+             elif msg.text.lower() == '555':
                 msg.contentType = 7
                 msg.text = None
                 msg.contentMetadata = {
                                      "STKID": "16846759",
-                                     "STKPKGID": "8543",    
+                                     "STKPKGID": "8543",
+			             "STKVER": "7" }
                 cl.sendMessage(msg)
                 cl.sendMessage(msg)
                 cl.sendMessage(msg)
