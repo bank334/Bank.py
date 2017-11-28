@@ -1614,7 +1614,7 @@ def bot(op):
                       cl.sendText(msg.to,"Succes Bosque")
                    except:
                       pass
-             elif "แก้ดำ @" in msg.text:
+            elif "แก้ดำ @" in msg.text:
                 if msg.toType == 2:
                     print "[Unban]ok"
                     _name = msg.text.replace("Unban @","")
