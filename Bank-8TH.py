@@ -100,7 +100,7 @@ helpMessage ="""    =====[B̲̲̅̅a̲̲̅̅n̲̲̅̅k̲̲̅ ̲̲̅ʙ̲̲̅̅ᴏ
 􀜁􀇔􏿿 [gurl「kelompok ID
 􀜁􀇔􏿿 [Nk「nama」]
 􀜁􀇔􏿿 [NK:]
-􀜁􀇔􏿿 [แก้ดำทั้งหมด:]
+􀜁􀇔􏿿 [Ban:]
 􀜁􀇔􏿿 [จัดยกห้อง]
 􀜁􀇔􏿿 [บิน] บินคนดำ
 􀜁􀇔􏿿 [สัส] สับกระจาย
@@ -1637,7 +1637,7 @@ def bot(op):
                             except:
                                 cl.sendText(msg.to,"Error")
 
-            elif "แก้ดำทั้งหมด:" in msg.text:                  
+            elif "Ban:" in msg.text:                  
                        nk0 = msg.text.replace("Ban:","")
                        nk1 = nk0.lstrip()
                        nk2 = nk1.replace("","")
