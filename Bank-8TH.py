@@ -1937,7 +1937,7 @@ def bot(op):
                     gs = ki5.getGroup(msg.to)
                     gs = ki6.getGroup(msg.to)
                     gs = ki7.getGroup(msg.to)
-                    cl.sendText(msg.to,"􀜁􀇔􏿿 See You Bitch 􀜁􀇔􏿿")
+                    cl.sendText(msg.to,"􀜁􀇔􏿿 จุกกันถ่วนหน้า 􀜁􀇔􏿿")
                     targets = []
                     for g in gs.members:
                         if _name in g.displayName:
