@@ -605,32 +605,41 @@ def bot(op):
                     cl.sendText(msg.to,"􀜁􀇔􏿿เปลี่ยนชื่อ ให้แล้ว􀜁􀇔􏿿\n♻ " + string + "♻")
 
 #-------------Fungsi Tag All Start---------------#
-            elif msg.text in ["Cipok","แท็ค"]:
-                  group = cl.getGroup(msg.to)
-                  nama = [contact.mid for contact in group.members]
-
-                  cb = ""
-                  cb2 = ""
-                  strt = int(0)
-                  akh = int(0)
-                  for md in nama:
-                      akh = akh + int(6)
-
-                      cb += """{"S":"""+json.dumps(str(strt))+""","E":"""+json.dumps(str(akh))+""","M":"""+json.dumps(md)+"},"""
-
-                      strt = strt + int(7)
-                      akh = akh + 1
-                      cb2 += "@nrik \n"
-
-                  cb = (cb[:int(len(cb)-1)])
-                  msg.contentType = 0
-                  msg.text = cb2
-                  msg.contentMetadata ={'MENTION':'{"MENTIONEES":['+cb+']}','EMTVER':'4'}
-
-                  try:
-                      cl.sendMessage(msg)
-                  except Exception as error:
-                      print error
+            if msg.text.lower() in ["แท็ค"]:
+                 group = cl.getGroup(msg.to)
+                 nama = [contact.mid for contact in group.members]
+                 nm1, nm2, nm3, nm4, nm5, jml = [], [], [], [], [], len(nama)
+                 if jml <= 100:
+                    mention(msg.to, nama)
+                 if jml > 100 and jml < 200:
+                    for i in range(0, 99):
+                        nm1 += [nama[i]]
+                    mention(msg.to, nm1)
+                    for j in range(100, len(nama)-1):
+                        nm2 += [nama[j]]
+                    mention(msg.to, nm2)
+                 if jml > 200  and jml < 500:
+                    for i in range(0, 99):
+                        nm1 += [nama[i]]
+                    mention(msg.to, nm1)
+                    for j in range(100, 199):
+                        nm2 += [nama[j]]
+                    mention(msg.to, nm2)
+                    for k in range(200, 299):
+                        nm3 += [nama[k]]
+                    mention(msg.to, nm3)
+                    for l in range(300, 399):
+                        nm4 += [nama[l]]
+                    mention(msg.to, nm4)
+                    for m in range(400, len(nama)-1):
+                        nm5 += [nama[m]]
+                    mention(msg.to, nm5)
+                 if jml > 500:
+                     print "Terlalu Banyak Men 500+"
+                 cnt = Message()
+                 cnt.text = "Jumlah:\n" + str(jml) +  " Members"
+                 cnt.to = msg.to
+                 cl.sendMessage(cnt)
 #-------------Fungsi Tag All Finish---------------#
 
 #---------------------------------------------------------
