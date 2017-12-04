@@ -1824,6 +1824,12 @@ def bot(op):
                 ki7.sendText(msg.to, text)
 
 #-------------------------------------------------------------------
+            elif msg.text.lower() in ["ข้อมูล","admin"]:
+                msg.contentType = 13
+                adm = 'u801fe367c48e4fe31ab0270933a0616f'
+                msg.contentMetadata = {'mid': adm}
+                cl.sendMessage(msg)
+                cl.sendText(msg.to,"INFO CREATOR\n╔════════════════════════\n╠Instagram: @MuhMursalinD\n╠LINE:   bank60.com\n╠WhatsApp: 0908868122\n╠Nama: Muh Bank.    D\n╚════════════════════════")
 
 #------------------------------------------------------------------	
             elif "Steal home @" in msg.text:            
