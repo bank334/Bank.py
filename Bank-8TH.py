@@ -34,7 +34,7 @@ ki6.login(token="EnL9HdQVQ2YhzUurgUn0.YJCMjxLLg0sBWJ/+JKhYWa./JMk+CPGgaYKQmFHpdn
 ki6.loginResult()
 
 ki7 = LINETCR.LINE()
-ki7.login(token="EnlvcU5bjNVbMNmA7rI8.gxoSjadDzbbrk18XEDsGQa.qEzmFp7E+2qx9rC8OKUj43ts1GfD6iL6Qmzv3GRfjkg=")
+ki7.login(token="EnI03JGuyWor0K4gEBa0.jvOVF96vUPzJ0reR8pDaSa.0TazXelz+Hi/yU8tG/okkUjQ/Nep8W6rIvMxPWBJVag=")
 ki7.loginResult()
 
 print u"login success"
