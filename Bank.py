@@ -178,7 +178,7 @@ groupMessage ="""
 ║    〽️ line.me/ti/p/~nad_nad. 〽️
 ╚═════════════════════════
 """
-tjia="u14f64e139a3817afaabe27d237afb36b"
+tjia="u6e2ec37dbe96a68bed4acf361b2439de"
 
 setMessage ="""
 ╔═════════════════════════
@@ -313,7 +313,7 @@ Cmid = kc.getProfile().mid
 Dmid = kr.getProfile().mid
 Emid = km.getProfile().mid
 Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid]
-Creator=["u14f64e139a3817afaabe27d237afb36b"]
+Creator=["u6e2ec37dbe96a68bed4acf361b2439de"]
 admin=["u14f64e139a3817afaabe27d237afb36b","u23ad5ddec0dd0523f9caffad673d693c","u8b2bb5214c1afc77d06901a535c23e30","u57a54b914085fea6f04c19f6fe589057","u94fb89525397a12a24df3642a7335fe7","u3a43893bf65289be03f9fd3a85dab2a7","u787d28e13bd4f94cdca5457cd90efaf4","u86304883a6fa105778bfdf13f467eaf0"]
 
 contact = cl.getProfile()
