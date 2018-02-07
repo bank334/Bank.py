@@ -1,13 +1,16 @@
 # -*- coding: utf-8 -*-
-#Chucky_Bot
 
 import LINETCR
 from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
+import time, random, sys, ast, re, os, io, json, subprocess, threading, string, codecs, requests, ctypes, urllib, urllib2, urllib3, wikipedia, tempfile
 from bs4 import BeautifulSoup
+from urllib import urlopen
+from io import StringIO
 from threading import Thread
-from googletrans import Translator
 from gtts import gTTS
+from googletrans import Translator
+from threading import Thread
 import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,os,subprocess,requests,tempfile
 
 cl = LINETCR.LINE()
