@@ -103,204 +103,196 @@ botMessage ="""
 """
 
 mediaMessage ="""
-╔═════════════════════════
-║           ☆☞ M E D I A ☜☆
-╠═════════════════════════
-╠➩〘Gift〙
-╠➩〘Gift1 @ s/d Gift10 @〙
-╠➩〘Giftbycontact〙
-╠➩〘All gift〙
-╠➩〘Gif gore〙
-╠➩〘Google: (Text)〙
-╠➩〘Playstore NamaApp〙
-╠➩〘Fancytext: Text〙
-╠➩〘/musik Judul-Penyanyi〙
-╠➩〘/lirik Judul-Penyanyi〙
-╠➩〘/musrik Judul-Penyanyi〙
-╠➩〘/ig UrsnameInstagram〙
-╠➩〘Checkig UrsnameInstagram〙
-╠➩〘/apakah Text (Kerang Ajaib)〙
-╠➩〘/kapan Text (Kerang Ajaib)〙
-╠➩〘/hari Text (Kerang Ajaib)〙
-╠➩〘/berapa Text (Kerang Ajaib)〙
-╠➩〘/berapakah Text〙
-╠➩〘Youtubelink: Judul Video〙
-╠➩〘Youtubevideo: Judul Video〙
-╠➩〘Youtubesearch: Judul Video〙
-╠➩〘Image NamaGambar〙
-╠➩〘Say-id Text〙
-╠➩〘Say-en Text〙
-╠➩〘Say-jp Text〙
-╠➩〘Image NamaGambar〙
-╠➩〘Tr-id Text (Translate En Ke ID〙
-╠➩〘Tr-en Text (Translate ID Ke En〙
-╠➩〘Tr-th Text (Translate ID Ke Th〙
-╠➩〘Id@en Text (Translate ID Ke En〙
-╠➩〘Id@th Text (Translate ID Ke TH〙
-╠➩〘En@id Text (Translate En Ke ID〙
-╠═════════════════════════
-║             💠 By : Nadya 💠
-║    〽️ line.me/ti/p/~nad_nad. 〽️
-╚═════════════════════════
+           ☆☞ M E D I A ☜☆
+
+➩〘Gift〙
+➩〘Gift1 @ s/d Gift10 @〙
+➩〘Giftbycontact〙
+➩〘All gift〙
+➩〘Gif gore〙
+➩〘Google: (Text)〙
+➩〘Playstore NamaApp〙
+➩〘Fancytext: Text〙
+➩〘/musik Judul-Penyanyi〙
+➩〘/lirik Judul-Penyanyi〙
+➩〘/musrik Judul-Penyanyi〙
+➩〘/ig UrsnameInstagram〙
+➩〘Checkig UrsnameInstagram〙
+➩〘/apakah Text (Kerang Ajaib)〙
+➩〘/kapan Text (Kerang Ajaib)〙
+➩〘/hari Text (Kerang Ajaib)〙
+➩〘/berapa Text (Kerang Ajaib)〙
+➩〘/berapakah Text〙
+➩〘Youtubelink: Judul Video〙
+➩〘Youtubevideo: Judul Video〙
+➩〘Youtubesearch: Judul Video〙
+➩〘Image NamaGambar〙
+➩〘Say-id Text〙
+➩〘Say-en Text〙
+➩〘Say-jp Text〙
+➩〘Image NamaGambar〙
+➩〘Tr-id Text (Translate En Ke ID〙
+➩〘Tr-en Text (Translate ID Ke En〙
+➩〘Tr-th Text (Translate ID Ke Th〙
+➩〘Id@en Text (Translate ID Ke En〙
+➩〘Id@th Text (Translate ID Ke TH〙
+➩〘En@id Text (Translate En Ke ID〙
+
+       By :꧁⎈Bäñk⎈꧂
+    line.me/ti/p/~bank39.com
 """
 
 groupMessage ="""
-╔═════════════════════════
-║           ☆☞ G R O U P ☜☆
-╠═════════════════════════
-╠➩〘Welcome〙
-╠➩〘Say welcome〙
-╠➩〘Invite creator〙
-╠➩〘Setview〙
-╠➩〘Viewseen〙
-╠➩〘Gn: (NamaGroup)〙
-╠➩〘Tag all〙
-╠➩〘Recover〙
-╠➩〘Cancel〙
-╠➩〘Cancelall〙
-╠➩〘Gcreator〙
-╠➩〘Ginfo〙
-╠➩〘Gurl〙
-╠➩〘List group〙
-╠➩〘Pict group: (NamaGroup)〙
-╠➩〘Spam: (Text)〙
-╠➩〘Spam〙
-╠➩〘Add all〙
-╠➩〘Kick: (Mid)〙
-╠➩〘Invite: (Mid)〙
-╠➩〘Invite〙
-╠➩〘Memlist〙
-╠➩〘Getgroup image〙
-╠➩〘Urlgroup Image〙
-╠═════════════════════════
-║             💠 By : Nadya 💠
-║    〽️ line.me/ti/p/~nad_nad. 〽️
-╚═════════════════════════
+
+           ☆☞ G R O U P ☜☆
+
+➩〘Welcome〙
+➩〘Say welcome〙
+➩〘Invite creator〙
+➩〘Setview〙
+➩〘Viewseen〙
+➩〘Gn: (NamaGroup)〙
+➩〘Tag all〙
+➩〘Recover〙
+➩〘Cancel〙
+➩〘Cancelall〙
+➩〘Gcreator〙
+➩〘Ginfo〙
+➩〘Gurl〙
+➩〘List group〙
+➩〘Pict group: (NamaGroup)〙
+➩〘Spam: (Text)〙
+➩〘Spam〙
+➩〘Add all〙
+➩〘Kick: (Mid)〙
+➩〘Invite: (Mid)〙
+➩〘Invite〙
+➩〘Memlist〙
+➩〘Getgroup image〙
+➩〘Urlgroup Image
+
+       By :꧁⎈Bäñk⎈꧂
+    line.me/ti/p/~bank39.com
 """
 tjia="u6e2ec37dbe96a68bed4acf361b2439de"
 
 setMessage ="""
-╔═════════════════════════
-║              ☆☞ S E T ☜☆
-╠═════════════════════════
-╠➩〘Sambutan on/off〙
-╠➩〘Url on/off〙
-╠➩〘Alwaysread on/off〙
-╠➩〘Sider on/off〙
-╠➩〘Contact on/off〙
-╠➩〘Simisimi on/off〙
-╠═════════════════════════
-║             💠 By : Nadya 💠
-║    〽️ line.me/ti/p/~nad_nad. 〽️
-╚═════════════════════════
+
+              ☆☞ S E T ☜☆
+
+➩〘Sambutan on/off〙
+➩〘Url on/off〙
+➩〘Alwaysread on/off〙
+➩〘Sider on/off〙
+➩〘Contact on/off〙
+➩〘Simisimi on/off〙
+
+        By :꧁⎈Bäñk⎈꧂
+    line.me/ti/p/~bank39.com
 """
 
 creatorMessage ="""
-╔═════════════════════════
-║         ☆☞ C R E A T O R ☜☆
-╠═════════════════════════
-╠➩〘Admin add @〙
-╠➩〘Admin remove @〙
-╠➩〘/cnkapten〙
-╠➩〘/cntc1〙
-╠➩〘/cntc2〙
-╠➩〘/cntc3〙
-╠➩〘/cntc4〙
-╠➩〘Crash〙
-╠➩〘Kickall〙
-╠➩〘Bc: (Text)〙
-╠➩〘Nk: @〙
-╠➩〘Ulti @〙
-╠➩〘Join group: (NamaGroup〙
-╠➩〘Leave group: (NamaGroup〙
-╠➩〘Leave all group〙
-╠➩〘Bot restart〙
-╠➩〘Turn off〙
-╠═════════════════════════
-║             💠 By : Nadya 💠
-║    〽️ line.me/ti/p/~nad_nad. 〽️
-╚═════════════════════════
+
+       ☆☞ C R E A T O R ☜☆
+
+➩〘Admin add @〙
+➩〘Admin remove @〙
+➩〘/cnkapten〙
+➩〘/cntc1〙
+➩〘/cntc2〙
+➩〘/cntc3〙
+➩〘/cntc4〙
+➩〘Crash〙
+➩〘Kickall〙
+➩〘Bc: (Text)〙
+➩〘Nk: @〙
+➩〘Ulti @〙
+➩〘Join group: (NamaGroup〙
+➩〘Leave group: (NamaGroup〙
+➩〘Leave all group〙
+➩〘Bot restart〙
+➩〘Turn off〙
+
+        By :꧁⎈Bäñk⎈꧂
+    line.me/ti/p/~bank39.com
 """
 
 adminMessage ="""
-╔═════════════════════════
-║            ☆☞ A D M I N ☜☆
-╠═════════════════════════
-╠➩〘Admin list〙
-╠➩〘Ban〙
-╠➩〘Unban〙
-╠➩〘Ban @〙
-╠➩〘Unban @〙
-╠➩〘Ban list〙
-╠➩〘Clear ban〙
-╠➩〘Kill〙
-╠➩〘Kick @〙
-╠➩〘Set member: (Jumblah)〙
-╠➩〘Ban group: (NamaGroup〙
-╠➩〘Del ban: (NamaGroup〙
-╠➩〘List ban〙
-╠➩〘Kill ban〙
-╠➩〘Glist〙
-╠➩〘Glistmid〙
-╠➩〘Details group: (Gid)〙
-╠➩〘Cancel invite: (Gid)〙
-╠➩〘Invitemeto: (Gid)〙
-╠➩〘Kapten acc invite〙
-╠➩〘TC1 acc invite〙
-╠➩〘TC2 acc invite〙
-╠➩〘TC3 acc invite〙
-╠➩〘TC4 acc invite〙
-╠➩〘Removechat〙
-╠➩〘Join on/off〙
-╠➩〘Joincancel on/off〙
-╠➩〘Respon on/off〙
-╠➩〘Responkick on/off〙
-╠➩〘Leave on/off〙
-╠➩〘All join / (TC1/2/3/4 Join)〙
-╠═════════════════════════
-║             💠 By : Nadya 💠
-║    〽️ line.me/ti/p/~nad_nad. 〽️
-╚═════════════════════════
+
+            ☆☞ A D M I N ☜☆
+
+➩〘Admin list〙
+➩〘Ban〙
+➩〘Unban〙
+➩〘Ban @〙
+➩〘Unban @〙
+➩〘Ban list〙
+➩〘Clear ban〙
+➩〘Kill〙
+➩〘Kick @〙
+➩〘Set member: (Jumblah)〙
+➩〘Ban group: (NamaGroup〙
+➩〘Del ban: (NamaGroup〙
+➩〘List ban〙
+➩〘Kill ban〙
+➩〘Glist〙
+➩〘Glistmid〙
+➩〘Details group: (Gid)〙
+➩〘Cancel invite: (Gid)〙
+➩〘Invitemeto: (Gid)〙
+➩〘Kapten acc invite〙
+➩〘TC1 acc invite〙
+➩〘TC2 acc invite〙
+➩〘TC3 acc invite〙
+➩〘TC4 acc invite〙
+➩〘Removechat〙
+➩〘Join on/off〙
+➩〘Joincancel on/off〙
+➩〘Respon on/off〙
+➩〘Responkick on/off〙
+➩〘Leave on/off〙
+➩〘All join / (TC1/2/3/4 Join)〙
+
+        By :꧁⎈Bäñk⎈꧂
+    line.me/ti/p/~bank39.com
 """
 
 helpMessage ="""
-╔═════════════════════════
-║              ☆☞ H E L P ☜☆
-╠═════════════════════════
-╠➩〘Help protect〙
-╠➩〘Help self〙
-╠➩〘Help bot〙
-╠➩〘Help group〙
-╠➩〘Help set〙
-╠➩〘Help media〙
-╠➩〘Help admin〙
-╠➩〘Help creator〙
-╠➩〘Owner〙
-╠➩〘Pap owner〙
-╠➩〘Admin〙
-╠➩〘Speed〙
-╠➩〘Speed test〙
-╠➩〘Status〙
-╠═════════════════════════
-║             💠 By : Nadya 💠
-║    〽️ line.me/ti/p/~nad_nad. 〽️
-╚═════════════════════════
+
+              ☆☞ H E L P ☜☆
+
+➩〘Help protect〙
+➩〘Help self〙
+➩〘Help bot〙
+➩〘Help group〙
+➩〘Help set〙
+➩〘Help media〙
+➩〘Help admin〙
+➩〘Help creator〙
+➩〘Owner〙
+➩〘Pap owner〙
+➩〘Admin〙
+➩〘Speed〙
+➩〘Speed test〙
+➩〘Status〙
+     
+        By :꧁⎈Bäñk⎈꧂
+    line.me/ti/p/~bank39.com
 """
 
 protectMessage ="""
-╔═════════════════════════
-║           ☆☞ P R O T E C T ☜☆
-╠═════════════════════════
-╠➩〘Allprotect on/off〙
-╠➩〘Autocancel on/off〙
-╠➩〘Qr on/off〙
-╠➩〘Autokick on/off〙
-╠➩〘Ghost on/off〙
-╠➩〘Invitepro on/off〙
-╠═════════════════════════
-║             💠 By : Nadya 💠
-║    〽️ line.me/ti/p/~nad_nad. 〽️
-╚═════════════════════════
+
+           ☆☞ P R O T E C T ☜☆
+
+➩〘Allprotect on/off〙
+➩〘Autocancel on/off〙
+➩〘Qr on/off〙
+➩〘Autokick on/off〙
+➩〘Ghost on/off〙
+➩〘Invitepro on/off〙
+     
+       By :꧁⎈Bäñk⎈꧂
+    line.me/ti/p/~bank39.com 
 """
 
 
@@ -313,7 +305,7 @@ Dmid = kr.getProfile().mid
 Emid = km.getProfile().mid
 Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid]
 Creator=["u6e2ec37dbe96a68bed4acf361b2439de"]
-admin=["u14f64e139a3817afaabe27d237afb36b","u23ad5ddec0dd0523f9caffad673d693c","u8b2bb5214c1afc77d06901a535c23e30","u57a54b914085fea6f04c19f6fe589057","u94fb89525397a12a24df3642a7335fe7","u3a43893bf65289be03f9fd3a85dab2a7","u787d28e13bd4f94cdca5457cd90efaf4","u86304883a6fa105778bfdf13f467eaf0"]
+admin=["u6e2ec37dbe96a68bed4acf361b2439de","u23ad5ddec0dd0523f9caffad673d693c","u8b2bb5214c1afc77d06901a535c23e30","u57a54b914085fea6f04c19f6fe589057","u94fb89525397a12a24df3642a7335fe7","u3a43893bf65289be03f9fd3a85dab2a7","u787d28e13bd4f94cdca5457cd90efaf4","u86304883a6fa105778bfdf13f467eaf0"]
 
 contact = cl.getProfile()
 backup1 = cl.getProfile()
@@ -1344,7 +1336,7 @@ def bot(op):
 		
             elif msg.text in ["Admin","admin"]:
                 msg.contentType = 13
-                admin1 = "u23ad5ddec0dd0523f9caffad673d693c"
+                admin1 = "u6e2ec37dbe96a68bed4acf361b2439de"
                 admin2 = "u8b2bb5214c1afc77d06901a535c23e30"
                 admin3 = "u57a54b914085fea6f04c19f6fe589057"
                 msg.contentMetadata = {'mid': tjia}
@@ -1551,31 +1543,31 @@ def bot(op):
                                       break
                                   
  
-            elif msg.text in ["Key creator","help creator","Help creator"]:
+            elif msg.text in ["Key creator","help creator","Help creator","คำสั่ง1"]:
                 cl.sendText(msg.to,creatorMessage)
 
-            elif msg.text in ["Key group","help group","Help group"]:
+            elif msg.text in ["Key group","help group","Help group","คำสั่ง2"]:
                 cl.sendText(msg.to,groupMessage)
 
-            elif msg.text in ["Key","help","Help"]:
+            elif msg.text in ["Key","help","Help","คำสั่ง3"]:
                 cl.sendText(msg.to,helpMessage)
 
-            elif msg.text in ["Key self","help self","Help self"]:
+            elif msg.text in ["Key self","help self","Help self","คำสั่ง4"]:
                 cl.sendText(msg.to,selfMessage)
 
-            elif msg.text in ["Key bot","help bot","Help bot"]:
+            elif msg.text in ["Key bot","help bot","Help bot","คำสั่ง5"]:
                 cl.sendText(msg.to,botMessage)
 
-            elif msg.text in ["Key set","help set","Help set"]:
+            elif msg.text in ["Key set","help set","Help set","คำสั่ง6"]:
                 cl.sendText(msg.to,setMessage)
 
-            elif msg.text in ["Key media","help media","Help media"]:
+            elif msg.text in ["Key media","help media","Help media","คำสั่ง7"]:
                 cl.sendText(msg.to,mediaMessage)
                 
-            elif msg.text in ["Key admin","help admin","Help admin"]:
+            elif msg.text in ["Key admin","help admin","Help admin","คำสั่ง8"]:
                 cl.sendText(msg.to,adminMessage)    
                 
-            elif msg.text in ["Key protect","help protect","Help protect"]:
+            elif msg.text in ["Key protect","help protect","Help protect","คำสั่ง9"]:
                 cl.sendText(msg.to,protectMessage)                 
                 
 
@@ -1998,40 +1990,40 @@ def bot(op):
                     cl.sendText(msg.to, "Heh Belom Di Set")                         
 
 
-            elif msg.text in ["Status"]:
+            elif msg.text in ["ตั้งค่า"]:
                 md = ""
-		if wait["Sambutan"] == True: md+="╠➩✔️ Sambutan : On\n"
-		else:md+="╠➩❌ Sambutan : Off\n"
-		if wait["joinkick"] == True: md+="╠➩✔️ Join Kick : On\n"
-		else:md+="╠➩❌ Join Kick : Off\n"		
-		if wait["AutoJoin"] == True: md+="╠➩✔️ Auto Join : On\n"
-                else: md +="╠➩❌ Auto Join : Off\n"
-		if wait["AutoJoinCancel"] == True: md+="╠➩✔️ Auto Join Cancel : On\n"
-                else: md +="╠➩❌ Auto Join Cancel : Off\n"                
-		if wait["Leave"] == True: md+="╠➩✔️ Leave : On\n"
-                else: md +="╠➩❌ Leave : Off\n"                
-		if wait["Contact"] == True: md+="╠➩✔️ Info Contact : On\n"
-		else: md+="╠➩❌ Info Contact : Off\n"
-                if wait["AutoCancelon"] == True:md+="╠➩✔️ Auto Cancel : On\n"
-                else: md+= "╠➩❌ Auto Cancel : Off\n"
-                if wait["inviteprotect"] == True:md+="╠➩✔️ Invite Protect : On\n"
-                else: md+= "╠➩❌ Invite Protect : Off\n"                
-		if wait["Qron"] == True: md+="╠➩✔️ Qr Protect : On\n"
-		else:md+="╠➩❌ Qr Protect : Off\n"
-		if wait["AutoKickon"] == True: md+="╠➩✔️ Auto Kick : On\n"
-		else:md+="╠➩❌ Auto Kick : Off\n"
-		if wait["Ghost"] == True: md+="╠➩✔️ Ghost : On\n"
-		else:md+="╠➩❌ Ghost : Off\n"
-		if wait["alwaysRead"] == True: md+="╠➩✔️ Always Read : On\n"
-		else:md+="╠➩❌ Always Read: Off\n"
-		if wait["detectMention"] == True: md+="╠➩✔️ Auto Respon : On\n"
-		else:md+="╠➩❌ Auto Respon : Off\n"		
-		if wait["kickMention"] == True: md+="╠➩✔️ Auto Respon Kick : On\n"
-		else:md+="╠➩❌ Auto Respon Kick : Off\n"				
-		if wait["Sider"] == True: md+="╠➩✔️ Auto Sider : On\n"
-		else:md+="╠➩❌ Auto Sider: Off\n"	
-		if wait["Simi"] == True: md+="╠➩✔️ Simisimi : On\n"
-		else:md+="╠➩❌ Simisimi: Off\n"		
+		if wait["Sambutan"] == True: md+="➩✔️ Sambutan : On\n"
+		else:md+="➩❌ Sambutan : Off\n"
+		if wait["joinkick"] == True: md+="➩✔️ Join Kick : On\n"
+		else:md+="➩❌ Join Kick : Off\n"		
+		if wait["AutoJoin"] == True: md+="➩✔️ Auto Join : On\n"
+                else: md +="➩❌ Auto Join : Off\n"
+		if wait["AutoJoinCancel"] == True: md+="➩✔️ Auto Join Cancel : On\n"
+                else: md +="➩❌ Auto Join Cancel : Off\n"                
+		if wait["Leave"] == True: md+="➩✔️ Leave : On\n"
+                else: md +="➩❌ Leave : Off\n"                
+		if wait["Contact"] == True: md+="➩✔️ Info Contact : On\n"
+		else: md+="➩❌ Info Contact : Off\n"
+                if wait["AutoCancelon"] == True:md+="➩✔️ Auto Cancel : On\n"
+                else: md+= "➩❌ Auto Cancel : Off\n"
+                if wait["inviteprotect"] == True:md+="➩✔️ Invite Protect : On\n"
+                else: md+= "➩❌ Invite Protect : Off\n"                
+		if wait["Qron"] == True: md+="➩✔️ Qr Protect : On\n"
+		else:md+="➩❌ Qr Protect : Off\n"
+		if wait["AutoKickon"] == True: md+="➩✔️ Auto Kick : On\n"
+		else:md+="➩❌ Auto Kick : Off\n"
+		if wait["Ghost"] == True: md+="➩✔️ Ghost : On\n"
+		else:md+="➩❌ Ghost : Off\n"
+		if wait["alwaysRead"] == True: md+="➩✔️ Always Read : On\n"
+		else:md+="➩❌ Always Read: Off\n"
+		if wait["detectMention"] == True: md+="➩✔️ Auto Respon : On\n"
+		else:md+="➩❌ Auto Respon : Off\n"		
+		if wait["kickMention"] == True: md+="➩✔️ Auto Respon Kick : On\n"
+		else:md+="➩❌ Auto Respon Kick : Off\n"				
+		if wait["Sider"] == True: md+="➩✔️ Auto Sider : On\n"
+		else:md+="➩❌ Auto Sider: Off\n"	
+		if wait["Simi"] == True: md+="➩✔️ Simisimi : On\n"
+		else:md+="➩❌ Simisimi: Off\n"		
                 cl.sendText(msg.to,"╔═════════════════════════\n""║           ☆☞ S T A T U S ☜☆\n""╠═════════════════════════\n"+md+"╚═════════════════════════")
 
 
@@ -2542,7 +2534,7 @@ def bot(op):
         
 
 
-            elif msg.text in ["Tagall","Tag all"]:
+            elif msg.text in ["Tagall","Tag all","แท็ค"]:
                   group = cl.getGroup(msg.to)
                   nama = [contact.mid for contact in group.members]
 
@@ -2755,7 +2747,7 @@ def bot(op):
                     else:
                         cl.sendText(msg.to,"Not for use less than group")
 
-            elif msg.text in ["All join","Join all"]:
+            elif msg.text in ["All join","Join all","เข้ามา"]:
 		if msg.from_ in admin:
 		    G = cl.getGroup(msg.to)
                     ginfo = cl.getGroup(msg.to)
@@ -2779,7 +2771,7 @@ def bot(op):
 		else:
 		    cl.sendText(msg.to,"Sape lu!")
 
-            elif msg.text in ["TC1 join"]:
+            elif msg.text in ["1เข้า"]:
 		if msg.from_ in admin:
                     X = cl.getGroup(msg.to)
                     X.preventJoinByTicket = False
@@ -2793,7 +2785,7 @@ def bot(op):
 		else:
 		    cl.sendText(msg.to,"Sape lu!")
 
-            elif msg.text in ["TC2 join"]:
+            elif msg.text in ["2เข้า"]:
 		if msg.from_ in admin:
                     X = cl.getGroup(msg.to)
                     X.preventJoinByTicket = False
@@ -2807,7 +2799,7 @@ def bot(op):
 		else:
 		    cl.sendText(msg.to,"Sape lu!")
 
-            elif msg.text in ["TC3 join"]:
+            elif msg.text in ["3เข้า"]:
 		if msg.from_ in admin:
                     G = cl.getGroup(msg.to)
                     ginfo = cl.getGroup(msg.to)
@@ -2821,7 +2813,7 @@ def bot(op):
 		else:
 		    cl.sendText(msg.to,"Sape lu!")                    
 
-            elif msg.text in ["TC4 join"]:
+            elif msg.text in ["4เข้า"]:
 		if msg.from_ in admin:
                     G = cl.getGroup(msg.to)
                     ginfo = cl.getGroup(msg.to)
@@ -2835,7 +2827,7 @@ def bot(op):
 		else:
 		    cl.sendText(msg.to,"Sape lu!")
 		    
-            elif msg.text in ["Ghost join"]:
+            elif msg.text in ["5เข้า"]:
 		if msg.from_ in admin:
                     G = cl.getGroup(msg.to)
                     ginfo = cl.getGroup(msg.to)
@@ -2896,7 +2888,17 @@ def bot(op):
                 elapsed_time = time.time() - start
 		cl.sendText(msg.to, "Progress...")
                 random.choice(KAC).sendText(msg.to, "%sseconds" % (elapsed_time))
-                
+            elif "Speed" in msg.text:
+                start = time.time()
+                cl.sendText(msg.to, "ᴘʀᴏɢʀᴇss...")
+                elapsed_time = time.time() - start
+                cl.sendText(msg.to, "%sseconds" % (elapsed_time))
+                ki.sendText(msg.to, "%sseconds" % (elapsed_time))
+                kk.sendText(msg.to, "%sseconds" % (elapsed_time))
+                kc.sendText(msg.to, "%sseconds" % (elapsed_time))
+                kr.sendText(msg.to, "%sseconds" % (elapsed_time))
+                km.sendText(msg.to, "%sseconds" % (elapsed_time))
+                          
             elif msg.text in ["Speed test"]:
                 start = time.time()
                 cl.sendText(msg.to, "Progress...")
