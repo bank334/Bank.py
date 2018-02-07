@@ -54,56 +54,52 @@ sys.setdefaultencoding('utf-8')
 
 
 selfMessage ="""
-╔═════════════════════════
-║            ☆☞ S E L F ☜☆
-╠═════════════════════════
-╠➩〘Hi〙
-╠➩〘Me〙
-╠➩〘Mymid〙
-╠➩〘Mid @〙
-╠➩〘SearchID: (ID LINE)〙
-╠➩〘Checkdate (DD/MM/YY)〙
-╠➩〘Kalender〙
-╠➩〘Steal contact〙
-╠➩〘Pp @〙
-╠➩〘Cover @〙
-╠➩〘Auto like〙
-╠➩〘Scbc Text〙
-╠➩〘Cbc Text〙
-╠➩〘Gbc Text〙
-╠➩〘Getbio @〙
-╠➩〘Getinfo @〙
-╠➩〘Getname @〙
-╠➩〘Getprofile @〙
-╠➩〘Getcontact @〙
-╠➩〘Getvid @〙
-╠➩〘Friendlist〙
-╠═════════════════════════
-║             💠 By : Nadya 💠
-║    〽️ line.me/ti/p/~nad_nad. 〽️
-╚═════════════════════════
+
+            ☆☞ B A N K ☜☆
+➩〘Hi〙
+➩〘Me〙
+➩〘Mymid〙
+➩〘Mid @〙
+➩〘SearchID: (ID LINE)〙
+➩〘Checkdate (DD/MM/YY)〙
+➩〘Kalender〙
+➩〘Steal contact〙
+➩〘Pp @〙
+➩〘Cover @〙
+➩〘Auto like〙
+➩〘Scbc Text〙
+➩〘Cbc Text〙
+➩〘Gbc Text〙
+➩〘Getbio @〙
+➩〘Getinfo @〙
+➩〘Getname @〙
+➩〘Getprofile @〙
+➩〘Getcontact @〙
+➩〘Getvid @〙
+➩〘Friendlist〙
+
+       By :꧁⎈Bäñk⎈꧂
+    line.me/ti/p/~bank39.com
 """
 
 botMessage ="""
-╔═════════════════════════
-║             ☆☞ B O T ☜☆
-╠═════════════════════════
-╠➩〘Absen〙
-╠➩〘Respon〙
-╠➩〘Runtime〙
-╠➩〘Kapten copy @〙
-╠➩〘TC1 copy @〙
-╠➩〘TC2 copy @〙
-╠➩〘TC3 copy @〙
-╠➩〘TC4 copy @〙
-╠➩〘Backup all〙
-╠➩〘/bio Text〙
-╠➩〘@bye (Usir Kapten)〙
-╠➩〘Bye all (Usir Semua)〙
-╠═════════════════════════
-║             💠 By : Nadya 💠
-║    〽️ line.me/ti/p/~nad_nad. 〽️
-╚═════════════════════════
+             ☆☞ B O T ☜☆
+
+➩〘Absen〙
+➩〘Respon〙
+➩〘Runtime〙
+➩〘Kapten copy @〙
+➩〘TC1 copy @〙
+➩〘TC2 copy @〙
+➩〘TC3 copy @〙
+➩〘TC4 copy @〙
+➩〘Backup all〙
+➩〘/bio Text〙
+➩〘@bye (Usir Kapten)〙
+➩〘Bye all (Usir Semua)〙
+
+       By :꧁⎈Bäñk⎈꧂
+    line.me/ti/p/~bank39.com
 """
 
 mediaMessage ="""
