@@ -18,8 +18,8 @@ class Channel:
     http_query_path = "/S4"
     channel_query_path = "/CH4"
 
-    UA = "Line/6.0.0 iPad4,1 9.0.2"
-    LA = "DESKTOPMAC 10.10.2-YOSEMITE-x64    MAC 4.5.0"
+    UA = "Line/8.0.0"
+    LA = "DESKTOPMAC\t10.10.2-YOSEMITE-x64\tMAC 4.5.0"    
 
     authToken = None
     mid = None
@@ -324,4 +324,4 @@ class Channel:
         #files = files
         #)
         return r.json()
-        #cl.createAlbum("cea9d61ba824e937aaf91637991ac934b","ss3ai","kawamuki.png")
+        #cl.createAlbum("cea9d61ba824e937aaf91637991ac934b
