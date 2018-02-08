@@ -283,12 +283,12 @@ protectMessage ="""
 
            ☆☞ P R O T E C T ☜☆
 
-➩〘Allprotect on/off〙
-➩〘Autocancel on/off〙
-➩〘Qr on/off〙
-➩〘Autokick on/off〙
-➩〘Ghost on/off〙
-➩〘Invitepro on/off〙
+➩〘Allprotect on/off〙ปิดเปิดป้องกัน
+➩〘Autocancel on/off〙ปิดเปิดลบเชิน
+➩〘Qr on/off〙ปิดเปิดกันลิ้ง
+➩〘Autokick on/off〙ปิดเปิดเตะ
+➩〘Ghost on/off〙ปิดเปิดคิก
+➩〘Invitepro on/off〙ปิดเปิดเชิน
      
        By :꧁⎈Bäñk⎈꧂
     line.me/ti/p/~bank39.com 
