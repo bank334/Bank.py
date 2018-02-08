@@ -1263,6 +1263,23 @@ def bot(op):
                             random.choice(KAC).sendText(msg.to,"Ditambahkan")
 		    else:
 			cl.sendText(msg.to,"Admin Detected~")
+	
+	
+            if op.type == 13:
+                if wait["dcommentOn"] == True:
+                    if op.param2 in Bots:
+                    return
+                
+                       ginfo = cl.getGroup(op.param1)
+                       contact = cl.getContact(op.param2)
+                       image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
+                       c = Message(to=op.param1, from_=None, text=None, contentType=13)
+                       c.contentMetadata={'mid':op.param2}
+                       cl.sendMessage(c)
+                       cl.sendText(op.param1,"☞ " + cl.getContact(op.param2).displayName + "\n ☞ " + str(ginfo.name) + " ☜" + "\n\n ^_^")            
+                       cl.sendText(op.param1,cl.getContact(op.param2).displayName + "\n" + str(wait["dcomment"]))
+                       print "MEMBER TAG START"
+
 			
 
                 elif wait["dblacklist"] == True:
@@ -1988,7 +2005,32 @@ def bot(op):
                 else:
                     cl.sendText(msg.to, "Heh Belom Di Set")                         
 
+                        elif msg.text in ["Hhx4 on"]:
+                if wait["dcommentOn"] == True:
+                    if wait["lang"] == "JP":
+                        cl.sendText(msg.to,"➠ เปิดข้อความTagเเล้ว👌")
+                    else:
+                        cl.sendText(msg.to,"Already on")
+                else:
+                    wait["dcommentOn"] = True
+                    if wait["lang"] == "JP":
+                        cl.sendText(msg.to,"➠ เปิดข้อความTagเเล้ว👌")
+                    else:
+                        cl.sendText(msg.to,"Already on")
 
+            elif msg.text in ["Hhx4 off"]:
+                if wait["dcommentOn"] == False:
+                    if wait["lang"] == "JP":
+                        cl.sendText(msg.to,"➠ ปิดข้อความTagเเล้ว👌")
+                    else:
+                        cl.sendText(msg.to,"Already off")
+                else:
+                    wait["dcommentOn"] = False
+                    if wait["lang"] == "JP":
+                        cl.sendText(msg.to,"➠ ปิดข้อความTagเเล้ว👌")
+                    else:
+                        cl.sendText(msg.to,"Already off")
+#======================================================#	
             elif msg.text in ["ตั้งค่า"]:
                 md = ""
 		if wait["Sambutan"] == True: md+="➩✔️ Sambutan : On\n"
@@ -2023,7 +2065,13 @@ def bot(op):
 		else:md+="➩❌ Auto Sider: Off\n"	
 		if wait["Simi"] == True: md+="➩✔️ Simisimi : On\n"
 		else:md+="➩❌ Simisimi: Off\n"		
-                cl.sendText(msg.to,"╔═════════════════════════\n""║           ☆☞ S T A T U S ☜☆\n""╠═════════════════════════\n"+md+"╚═════════════════════════")
+		if wait["acommentOn"] == True: md+="➩✔️ Hhx1 : on 􀜁􀄯􏿿\n"
+                else:md+="➩❌ Hhx1 : off 􀜁􀄰􏿿\n"
+                if wait["bcommentOn"] == True: md+="➩✔️ Hhx2 : on 􀜁􀄯􏿿\n"
+                else:md+="➩❌ Hhx2 : off 􀜁􀄰􏿿\n"
+                if wait["ccommentOn"] == True: md+="➩✔️ Hhx3 : on 􀜁􀄯􏿿\n"
+                else:md+="➩❌ Hhx3 : off 􀜁􀄰􏿿\n" 
+                cl.sendText(msg.to,"  ☆☞ S T A T U S ☜☆\n""\n"+md+")
 
 
             elif msg.text in ["Gift","gift"]:
@@ -2633,8 +2681,6 @@ def bot(op):
                 wait["invite"] = True
                 cl.sendText(msg.to,"Send Contact")
                 
-                
-
             elif msg.text in ["Auto like"]:
                 wait["likeOn"] = True
                 cl.sendText(msg.to,"Shere Post Kamu Yang Mau Di Like!")                
@@ -2643,13 +2689,14 @@ def bot(op):
             elif msg.text in ["Steal contact"]:
                 wait["steal"] = True
                 cl.sendText(msg.to,"Send Contact")
-                
+			    
+	    elif msg.text in ["HHX4","Hhx4"]:
+                cl.sendText(msg.to,"[เช็คข้อความต้อนรับของคุณ]\n\n" + str(wait["dcomment"]))
 
             elif msg.text in ["Giftbycontact"]:
                 wait["gift"] = True
                 cl.sendText(msg.to,"Send Contact") 
                 
-
 	    elif "Recover" in msg.text:
 		thisgroup = cl.getGroups([msg.to])
 		Mids = [contact.mid for contact in thisgroup[0].members]
@@ -2657,7 +2704,13 @@ def bot(op):
 		cl.createGroup("Recover", mi_d)
 		cl.sendText(msg.to,"Success recover")
 
-
+            elif "Hhx4:" in msg.text:
+                c = msg.text.replace("Hhx4:","")
+                if c in [""," ","\n",None]:
+                    cl.sendText(msg.to,"เกิดข้อผิดพลาด..!!")
+                else:
+                    wait["dcomment"] = c
+                    cl.sendText(msg.to,"➠ ตั้งค่าข้อความTag👌\n\n" + c)
 
             elif ("Gn: " in msg.text):
                 if msg.toType == 2:
