@@ -659,7 +659,7 @@ def bot(op):
                                     else:
                                         random.choice(KAC).sendText(op.param1, "Haii " + "☞ " + nick[1] + " ☜" + "\nBetah Banget Jadi Penonton. . .\nChat Napa (-__-)   ")
                                 else:
-                                    random.choice(KAC).sendText(op.param1, "Haii " + "☞ " + Name + " ☜" + "\nNgapain Kak Ngintip Aja???\nSini Gabung Chat...   ")
+                                    random.choice(KAC).sendText(op.param1, "คุณ " + "☞ " + Name + " ☜" + "\nแอบอ่านหรอ🤗\nออกมารายงานตัว(~_^)   ")
                         else:
                             pass
                     else:
