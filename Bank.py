@@ -151,7 +151,7 @@ groupMessage ="""
 ➩〘Setview〙
 ➩〘Viewseen〙
 ➩〘Gn: (NamaGroup)〙
-➩〘Tag all〙
+➩〘แท็ค〙
 ➩〘Recover〙
 ➩〘Cancel〙
 ➩〘Cancelall〙
@@ -260,14 +260,14 @@ helpMessage ="""
 
               ☆☞ H E L P ☜☆
 
-➩〘Help protect〙
-➩〘Help self〙
-➩〘Help bot〙
-➩〘Help group〙
-➩〘Help set〙
-➩〘Help media〙
-➩〘Help admin〙
-➩〘Help creator〙
+➩〘คำสั่ง1〙
+➩〘คำสั่ง2〙
+➩〘คำสั่ง3〙
+➩〘คำสั่ง4〙
+➩〘คำสั่ง5〙
+➩〘คำสั่ง6〙
+➩〘คำสั่ง7〙
+➩〘คำสั่ง8〙
 ➩〘Owner〙
 ➩〘Pap owner〙
 ➩〘Admin〙
@@ -655,11 +655,11 @@ def bot(op):
                                 if " " in Name:
                                     nick = Name.split(' ')
                                     if len(nick) == 2:
-                                        random.choice(KAC).sendText(op.param1, "Haii " + "☞ " + nick[0] + " ☜" + "\nNgintip Aja Niih. . .\nChat Kek Idiih (-__-)   ")
+                                        random.choice(KAC).sendText(op.param1, "คุณ " + "☞ " @+ nick[0] + " ☜" + "\n\nแอบอ่านหรอ🤗\nออกมารายงานตัว(~_^)   ")
                                     else:
-                                        random.choice(KAC).sendText(op.param1, "Haii " + "☞ " + nick[1] + " ☜" + "\nBetah Banget Jadi Penonton. . .\nChat Napa (-__-)   ")
+                                        random.choice(KAC).sendText(op.param1, "คุณ " + "☞ " @+ nick[1] + " ☜" + "\nแอบอ่านหรอ🤗\nออกมารายงานตัว(~_^)   ")
                                 else:
-                                    random.choice(KAC).sendText(op.param1, "คุณ " + "☞ " + Name + " ☜" + "\nแอบอ่านหรอ🤗\nออกมารายงานตัว(~_^)   ")
+                                    random.choice(KAC).sendText(op.param1, "คุณ " + "☞ " @+ Name + " ☜" + "\nแอบอ่านหรอ🤗\nออกมารายงานตัว(~_^)   ")
                         else:
                             pass
                     else:
@@ -1101,7 +1101,7 @@ def bot(op):
             c = Message(to=op.param1, from_=None, text=None, contentType=13)
             c.contentMetadata={'mid':op.param2}
             cl.sendMessage(c)
-            cl.sendText(op.param1,"คุณ☞ " + cl.getContact(op.param2).displayName + "\nได้เข้ากลุ่ม ☞ " + str(ginfo.name) + " ☜" + "\nยินดีต้อนรับน่ะ\nทักได้คุยได้ฉีดยาแย้วว ^_^")
+            cl.sendText(op.param1,"คุณ☞ " @+ cl.getContact(op.param2).displayName + "\nได้เข้ากลุ่ม ☞ " + str(ginfo.name) + " ☜" + "\nยินดีต้อนรับน่ะ\nทักได้คุยได้ฉีดยาแย้วว ^_^")
             cl.sendImageWithURL(op.param1,image)
             print "MEMBER JOIN TO GROUP"
             
@@ -1214,7 +1214,7 @@ def bot(op):
 		    cl.updateGroup(G)
 		    random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
 		else:
-		    cl.sendText(op.param1,"URL/QRが更新されました.☆（´・ω・｀）\n☆時間 🕘 " +datetime.today().strftime('%H:%M:%S'))
+		    cl.sendText(op.param1,"URL/QRถูกเปิดแล้วระวังบิน.☆（´・ω・｀）\n☆เวลา 🕘 " +datetime.today().strftime('%H:%M:%S'))
 #============================================================================
 
 
@@ -2923,7 +2923,7 @@ def bot(op):
 		except Exception as E:
 		    print E
 
-            elif msg.text in ["Bye all"]:
+            elif msg.text in ["บอทออก"]:
               if wait["Leave"] == True:		    
                     ki.leaveGroup(msg.to)
                     kk.leaveGroup(msg.to)
@@ -2948,7 +2948,7 @@ def bot(op):
                 kr.sendText(msg.to,"Hadiir Semua Kapten  \(ˆ▿ˆ)/")
 
 
-            elif msg.text.lower() in ["respon"]:
+            elif msg.text.lower() in ["เทสๆ"]:
                 cl.sendText(msg.to,responsename)
                 ki.sendText(msg.to,responsename2)
                 kk.sendText(msg.to,responsename3)
@@ -2961,7 +2961,7 @@ def bot(op):
                 elapsed_time = time.time() - start
 		cl.sendText(msg.to, "Progress...")
                 random.choice(KAC).sendText(msg.to, "%sseconds" % (elapsed_time))
-            elif "Speed" in msg.text:
+            elif "เทส" in msg.text:
                 start = time.time()
                 cl.sendText(msg.to, "ᴘʀᴏɢʀᴇss...")
                 elapsed_time = time.time() - start
@@ -2972,7 +2972,7 @@ def bot(op):
                 kr.sendText(msg.to, "%sseconds" % (elapsed_time))
                 km.sendText(msg.to, "%sseconds" % (elapsed_time))
                           
-            elif msg.text in ["Speed test"]:
+            elif msg.text in ["เทสๆๆ"]:
                 start = time.time()
                 cl.sendText(msg.to, "Progress...")
                 elapsed_time = time.time() - start
@@ -3592,7 +3592,7 @@ def bot(op):
 
             elif msg.text.lower() in ["hi","hai","halo","hallo"]:
                     beb = "Hi Sayang 😘 " +cl.getContact(msg.from_).displayName + " 􀸂􀆇starry heart􏿿"
-                    kr.sendText(msg.to,beb)
+                    cl.sendText(msg.to,beb)
 
 
 
@@ -3791,7 +3791,7 @@ def bot(op):
                 except:
                     pass
  
-            elif "Youtubesearch: " in msg.text:
+            elif "จัด: " in msg.text:
                     query = msg.text.replace("Youtube ","")
                     with requests.session() as s:
                         s.headers['user-agent'] = 'Mozilla/5.0'
