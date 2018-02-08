@@ -1806,7 +1806,7 @@ def bot(op):
                     cl.sendText(msg.to,"Auto Respon Sudah Off")
 		else:
 		    cl.sendText(msg.to,"Khusus Nadya")	
-                       elif msg.text in ["Hhx4 on"]:
+            elif msg.text in ["Hhx4 on"]:
                 if wait["dcommentOn"] == True:
                     if wait["lang"] == "JP":
                         cl.sendText(msg.to,"➠ เปิดข้อความTagเเล้ว👌")
