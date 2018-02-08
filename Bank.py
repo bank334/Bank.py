@@ -1101,7 +1101,7 @@ def bot(op):
             c = Message(to=op.param1, from_=None, text=None, contentType=13)
             c.contentMetadata={'mid':op.param2}
             cl.sendMessage(c)
-            cl.sendText(op.param1,"คุณ☞ " @+ cl.getContact(op.param2).displayName + "\nได้เข้ากลุ่ม ☞ " + str(ginfo.name) + " ☜" + "\nยินดีต้อนรับน่ะ\nทักได้คุยได้ฉีดยาแย้วว ^_^")
+            cl.sendText(op.param1,"คุณ☞ " + cl.getContact(op.param2).displayName + "\nได้เข้ากลุ่ม ☞ " + str(ginfo.name) + " ☜" + "\nยินดีต้อนรับน่ะ\nทักได้คุยได้ฉีดยาแย้วว ^_^")
             cl.sendImageWithURL(op.param1,image)
             print "MEMBER JOIN TO GROUP"
             
