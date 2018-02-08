@@ -2053,9 +2053,10 @@ def bot(op):
                 else:md+="➩❌ Hhx2 : off 􀜁􀄰􏿿\n"
                 if wait["ccommentOn"] == True: md+="➩✔️ Hhx3 : on 􀜁􀄯􏿿\n"
                 else:md+="➩❌ Hhx3 : off 􀜁􀄰􏿿\n" 
-                cl.sendText(msg.to,"  ☆☞ S T A T U S ☜☆\n""\n"+md+")
-
-
+                cl.sendText(msg.to,md)
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': admsa}
+                cl.sendMessage(msg)
             elif msg.text in ["Gift","gift"]:
                 msg.contentType = 9
                 msg.contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58',
