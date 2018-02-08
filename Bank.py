@@ -1293,21 +1293,6 @@ def bot(op):
                            if mention['M'] in Bots:
                                   cl.sendText(msg.to,ret_)
                                   break
-	
-            if 'MENTION' in msg.contentMetadata.keys() != None:
-                if wait["dcommentOn"] == True:
-                    contact = cl.getContact(msg.from_)
-                    cName = contact.displayName
-                    balas = [cName + "\n" + str(wait["tag1"]) , cName
-                    ret_ = random.choice(balas)
-                    name = re.findall(r'@(\w+)', msg.text)
-                    mention = ast.literal_eval(msg.contentMetadata['MENTION'])
-                    mentionees = mention['MENTIONEES']
-                    for mention in mentionees:
-                        if mention['M'] in Bots:
-                            cl.sendText(msg.to,ret_)
-                            break
-
 
             if msg.contentType == 13:
                 if wait["wblacklist"] == True:
