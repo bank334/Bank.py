@@ -1172,7 +1172,50 @@ def bot(op):
               G.preventJoinByTicket = True
               cl.updateGroup(G)
               wait["blacklist"][op.param2] = True
-
+#========================NOTIFED MEMBER JOIN GROUP=========================
+        if op.type == 17:
+          #if wait["sambut"] == True:
+            if op.param2 in admin:
+                return
+            ginfo = cl.getGroup(op.param1)
+            contact = cl.getContact(op.param2)
+            image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
+            cl.sendText(op.param1," HELLO 😻 " + cl.getContact(op.param2).displayName + "\n✨ยินดีต้อนรับเข้าร่วมกลุ่ม✨\n☛ " + str(ginfo.name) + " ☚" + "\n\nUpdate your Membership Profile to Join The GroupS suggestions  [⏰]  " +datetime.today().strftime('%H:%M:%S'))
+            cl.sendImageWithURL(op.param1,image)
+            print "ada orang masuk grup"
+            if msg.contentType == 16:
+                url = msg.contentMetadata["postEndUrl"]
+#================================List mimic status=========================
+	if op.type == 13:
+            if op.param2 not in Bots:
+		if op.param2 in Bots:
+		    pass
+		elif wait["inviteprotect"] == True:
+		    wait ["blacklist"][op.param2] = True
+		    cl.cancelGroupInvitation(op.param1,[op.param3])
+		else:
+		    cl.sendText(op.param1,"グループにメンバーを招待する（´・ω・｀）\n☆時間 🕘 " +datetime.today().strftime('%H:%M:%S'))
+	    if op.param2 not in Bots:
+		if op.param2 in Bots:
+		    pass
+		elif wait["cancelprotect"] == True:
+		    wait ["blacklist"][op.param2] = True
+		    cl.cancelGroupInvitation(op.param1,[op.param3])
+		else:
+		    cl.sendText(op.param1,"「Auto Messages」\nแจ้งเตือน📛มีการเชิญสมาชิกเข้าร่วมกลุ่ม\n\n「เวลา」🕘 " +datetime.today().strftime('%H:%M:%S'))
+	if op.type == 11:
+	    if op.param2 not in Bots:
+		if op.param2 in Bots:
+		    pass
+		elif wait["linkprotect"] == True:
+		    wait ["blacklist"][op.param2] = True
+		    G = cl.getGroup(op.param1)
+		    G.preventJoinByTicket = True
+		    cl.updateGroup(G)
+		    random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
+		else:
+		    cl.sendText(op.param1,"URL/QRが更新されました.☆（´・ω・｀）\n☆時間 🕘 " +datetime.today().strftime('%H:%M:%S'))
+#============================================================================
 
 
         if op.type == 25:
