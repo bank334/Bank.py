@@ -1987,31 +1987,7 @@ def bot(op):
                 else:
                     cl.sendText(msg.to, "Heh Belom Di Set")                         
 
-            elif msg.text in ["Hhx4 on"]:
-                if wait["dcommentOn"] == True:
-                    if wait["lang"] == "JP":
-                        cl.sendText(msg.to,"➠ เปิดข้อความTagเเล้ว👌")
-                    else:
-                        cl.sendText(msg.to,"Already on")
-                else:
-                    wait["dcommentOn"] = True
-                    if wait["lang"] == "JP":
-                        cl.sendText(msg.to,"➠ เปิดข้อความTagเเล้ว👌")
-                    else:
-                        cl.sendText(msg.to,"Already on")
-
-            elif msg.text in ["Hhx4 off"]:
-                if wait["dcommentOn"] == False:
-                    if wait["lang"] == "JP":
-                        cl.sendText(msg.to,"➠ ปิดข้อความTagเเล้ว👌")
-                    else:
-                        cl.sendText(msg.to,"Already off")
-                else:
-                    wait["dcommentOn"] = False
-                    if wait["lang"] == "JP":
-                        cl.sendText(msg.to,"➠ ปิดข้อความTagเเล้ว👌")
-                    else:
-                        cl.sendText(msg.to,"Already off")
+            
 #======================================================#	
             elif msg.text in ["ตั้งค่า"]:
                 md = ""
@@ -2046,13 +2022,7 @@ def bot(op):
 		if wait["Sider"] == True: md+="➩✔️ Auto Sider : On\n"
 		else:md+="➩❌ Auto Sider: Off\n"	
 		if wait["Simi"] == True: md+="➩✔️ Simisimi : On\n"
-		else:md+="➩❌ Simisimi: Off\n"		
-		if wait["acommentOn"] == True: md+="➩✔️ Hhx1 : on 􀜁􀄯􏿿\n"
-                else:md+="➩❌ Hhx1 : off 􀜁􀄰􏿿\n"
-                if wait["bcommentOn"] == True: md+="➩✔️ Hhx2 : on 􀜁􀄯􏿿\n"
-                else:md+="➩❌ Hhx2 : off 􀜁􀄰􏿿\n"
-                if wait["ccommentOn"] == True: md+="➩✔️ Hhx3 : on 􀜁􀄯􏿿\n"
-                else:md+="➩❌ Hhx3 : off 􀜁􀄰􏿿\n" 
+		else:md+="➩❌ Simisimi: Off\n"
                 cl.sendText(msg.to,md)
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': admsa}
