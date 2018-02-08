@@ -2757,7 +2757,11 @@ def bot(op):
                 kc.findAndAddContactsByMid(midd)
                 kr.findAndAddContactsByMid(midd)
                 random.choice(KAC).inviteIntoGroup(msg.to,[midd])
-
+            elif "#ประกาศ:" in msg.text:
+                bctxt = msg.text.replace("#ประกาศ:", "")
+                a = cl.getGroupIdsJoined()
+                for manusia in a:
+                    cl.sendText(manusia, (bctxt))
             elif "Invite creator" in msg.text:
                 midd = "u14f64e139a3817afaabe27d237afb36b"
                 random.choice(KAC).inviteIntoGroup(msg.to,[midd])
