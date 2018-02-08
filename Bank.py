@@ -2034,7 +2034,7 @@ def bot(op):
                         cl.sendText(msg.to,"Sudah Off(p′︵‵。)")
                         
                         
-            elif "Sider on","เปิดทั้งหมด" in msg.text:
+            elif "Sider on" in msg.text:
                 try:
                     del cctv['point'][msg.to]
                     del cctv['sidermem'][msg.to]
@@ -2047,7 +2047,7 @@ def bot(op):
                 wait["Sider"] = True
                 cl.sendText(msg.to,"Siap On Cek Sider")
                 
-            elif "Sider off","ปิดทั้งหมด" in msg.text:
+            elif "Sider off" in msg.text:
                 if msg.to in cctv['point']:
                     cctv['cyduk'][msg.to]=False
                     wait["Sider"] = False
