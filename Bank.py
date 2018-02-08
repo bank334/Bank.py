@@ -1262,25 +1262,7 @@ def bot(op):
                             wait["wblacklist"] = False
                             random.choice(KAC).sendText(msg.to,"Ditambahkan")
 		    else:
-			cl.sendText(msg.to,"Admin Detected~")
-	
-	
-            if op.type == 13:
-                if wait["dcommentOn"] == True:
-                    if op.param2 in Bots:
-                    return
-                
-                       ginfo = cl.getGroup(op.param1)
-                       contact = cl.getContact(op.param2)
-                       image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
-                       c = Message(to=op.param1, from_=None, text=None, contentType=13)
-                       c.contentMetadata={'mid':op.param2}
-                       cl.sendMessage(c)
-                       cl.sendText(op.param1,"☞ " + cl.getContact(op.param2).displayName + "\n ☞ " + str(ginfo.name) + " ☜" + "\n\n ^_^")            
-                       cl.sendText(op.param1,cl.getContact(op.param2).displayName + "\n" + str(wait["dcomment"]))
-                       print "MEMBER TAG START"
-
-			
+			cl.sendText(msg.to,"Admin Detected~")	
 
                 elif wait["dblacklist"] == True:
                     if msg.contentMetadata["mid"] in wait["blacklist"]:
