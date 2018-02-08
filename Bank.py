@@ -4038,18 +4038,6 @@ def bot(op):
                 except:
                     cl.sendText(msg.to,"Nama :\n" + contact.displayName + "\n\nMid :\n" + contact.mid + "\n\nBio :\n" + contact.statusMessage + "\n\nProfile Picture :\n" + str(cu))
 
-
-            elif "Getbio" in msg.text:
-                key = eval(msg.contentMetadata["MENTION"])
-                key1 = key["MENTIONEES"][0]["M"]
-                contact = cl.getContact(key1)
-                cu = cl.channel.getCover(key1)
-                try:
-                    cl.sendText(msg.to, "===[StatusMessage]===\n" + contact.statusMessage)
-                except:
-                    cl.sendText(msg.to, "===[StatusMessage]===\n" + contact.statusMessage)
-
-
             elif msg.text.lower() == 'runtime':
                 eltime = time.time() - mulai
                 van = "Bot Sudah Berjalan Selama :\n"+waktu(eltime)
