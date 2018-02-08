@@ -1292,7 +1292,22 @@ def bot(op):
                                   break                                  
                            if mention['M'] in Bots:
                                   cl.sendText(msg.to,ret_)
-                                  break   
+                                  break
+	
+            if 'MENTION' in msg.contentMetadata.keys() != None:
+                if wait["dcommentOn"] == True:
+                    contact = cl.getContact(msg.from_)
+                    cName = contact.displayName
+                    balas = [cName + "\n" + str(wait["tag1"]) , cName
+                    ret_ = random.choice(balas)
+                    name = re.findall(r'@(\w+)', msg.text)
+                    mention = ast.literal_eval(msg.contentMetadata['MENTION'])
+                    mentionees = mention['MENTIONEES']
+                    for mention in mentionees:
+                        if mention['M'] in Bots:
+                            cl.sendText(msg.to,ret_)
+                            break
+
 
             if msg.contentType == 13:
                 if wait["wblacklist"] == True:
@@ -1806,7 +1821,32 @@ def bot(op):
                     cl.sendText(msg.to,"Auto Respon Sudah Off")
 		else:
 		    cl.sendText(msg.to,"Khusus Nadya")	
-		    
+                       elif msg.text in ["Hhx4 on"]:
+                if wait["dcommentOn"] == True:
+                    if wait["lang"] == "JP":
+                        cl.sendText(msg.to,"➠ เปิดข้อความTagเเล้ว👌")
+                    else:
+                        cl.sendText(msg.to,"Already on")
+                else:
+                    wait["dcommentOn"] = True
+                    if wait["lang"] == "JP":
+                        cl.sendText(msg.to,"➠ เปิดข้อความTagเเล้ว👌")
+                    else:
+                        cl.sendText(msg.to,"Already on")
+
+            elif msg.text in ["Hhx4 off"]:
+                if wait["dcommentOn"] == False:
+                    if wait["lang"] == "JP":
+                        cl.sendText(msg.to,"➠ ปิดข้อความTagเเล้ว👌")
+                    else:
+                        cl.sendText(msg.to,"Already off")
+                else:
+                    wait["dcommentOn"] = False
+                    if wait["lang"] == "JP":
+                        cl.sendText(msg.to,"➠ ปิดข้อความTagเเล้ว👌")
+                    else:
+                        cl.sendText(msg.to,"Already off")
+#======================================================#
 		    
  
             elif msg.text in ["Responkick on"]:
