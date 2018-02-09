@@ -14,7 +14,7 @@ from threading import Thread
 import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,os,subprocess,requests,tempfile
 
 cl = LINETCR.LINE()
-cl.login(token='Epvmzp4CM4hXKjsZciae.BI7dFB6wPOVTsS82gYq53G.hJnBLPBzWgBa//Ik57870SFR+GcKPMMOKDdPW6iRazk=')
+cl.login(token='Epa82CV1lFfKgL3LptIe.BI7dFB6wPOVTsS82gYq53G.9HS05VG5KsTpD3QCTyw4HykzMCvEAB5Xr8pwsmr01/o=')
 cl.loginResult()
 print "Cl-Login Success\n"
 
