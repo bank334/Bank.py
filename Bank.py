@@ -1741,7 +1741,7 @@ def bot(op):
                 else:
                     cl.sendText(msg.to,"Tidak Bisa Digunakan Diluar Group")
  
-            elif msg.text in ["Ourl","Url on","เปิดทั้งหมด"]:
+            elif msg.text in ["Ourl","Url on","เปิด1"]:
                 if msg.toType == 2:
                     X = cl.getGroup(msg.to)
                     X.preventJoinByTicket = False
@@ -1750,7 +1750,7 @@ def bot(op):
                 else:
                     cl.sendText(msg.to,"Can not be used outside the group")
  
-            elif msg.text in ["Curl","Url off","ปิดทั้งหมด"]:
+            elif msg.text in ["Curl","Url off","ปิด1"]:
                 if msg.toType == 2:
                     X = cl.getGroup(msg.to)
                     X.preventJoinByTicket = True
@@ -1760,7 +1760,7 @@ def bot(op):
                 else:
                     cl.sendText(msg.to,"Can not be used outside the group")
  
-            elif msg.text in ["Join on","Autojoin on","เปิดทั้งหมด"]:
+            elif msg.text in ["Join on","Autojoin on","เปิด2"]:
 		if msg.from_ in admin:
                     wait["AutoJoin"] = True
                     wait["AutoJoinCancel"] = False
@@ -1768,7 +1768,7 @@ def bot(op):
 		else:
 		    cl.sendText(msg.to,"Khusus Nadya")
 
-            elif msg.text in ["Join off","Autojoin off","ปิดทั้งหมด"]:
+            elif msg.text in ["Join off","Autojoin off","ปิด2"]:
 		if msg.from_ in admin:
                     wait["AutoJoin"] = False
                     cl.sendText(msg.to,"Auto Join Sudah Di Nonaktifkan")
@@ -1776,7 +1776,7 @@ def bot(op):
 		    cl.sendText(msg.to,"Khusus Nadya")
 		    
 		    
-            elif msg.text in ["Joincancel on","Autojoincancel on","เปิดทั้งหมด"]:
+            elif msg.text in ["Joincancel on","Autojoincancel on","เปิด3"]:
 		if msg.from_ in admin:
                     wait["AutoJoinCancel"] = True
                     wait["AutoJoin"] = False
@@ -1784,7 +1784,7 @@ def bot(op):
 		else:
 		    cl.sendText(msg.to,"Khusus Nadya")
 
-            elif msg.text in ["Joincancel off","Autojoincancel off","ปิดทั้งหมด"]:
+            elif msg.text in ["Joincancel off","Autojoincancel off","ปิด3"]:
 		if msg.from_ in admin:
                     wait["AutoJoinCancel"] = False
                     cl.sendText(msg.to,"Auto Join Cancel Sudah Di Nonaktifkan")
@@ -1792,7 +1792,7 @@ def bot(op):
 		    cl.sendText(msg.to,"Khusus Nadya")		    
 		    
  
-            elif msg.text in ["Respon on","เปิดทั้งหมด"]:
+            elif msg.text in ["Respon on","เปิด4"]:
 		if msg.from_ in admin:
                     wait["detectMention"] = True
                     wait["kickMention"] = False
@@ -1800,7 +1800,7 @@ def bot(op):
 		else:
 		    cl.sendText(msg.to,"Khusus Nadya")
 
-            elif msg.text in ["Respon off","ปิดทั้งหมด"]:
+            elif msg.text in ["Respon off","ปิด4"]:
 		if msg.from_ in admin:
                     wait["detectMention"] = False
                     cl.sendText(msg.to,"Auto Respon Sudah Off")
@@ -1834,7 +1834,7 @@ def bot(op):
 #======================================================#
 		    
  
-            elif msg.text in ["Responkick on","เปิดทั้งหมด"]:
+            elif msg.text in ["Responkick on","เปิด5"]:
 		if msg.from_ in admin:
                     wait["kickMention"] = True  
                     wait["detectMention"] = False
@@ -1842,14 +1842,14 @@ def bot(op):
 		else:
 		    cl.sendText(msg.to,"Khusus Nadya")
 
-            elif msg.text in ["Responkick off","ปิดทั้งหมด"]:
+            elif msg.text in ["Responkick off","ปิด5"]:
 		if msg.from_ in admin:
                     wait["kickMention"] = False                    
                     cl.sendText(msg.to,"Auto Respon Kick Sudah Off")
 		else:
 		    cl.sendText(msg.to,"Khusus Nadya")			  
  
-            elif msg.text in ["Leave on","เปิดทั้งหมด"]:
+            elif msg.text in ["Leave on","เปิด6"]:
 		if msg.from_ in admin:
                     wait["Leave"] = True
                     cl.sendText(msg.to,"Leave Sudah Aktif")
@@ -1857,7 +1857,7 @@ def bot(op):
 		    cl.sendText(msg.to,"Khusus Nadya")
 		    
  
-	    elif msg.text in ["Autocancel on","เปิดทั้งหมด"]:
+	    elif msg.text in ["Autocancel on","เปิด7"]:
 #	     if msg.from_ in admin:	        
                 wait["AutoCancel"][msg.to] = True
                 wait["AutoCancelon"] = True
@@ -1866,7 +1866,7 @@ def bot(op):
 #	     else:
 #		    cl.sendText(msg.to,"Khusus Nadya")		
 
-	    elif msg.text in ["Autocancel off","ปิดทั้งหมด"]:
+	    elif msg.text in ["Autocancel off","ปิด7"]:
 #	     if msg.from_ in admin:	        
                 wait["AutoCancel"][msg.to] = False
                 wait["AutoCancelon"] = False
@@ -1876,7 +1876,7 @@ def bot(op):
 #		    cl.sendText(msg.to,"Khusus Nadya")	
 
 
-	    elif msg.text in ["Joinkick on","เปิดทั้งหมด"]:
+	    elif msg.text in ["Joinkick on","เปิด9"]:
 #	     if msg.from_ in admin:	        
                 wait["joinkick"] = True
                 wait["Sambutan"] = False
@@ -1884,7 +1884,7 @@ def bot(op):
 #	     else:
 #		    cl.sendText(msg.to,"Khusus Nadya")		
 
-	    elif msg.text in ["Joinkick off","ปิดทั้งหมด"]:
+	    elif msg.text in ["Joinkick off","ปิด9"]:
 #	     if msg.from_ in admin:	        
                 wait["joinkick"] = False
                 cl.sendText(msg.to,"Join Kick Sudah Di Nonaktifkan")
@@ -1893,14 +1893,14 @@ def bot(op):
 
 		    
 
-	    elif msg.text in ["Invitepro on","Inviteprotect on","เปิดทั้งหมด"]:
+	    elif msg.text in ["Invitepro on","Inviteprotect on","เปิด10"]:
 #	     if msg.from_ in admin:	        
                 wait["inviteprotect"] = True
                 cl.sendText(msg.to,"Invite Protect Sudah Aktif")
 #	     else:
 #		    cl.sendText(msg.to,"Khusus Nadya")		
 
-	    elif msg.text in ["Invitepro off","Inviteprotect off","ปิดทั้งหมด"]:
+	    elif msg.text in ["Invitepro off","Inviteprotect off","ปิด10"]:
 #	     if msg.from_ in admin:	        
                 wait["inviteprotect"] = False
                 cl.sendText(msg.to,"Invite Protect Sudah Di Nonaktifkan")
@@ -1925,7 +1925,7 @@ def bot(op):
 #	     else:
 #		    cl.sendText(msg.to,"Khusus Nadya")	    	
                         
-	    elif msg.text in ["Autokick on","เปิดทั้งหมด"]:
+	    elif msg.text in ["Autokick on","เปิด11"]:
 #	     if msg.from_ in admin:	        
                 wait["AutoKick"][msg.to] = True
                 wait["AutoKickon"] = True
@@ -1934,7 +1934,7 @@ def bot(op):
 #	     else:
 #		    cl.sendText(msg.to,"Khusus Nadya")		
 
-	    elif msg.text in ["Autokick off","ปิดทั้งหมด"]:
+	    elif msg.text in ["Autokick off","ปิด11"]:
 #	     if msg.from_ in admin:	        
                 wait["AutoKick"][msg.to] = False
                 wait["AutoKickon"] = False
@@ -1944,21 +1944,21 @@ def bot(op):
 #		    cl.sendText(msg.to,"Khusus Nadya")	
 
 
-	    elif msg.text in ["Ghost on","เปิดทั้งหมด"]:
+	    elif msg.text in ["Ghost on","เปิด12"]:
 #	     if msg.from_ in admin:	        
                 wait["Ghost"] = True
                 cl.sendText(msg.to,"Ghost Sudah Aktif")
 #	     else:
 #		    cl.sendText(msg.to,"Khusus Nadya")		
 
-	    elif msg.text in ["Ghost off","ปิดทั้งหมด"]:
+	    elif msg.text in ["Ghost off","ปิด12"]:
 #	     if msg.from_ in admin:	        
                 wait["Ghost"] = False
                 cl.sendText(msg.to,"Ghost Sudah Di Nonaktifkan")
 #	     else:
 #		    cl.sendText(msg.to,"Khusus Nadya")	     
 
-            elif msg.text in ["Allprotect on","เปิดทั้งหมด"]:
+            elif msg.text in ["Allprotect on","เปิด13"]:
 #		if msg.from_ in admin:
                     wait["AutoCancel"][msg.to] = True
                     wait["AutoCancelon"] = True
@@ -1976,7 +1976,7 @@ def bot(op):
 #		else:
 #		    cl.sendText(msg.to,"Khusus Nadya")
 
-            elif msg.text in ["Allprotect off","ปิดทั้งหมด"]:
+            elif msg.text in ["Allprotect off","ปิด13"]:
 #		if msg.from_ in admin:
                     wait["AutoCancel"][msg.to] = False
                     wait["AutoCancelon"] = False
@@ -1996,25 +1996,25 @@ def bot(op):
 #		    cl.sendText(msg.to,"Khusus Nadya")
 
 
-            elif msg.text in ["K on","Contact on","เปิดทั้งหมด"]:
+            elif msg.text in ["K on","Contact on","เปิด14"]:
                 wait["Contact"] = True
                 cl.sendText(msg.to,"Contact Sudah Aktif")
 
-            elif msg.text in ["K off","Contact off","ปิดทั้งหมด"]:
+            elif msg.text in ["K off","Contact off","ปิด14"]:
                 wait["Contact"] = False
                 cl.sendText(msg.to,"Contact Sudah Di Nonaktifkan")
                 
 
-            elif msg.text in ["Alwaysread on","เปิดทั้งหมด"]:
+            elif msg.text in ["Alwaysread on","เปิด15"]:
                 wait["alwaysRead"] = True
                 cl.sendText(msg.to,"Always Read Sudah Aktif")
 
-            elif msg.text in ["Alwaysread off","ปิดทั้งหมด"]:
+            elif msg.text in ["Alwaysread off","ปิด15"]:
                 wait["alwaysRead"] = False
                 cl.sendText(msg.to,"Always Read Sudah Di Nonaktifkan")                
 
 
-            elif msg.text in ["Sambutan on","เปิดทั้งหมด"]:
+            elif msg.text in ["Sambutan on","เปิด16"]:
                 if wait["Sambutan"] == True:
                     if wait["lang"] == "JP":
                         cl.sendText(msg.to,"Sambutan Di Aktifkanヾ(*´∀｀*)ﾉ")
@@ -2024,7 +2024,7 @@ def bot(op):
                     if wait["lang"] == "JP":
                         cl.sendText(msg.to,"Sudah Onヽ(´▽｀)/")
 
-            elif msg.text in ["Sambutan off","ปิดทั้งหมด"]:
+            elif msg.text in ["Sambutan off","ปิด16"]:
                 if wait["Sambutan"] == False:
                     if wait["lang"] == "JP":
                         cl.sendText(msg.to,"Sambutan Di Nonaktifkan(　＾∇＾)")
