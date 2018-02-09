@@ -3,67 +3,51 @@
 import LINETCR
 from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
+import time, random, sys, ast, re, os, io, json, subprocess, threading, string, codecs, requests, ctypes, urllib, urllib2, urllib3, wikipedia, tempfile
 from bs4 import BeautifulSoup
-from googletrans import Translator
+from urllib import urlopen
+from io import StringIO
+from threading import Thread
 from gtts import gTTS
-import wikipedia
-import html5lib,shutil
+from googletrans import Translator
+from threading import Thread
 import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,os,subprocess,requests,tempfile
 
-#kk = LINETCR.LINE()
-#kk.login(qr=True)
-#kk.loginResult()
-
 cl = LINETCR.LINE()
-cl.login(token="Epi71af9Ht5Ki1kfRUlf.ICpPiGD6lKxQUjAskbI4lW.WmzsyphjRnTP4dc6cqW0tPFed0l+MMvyvEx6TyIHadk=")
+cl.login(token='Epvmzp4CM4hXKjsZciae.BI7dFB6wPOVTsS82gYq53G.hJnBLPBzWgBa//Ik57870SFR+GcKPMMOKDdPW6iRazk=')
 cl.loginResult()
-
-satpam = LINETCR.LINE() # Koplaxs # Login Pake Akun Utama Kalian(Gunanya Supaya Akun Utama Ke Kick bisa Terima Undangan dari Bot Otomatis)
-satpam.login(token="EpmkPGswRbUwM7tiHdP4.QXYHCXzQnIXP72luipN3Ha.HvNi//mpiR9Wq3M9B6dRTLrtDYPgA5sJNQn95BAg6yU=")
-satpam.loginResult()
+print "Cl-Login Success\n"
 
 ki = LINETCR.LINE()
-ki.login(token="Ep205ooa2paIlQD4fF36.0ClDQ0XXExcmqznHTHonrG.ePxVhUViVxzDt/MTlVPoHRyXtIjYdFPSBnkQgR+GEEE=")
+#ki.login(qr=True)
+ki.login(token='EpgDRbXYlpiJ4pdXcZS4.2Vi6mMIPjkjNHQf4yZ51na.0ylrpDNNcTWxDU36s4cqbUGgdIUcnZva3Vn60oXJDC4=')
 ki.loginResult()
+print "Ki-Login Success\n"
 
 kk = LINETCR.LINE()
-kk.login(token="EpMQ0BlQZFd1V1sh3BWb.56Q6F8HJ0G7hxHXo37fg6W.Czy5Ky+JBDFT6oX1cu8S6tjtBthS2RRIkRLE5exGujg=")
+#kk.login(qr=True)
+kk.login(token='EpcoP9wmxTz30HmVcWm4.8Kl/mLC1hHQtQk8JP7x8ja.OrER+Sqx3i2GSCikfReav3c/eWYqXPcqFEK6F5Pd4VI=')
 kk.loginResult()
-
-ks = LINETCR.LINE()
-ks.login(token="EpPnFYjf8JgeGDjg8iN9.q+GCiS+H2/Jt0U2vphfDcq./x1OuKAPjCkxfbrJ0tJp9+HNmhwIS36urRtv9oxdnc4=")
-ks.loginResult()
-
-ka = LINETCR.LINE()
-ka.login(token="EpmkwLjzgcNxnWDiq6Zd.K2HqbjOiKELgUqJfBR1jZq.+yQZFHDaUrsRGeHBpjj7Bsk1hg18j/k//34tkC0Jd5Y=")
-ka.loginResult()
+print "Kk-Login Success\n"
 
 kc = LINETCR.LINE()
-kc.login(token="EpsvFQLyEKWGzfVsNKm2.BM8ZzCvoIdukCQza1HyZGG.wh4j1RRd2Tc1fkaKwThiZIe6e0ty9jx3MDDexyFbZpE=")
+#kc.login(qr=True)
+kc.login(token='Ep5T8C80ztCPCcWn1Fpf.aNyW6qePayGNcl8m4skx3W.wBvoaxcGepisHzsmWhfG0MKVaXnnTQfMDSb+2KYDias=')
 kc.loginResult()
+print "Kc-Login Success\n"
 
-kb = LINETCR.LINE()
-kb.login(token="EpwWpxc0iAczxj8ieWmf.A48KdZfnSSzOHMavgsN8dW.pFZhl2M4v4kj63+BApWFIPq9EIQiU5Qg1elKDXiEc/s=")
-kb.loginResult()
+ks = LINETCR.LINE()
+#kr.login(qr=True)
+ks.login(token='EpNHa3372rfce8EvDtE6.g3dfwjf/U4iatTsbNrvxDG.mr61NuGqXs8eerneR8TpkSeBgqtdgxazt8JaX8GUIBc=')
+ks.loginResult()
+print "Kr-Login Success\n"
 
-km = LINETCR.LINE()
-km.login(token="EpFrt6RnLUmdHBVfbwI7.qSWU/6UEE3rWWs4Pndd5jW.19GrE3gG/jGDsTPm/ZEgUA6z8HHe9Fa0l0APu6nXJ7Q=")
-km.loginResult()
+ka = LINETCR.LINE()
+#km.login(qr=True)
+ka.login(token='EpDguM0VQnxsmHpj7eNb.RpxzV6pbiTUp3SM9muYDYW.kH6/FX6Jiv2f69juC2sC/2DrMvlGVAx6rldH4nbH8C8=')
+ka.loginResult()
+print "Km-Login Success\n\n=====[Sukses All Login]====="
 
-cl
-
-ko = ki
-
-ku = kk
-
-ks
-
-ke = ka
-
-kb
-
-kc
-print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
@@ -88,7 +72,7 @@ helpMessage= """\n
 ♦Help utility
 ♦Help bc
 ═╬════════►
-●▬▬▬▬๑۩line.me/ti/p/~geva7۩๑▬▬▬▬▬●
+●▬▬▬▬๑۩line.me/ti/p/~bank39.com۩๑▬▬▬▬▬●
 """
 
 editedMessage= """\n
@@ -468,11 +452,11 @@ Bmid = kk.getProfile().mid
 Cmid = kc.getProfile().mid
 Dmid = ks.getProfile().mid
 Emid = ka.getProfile().mid
-Fmid = kb.getProfile().mid
-Gmid = ko.getProfile().mid
-Hmid = ke.getProfile().mid
-Imid = ku.getProfile().mid
-Jmid = km.getProfile().mid
+#Fmid = kb.getProfile().mid
+#Gmid = ko.getProfile().mid
+#Hmid = ke.getProfile().mid
+#Imid = ku.getProfile().mid
+#Jmid = km.getProfile().mid
 Smid = satpam.getProfile().mid #Akun Utama
 
 
@@ -873,9 +857,9 @@ def autoSta():
                    cl.like(posts["userInfo"]["writerMid"], posts["postInfo"]["postId"], 1001)
                    ki.like(posts["userInfo"]["writerMid"], posts["postInfo"]["postId"], 1001)
                    kk.like(posts["userInfo"]["writerMid"], posts["postInfo"]["postId"], 1001)
+                   kc.like(posts["userInfo"]["writerMid"], posts["postInfo"]["postId"], 1001)
+                   ks.like(posts["userInfo"]["writerMid"], posts["postInfo"]["postId"], 1001)
                    ka.like(posts["userInfo"]["writerMid"], posts["postInfo"]["postId"], 1001)
-                   ke.like(posts["userInfo"]["writerMid"], posts["postInfo"]["postId"], 1001)
-                   km.like(posts["userInfo"]["writerMid"], posts["postInfo"]["postId"], 1001)
                    if wait["commentOn"] == True:
                       if posts["userInfo"]["writerMid"] in wait["commentBlack"]:
                          pass
@@ -883,9 +867,9 @@ def autoSta():
                           cl.comment(posts["userInfo"]["writerMid"],posts["postInfo"]["postId"],wait["comment"])
                           ki.comment(posts["userInfo"]["writerMid"],posts["postInfo"]["postId"],wait["comment"])
                           kk.comment(posts["userInfo"]["writerMid"],posts["postInfo"]["postId"],wait["comment"])
-                          km.comment(posts["userInfo"]["writerMid"],posts["postInfo"]["postId"],wait["comment"])
-                          ka.comment(posts["userInfo"]["writerMid"],posts["postInfo"]["postId"],wait["comment"])
-                          ke.comment(posts["userInfo"]["writerMid"],posts["postInfo"]["postId"],wait["comment"])												  
+                          kc.comment(posts["userInfo"]["writerMid"],posts["postInfo"]["postId"],wait["comment"])
+                          ks.comment(posts["userInfo"]["writerMid"],posts["postInfo"]["postId"],wait["comment"])
+                          ka.comment(posts["userInfo"]["writerMid"],posts["postInfo"]["postId"],wait["comment"])												  
         except:
             count += 1
             if(count == 50):
@@ -902,8 +886,8 @@ def likefriend():
            cl.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
            ki.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
            kk.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
-           ka.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
-           ke.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
+           kc.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
+           ks.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
            print "Like"
 	except:
               pass
@@ -918,8 +902,8 @@ def likeme():
                     cl.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
                     ki.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
                     kk.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
-                    ka.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
-                    ke.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
+                    kc.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
+                    ks.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
 		    print "Like"
                 except:
                     pass
@@ -1321,26 +1305,26 @@ def bot(op):
                      ki.like(url[25:58], url[66:], likeType=1002)
                      kk.like(url[25:58], url[66:], likeType=1004)
                      kc.like(url[25:58], url[66:], likeType=1003)
-                     kb.like(url[25:58], url[66:], likeType=1001)
+                     ks.like(url[25:58], url[66:], likeType=1001)
                      cl.comment(url[25:58], url[66:], wait["comment1"])
                      ki.comment(url[25:58], url[66:], wait["comment2"])
                      kk.comment(url[25:58], url[66:], wait["comment3"])
                      kc.comment(url[25:58], url[66:], wait["comment4"])
-                     kb.comment(url[25:58], url[66:], wait["comment5"])
+                     ks.comment(url[25:58], url[66:], wait["comment5"])
                      cl.sendText(msg.to,"Like Success")                     
                      wait['likeOn'] = False					
             if wait['alwayRead'] == True:
                 if msg.toType == 0:
                     cl.sendChatChecked(msg.from_,msg.id)
                     kk.sendChatChecked(msg.from_,msg.id)
-                    ke.sendChatChecked(msg.from_,msg.id)
+                    ks.sendChatChecked(msg.from_,msg.id)
                     ka.sendChatChecked(msg.from_,msg.id)
                     ki.sendChatChecked(msg.from_,msg.id)
                     kc.sendChatChecked(msg.from_,msg.id)			
                 else:
                     cl.sendChatChecked(msg.to,msg.id)
                     ka.sendChatChecked(msg.to,msg.id)
-                    ke.sendChatChecked(msg.to,msg.id)
+                    ks.sendChatChecked(msg.to,msg.id)
                     kk.sendChatChecked(msg.to,msg.id)	
                     ki.sendChatChecked(msg.to,msg.id)
                     kc.sendChatChecked(msg.to,msg.id)			
@@ -1461,9 +1445,9 @@ def bot(op):
                     kc.acceptGroupInvitationByTicket(op.param1,Ti)
                     ks.acceptGroupInvitationByTicket(op.param1,Ti)
                     ka.acceptGroupInvitationByTicket(op.param1,Ti)
-                    kb.acceptGroupInvitationByTicket(op.param1,Ti)
-                    ko.acceptGroupInvitationByTicket(op.param1,Ti)
-                    ke.acceptGroupInvitationByTicket(op.param1,Ti)
+   #                 kb.acceptGroupInvitationByTicket(op.param1,Ti)
+    #                ko.acceptGroupInvitationByTicket(op.param1,Ti)
+      #              ke.acceptGroupInvitationByTicket(op.param1,Ti)
                     X = cl.getGroup(op.param1)
                     X.preventJoinByTicket = True
                     cl.updateGroup(X)
@@ -1504,9 +1488,9 @@ def bot(op):
                     kc.acceptGroupInvitationByTicket(op.param1,Ti)
                     ks.acceptGroupInvitationByTicket(op.param1,Ti)
                     ka.acceptGroupInvitationByTicket(op.param1,Ti)
-                    kb.acceptGroupInvitationByTicket(op.param1,Ti)
-                    ko.acceptGroupInvitationByTicket(op.param1,Ti)
-                    ke.acceptGroupInvitationByTicket(op.param1,Ti)
+  #                  kb.acceptGroupInvitationByTicket(op.param1,Ti)
+    #                ko.acceptGroupInvitationByTicket(op.param1,Ti)
+      #              ke.acceptGroupInvitationByTicket(op.param1,Ti)
                     G = ki.getGroup(op.param1)
                     G.preventJoinByTicket = True
                     ki.updateGroup(G)
@@ -1547,9 +1531,9 @@ def bot(op):
                     kc.acceptGroupInvitationByTicket(op.param1,Ti)
                     ks.acceptGroupInvitationByTicket(op.param1,Ti)
                     ka.acceptGroupInvitationByTicket(op.param1,Ti)
-                    kb.acceptGroupInvitationByTicket(op.param1,Ti)
-                    ko.acceptGroupInvitationByTicket(op.param1,Ti)
-                    ke.acceptGroupInvitationByTicket(op.param1,Ti)
+   #                 kb.acceptGroupInvitationByTicket(op.param1,Ti)
+      #              ko.acceptGroupInvitationByTicket(op.param1,Ti)
+        #            ke.acceptGroupInvitationByTicket(op.param1,Ti)
                     G = kk.getGroup(op.param1)
                     G.preventJoinByTicket = True
                     kk.updateGroup(G)
@@ -1589,9 +1573,9 @@ def bot(op):
                     kc.acceptGroupInvitationByTicket(op.param1,Ti)
                     ks.acceptGroupInvitationByTicket(op.param1,Ti)
                     ka.acceptGroupInvitationByTicket(op.param1,Ti)
-                    kb.acceptGroupInvitationByTicket(op.param1,Ti)
-                    ko.acceptGroupInvitationByTicket(op.param1,Ti)
-                    ke.acceptGroupInvitationByTicket(op.param1,Ti)
+      #              kb.acceptGroupInvitationByTicket(op.param1,Ti)
+          #          ko.acceptGroupInvitationByTicket(op.param1,Ti)
+          #          ke.acceptGroupInvitationByTicket(op.param1,Ti)
                     G = kc.getGroup(op.param1)
                     G.preventJoinByTicket = True
                     kc.updateGroup(G)
@@ -1631,9 +1615,9 @@ def bot(op):
                     kc.acceptGroupInvitationByTicket(op.param1,Ti)
                     ks.acceptGroupInvitationByTicket(op.param1,Ti)
                     ka.acceptGroupInvitationByTicket(op.param1,Ti)
-                    kb.acceptGroupInvitationByTicket(op.param1,Ti)
-                    ko.acceptGroupInvitationByTicket(op.param1,Ti)
-                    ke.acceptGroupInvitationByTicket(op.param1,Ti)
+     #               kb.acceptGroupInvitationByTicket(op.param1,Ti)
+      #              ko.acceptGroupInvitationByTicket(op.param1,Ti)
+      #              ke.acceptGroupInvitationByTicket(op.param1,Ti)
                     G = ks.getGroup(op.param1)
                     G.preventJoinByTicket = True
                     ks.updateGroup(G)
@@ -1672,9 +1656,9 @@ def bot(op):
                     kc.acceptGroupInvitationByTicket(op.param1,Ti)
                     ks.acceptGroupInvitationByTicket(op.param1,Ti)
                     ka.acceptGroupInvitationByTicket(op.param1,Ti)
-                    kb.acceptGroupInvitationByTicket(op.param1,Ti)
-                    ko.acceptGroupInvitationByTicket(op.param1,Ti)
-                    ke.acceptGroupInvitationByTicket(op.param1,Ti)
+          #          kb.acceptGroupInvitationByTicket(op.param1,Ti)
+          #          ko.acceptGroupInvitationByTicket(op.param1,Ti)
+          #          ke.acceptGroupInvitationByTicket(op.param1,Ti)
                     G = ka.getGroup(op.param1)
                     G.preventJoinByTicket = True
                     ka.updateGroup(G)
@@ -1713,9 +1697,9 @@ def bot(op):
                     kc.acceptGroupInvitationByTicket(op.param1,Ti)
                     ks.acceptGroupInvitationByTicket(op.param1,Ti)
                     ka.acceptGroupInvitationByTicket(op.param1,Ti)
-                    kb.acceptGroupInvitationByTicket(op.param1,Ti)
-                    ko.acceptGroupInvitationByTicket(op.param1,Ti)
-                    ke.acceptGroupInvitationByTicket(op.param1,Ti)
+           #         kb.acceptGroupInvitationByTicket(op.param1,Ti)
+            #        ko.acceptGroupInvitationByTicket(op.param1,Ti)
+              #      ke.acceptGroupInvitationByTicket(op.param1,Ti)
                     G = kb.getGroup(op.param1)
                     G.preventJoinByTicket = True
                     kb.updateGroup(G)
@@ -1754,9 +1738,9 @@ def bot(op):
                     kc.acceptGroupInvitationByTicket(op.param1,Ti)
                     ks.acceptGroupInvitationByTicket(op.param1,Ti)
                     ka.acceptGroupInvitationByTicket(op.param1,Ti)
-                    kb.acceptGroupInvitationByTicket(op.param1,Ti)
-                    ko.acceptGroupInvitationByTicket(op.param1,Ti)
-                    ke.acceptGroupInvitationByTicket(op.param1,Ti)
+           #         kb.acceptGroupInvitationByTicket(op.param1,Ti)
+            #        ko.acceptGroupInvitationByTicket(op.param1,Ti)
+             #       ke.acceptGroupInvitationByTicket(op.param1,Ti)
                     G = ko.getGroup(op.param1)
                     G.preventJoinByTicket = True
                     ko.updateGroup(G)
@@ -1795,9 +1779,9 @@ def bot(op):
                     kc.acceptGroupInvitationByTicket(op.param1,Ti)
                     ks.acceptGroupInvitationByTicket(op.param1,Ti)
                     ka.acceptGroupInvitationByTicket(op.param1,Ti)
-                    kb.acceptGroupInvitationByTicket(op.param1,Ti)
-                    ko.acceptGroupInvitationByTicket(op.param1,Ti)
-                    ke.acceptGroupInvitationByTicket(op.param1,Ti)
+         #           kb.acceptGroupInvitationByTicket(op.param1,Ti)
+        #            ko.acceptGroupInvitationByTicket(op.param1,Ti)
+         #           ke.acceptGroupInvitationByTicket(op.param1,Ti)
                     G = ke.getGroup(op.param1)
                     G.preventJoinByTicket = True
                     ke.updateGroup(G)
@@ -1836,10 +1820,10 @@ def bot(op):
                     kc.acceptGroupInvitationByTicket(op.param1,Ti)
                     ks.acceptGroupInvitationByTicket(op.param1,Ti)
                     ka.acceptGroupInvitationByTicket(op.param1,Ti)
-                    kb.acceptGroupInvitationByTicket(op.param1,Ti)
-                    ko.acceptGroupInvitationByTicket(op.param1,Ti)
-                    ke.acceptGroupInvitationByTicket(op.param1,Ti)
-                    ku.acceptGroupInvitationByTicket(op.param1,Ti)
+             #       kb.acceptGroupInvitationByTicket(op.param1,Ti)
+           #         ko.acceptGroupInvitationByTicket(op.param1,Ti)
+            #        ke.acceptGroupInvitationByTicket(op.param1,Ti)
+            #        ku.acceptGroupInvitationByTicket(op.param1,Ti)
                     G = ku.getGroup(op.param1)
                     G.preventJoinByTicket = True
                     ku.updateGroup(G)
@@ -2327,11 +2311,11 @@ def bot(op):
                 
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': Emid}
-                ka.sendMessage(msg)
+                kc.sendMessage(msg)
 
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': Hmid}
-                ke.sendMessage(msg)
+                ks.sendMessage(msg)
 		
             elif msg.text in ["Me"]:
                 msg.contentType = 13
@@ -2606,7 +2590,7 @@ def bot(op):
                 kc.sendText(msg.to,Cmid)
                 ks.sendText(msg.to,Dmid)
                 ka.sendText(msg.to,Emid)
-                kb.sendText(msg.to,Fmid)
+     #           kb.sendText(msg.to,Fmid)
             elif "RA 1" == msg.text:
                 cl.sendText(msg.to,mid)
             elif "RA 2" == msg.text:
@@ -2626,10 +2610,10 @@ def bot(op):
                 cl.sendMessage(msg)
                 ki.sendMessage(msg)
                 kk.sendMessage(msg)
-                ka.sendMessage(msg)
-                ks.sendMessage(msg)
                 kc.sendMessage(msg)
-                kb.sendMessage(msg)		
+                ks.sendMessage(msg)
+                ka.sendMessage(msg)
+      #          kb.sendMessage(msg)		
             elif msg.text in ["Hehehe","Hehe","He","hehehe","hehe","he"]:
                 msg.contentType = 7
                 msg.text = None
@@ -3018,8 +3002,8 @@ def bot(op):
                         ki.removeAllMessages(op.param2)
                         kk.removeAllMessages(op.param2)
                         kc.removeAllMessages(op.param2)
-                        ka.removeAllMessages(op.param2)
-                        ke.removeAllMessages(op.param2)			
+                        ks.removeAllMessages(op.param2)
+                        ka.removeAllMessages(op.param2)			
                         print "[Command] Remove Chat"
                         cl.sendText(msg.to,"Done")
                     except Exception as error:
@@ -3322,8 +3306,8 @@ def bot(op):
 			cl.sendText(msg.to,mid)
 			ki.sendText(msg.to,Amid)
 			kk.sendText(msg.to,Bmid)
-			ke.sendText(msg.to,Dmid)
-			ka.sendText(msg.to,Emid)
+			kc.sendText(msg.to,Dmid)
+			ks.sendText(msg.to,Emid)
  #=======================================================
             elif "Vn-af " in msg.text:
               if msg.from_ in admin + staff + creator + peminjam:
