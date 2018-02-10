@@ -15,37 +15,37 @@ from googletrans import Translator
 
 cl = LINETCR.LINE()
 #cl.login(qr=True)
-cl.login(token='EpbAE0iCR8NXdWaJhHc4.4njzDnCKlLBeMThs5Bey5a.UcE79LsLmB/uR5o+q9dij1GLdsqpXBx1f+A6emrvBv0=')
+cl.login(token='EpS3wBTf8sHVEGGoDY3e.BI7dFB6wPOVTsS82gYq53G.jFFNZZ29bSd99Gg8yxY99U+zTOxxn7XnwYh/Z65gFwE=')
 cl.loginResult()
 print "Cl-Login Success\n"
 
 ki = LINETCR.LINE()
 #ki.login(qr=True)
-ki.login(token='EpA0pIKHeHpS3y2JF4J4.aQwlG1Yb79ZynULT8qCRja.zKEqMTNThMMBbCwXVZK8PS6B+2HwpdS5x/Bf1O859AY=')
+ki.login(token='EpD325PxoAzQIzhtK744.2Vi6mMIPjkjNHQf4yZ51na.bX0offGRiGdPzvue4pkY6NGZ9gPNBGC8I22woqOv/Kk=')
 ki.loginResult()
 print "Ki-Login Success\n"
 
 kk = LINETCR.LINE()
 #kk.login(qr=True)
-kk.login(token='EpJzt5XTOljRBJevbIh8.ghZnmC2ciegQIghsMM2+ka.5jB0JPrwkjx4bfgQdGMQ+TJtkU0+PnlugXvj0dhlHRI=')
+kk.login(token='Ep33kgErcewRZVCNvC64.8Kl/mLC1hHQtQk8JP7x8ja.gEpPIyHShdN6fbdYHjlGNnNDVk8Ylmbye+cJiNj0pPY=')
 kk.loginResult()
 print "Kk-Login Success\n"
 
 kc = LINETCR.LINE()
 #kc.login(qr=True)
-kc.login(token='EpEHGbsu7KSK8nwSKj0e.VaiImiEjGvzw9+FPEujUpG.NrMr9K2mT2rc4nFj+WiVN63bJkAVobcGhBoLVWWwL+I=')
+kc.login(token='EpNnqkc2AgL0JO9YKvUf.aNyW6qePayGNcl8m4skx3W.8jNhaDFey5+QNREEF2V/u8wJhzUZ94qYErVI5iHOySc=')
 kc.loginResult()
 print "Kc-Login Success\n"
 
 kr = LINETCR.LINE()
 #kr.login(qr=True)
-kr.login(token='EpJCkxL4RHLn2TXRcDSf.ErORVM2uZkxL3DKI0dXZpW.gQ0590ki/meOdHPsE4HIFToh+r75ZI+YaHtqhON0/54=')
+kr.login(token='Ep1Zp2r9H6PCKD0qn5Y6.g3dfwjf/U4iatTsbNrvxDG.6MSPF6kpHEHYacp52sklP2cmSS5udL9FhUDagKmltM8=')
 kr.loginResult()
 print "Kr-Login Success\n"
 
 km = LINETCR.LINE()
 #km.login(qr=True)
-km.login(token='Ep0PgBmb6vshLHO1iNI7.7xZurXNCqndHG6OfwUrtzW.rWjye7+Z5caG9dFRWpFEL9nJMgcRFJpayG9gZeE6QvI=')
+km.login(token='EpoAmgDGZLVrdFGwlczb.RpxzV6pbiTUp3SM9muYDYW.Nl8RhY8jA/sorCjnMES2BQHne7x+vPB63aFXeSLM7p0=')
 km.loginResult()
 print "Km-Login Success\n\n=====[Sukses All Login]====="
 
@@ -78,10 +78,10 @@ selfMessage ="""
 〘Getcontact @〙เอาคอนแท็กเพื่อน
 〘Getvid @〙
 〘Friendlist〙รายชื่อเพื่อนทั้งหมด
-╠═══════════════════
-║    💠 By : TOMEBOTLINE 💠
-║ 〽️ line.me/ti/p/~tomebotline 〽️
-╚═══════════════════
+
+       By :꧁⎈Bäñk⎈꧂
+    line.me/ti/p/~bank39.com
+  ◄]·🇹🇭·[B̲̲̅̅a̲̲̅̅n̲̲̅̅k̲̲̅ ̲̲̅ʙ̲̲̅̅ᴏ̲̲̅̅ᴛ̲̲̅̅ ̲̲̲̲̅̅̅̅ ̲̲̅̅L̲̲̅̅i̲̲̅n̲̲̅̅e̲̲̲̅̅̅]·🇹🇭·[►
 """
 
 botMessage ="""
@@ -101,10 +101,10 @@ Backup all〙 กลับร่างเดิมทั้งหมด
 @bye (Usir Kapten)〙 ออกจากห้องทั้งคิกและเซล
 Bye all (Usir Semua)〙 สั่งคิกเก้อออก
 Join all / All join   สั่งคิกเข้า
-╠═══════════════════
-║   💠 By : TOMEBOTLINE 💠
-║ 〽️ line.me/ti/p/~tomebotline 〽️
-╚═══════════════════
+
+     By :꧁⎈Bäñk⎈꧂
+    line.me/ti/p/~bank39.com
+  ◄]·🇹🇭·[B̲̲̅̅a̲̲̅̅n̲̲̅̅k̲̲̅ ̲̲̅ʙ̲̲̅̅ᴏ̲̲̅̅ᴛ̲̲̅̅ ̲̲̲̲̅̅̅̅ ̲̲̅̅L̲̲̅̅i̲̲̅n̲̲̅̅e̲̲̲̅̅̅]·🇹🇭·[►
 """
 
 mediaMessage ="""
@@ -143,10 +143,10 @@ mediaMessage ="""
 ╠〘Id@en ใส่ข้อความ (Translate ID Ke En〙
 ╠〘Id@th ใส่ข้อความ (Translate ID Ke TH〙
 ╠〘En@id ใส่ข้อความ (Translate En Ke ID〙
-╠════════════════════
-║     💠 By : TOMEBOTLINE 💠
-║ 〽️ line.me/ti/p/~tomebotline 〽️
-╚═══════════════════
+
+     By :꧁⎈Bäñk⎈꧂
+    line.me/ti/p/~bank39.com
+  ◄]·🇹🇭·[B̲̲̅̅a̲̲̅̅n̲̲̅̅k̲̲̅ ̲̲̅ʙ̲̲̅̅ᴏ̲̲̅̅ᴛ̲̲̅̅ ̲̲̲̲̅̅̅̅ ̲̲̅̅L̲̲̅̅i̲̲̅n̲̲̅̅e̲̲̲̅̅̅]·🇹🇭·[►
 """
 
 groupMessage ="""
@@ -179,10 +179,10 @@ groupMessage ="""
 ➩〘Memlist〙 ชื่อเพื่อนที่มีอยู่
 ➩〘Getgroup image〙 เอารูปกลุ่ม
 ➩〘Urlgroup Image〙เอาลิ้งก์รูปกลุ่ม
-╠════════════════════
-║       💠 By : TOMEBOTLINE💠
-║  〽️ line.me/ti/p/~tomebotline〽️
-╚════════════════════
+
+     By :꧁⎈Bäñk⎈꧂
+    line.me/ti/p/~bank39.com
+  ◄]·🇹🇭·[B̲̲̅̅a̲̲̅̅n̲̲̅̅k̲̲̅ ̲̲̅ʙ̲̲̅̅ᴏ̲̲̅̅ᴛ̲̲̅̅ ̲̲̲̲̅̅̅̅ ̲̲̅̅L̲̲̅̅i̲̲̅n̲̲̅̅e̲̲̲̅̅̅]·🇹🇭·[►
 """
 tjia="ue0d25974d7242e56c49ad1d2e5b118e4"
 
@@ -196,10 +196,10 @@ setMessage ="""
 ➩〘Sider on/off〙 
 ➩〘Contact on/off〙เปิด/ปิด คอนแท็ก
 ➩〘Simisimi on/off〙เปิดการตอบโต้ Simi
-╠════════════════════
-║       💠 By : TOMEBOTLINE💠
-║  〽️ line.me/ti/p/~tomebotline〽️
-╚════════════════════
+
+     By :꧁⎈Bäñk⎈꧂
+    line.me/ti/p/~bank39.com
+  ◄]·🇹🇭·[B̲̲̅̅a̲̲̅̅n̲̲̅̅k̲̲̅ ̲̲̅ʙ̲̲̅̅ᴏ̲̲̅̅ᴛ̲̲̅̅ ̲̲̲̲̅̅̅̅ ̲̲̅̅L̲̲̅̅i̲̲̅n̲̲̅̅e̲̲̲̅̅̅]·🇹🇭·[►
 """
 
 creatorMessage ="""
@@ -223,10 +223,10 @@ creatorMessage ="""
 〘Leave all group〙 สั่งบอทออดจากกลุ่มทั้งหมด
 〘Bot restart〙 รีสตาร์ทบอท
 〘Turn off ปิดการทำงานบอท
-╠════════════════════
-║       💠 By : TIMEBOTLINE💠
-║  〽️ line.me/ti/p/~tomebotline〽️
-╚════════════════════
+
+     By :꧁⎈Bäñk⎈꧂
+    line.me/ti/p/~bank39.com
+  ◄]·🇹🇭·[B̲̲̅̅a̲̲̅̅n̲̲̅̅k̲̲̅ ̲̲̅ʙ̲̲̅̅ᴏ̲̲̅̅ᴛ̲̲̅̅ ̲̲̲̲̅̅̅̅ ̲̲̅̅L̲̲̅̅i̲̲̅n̲̲̅̅e̲̲̲̅̅̅]·🇹🇭·[►
 """
 
 adminMessage ="""
@@ -311,38 +311,34 @@ adminMessage ="""
 ║✰ Hhx1 ➠เช็คข้อความต้อนรับ
 ║✰ Hhx2 ➠เช็คข้อความคนออก
 ║✰ Hhx3 ➠เช็คข้อความคนลบ
-╠═════════════════
-║       ─┅═✥ᵀᴴᴬᴵᴸᴬᴺᴰ✥═┅─
-║    [BY] . TOMEBOTLINE THAILAND
-╠══════════════════
-║             Link ID  Line
-║    http://line.me/ti/p/_hhRkiw2jP
-║             โทร 0928081567
-╚══════════════════
+
+     By :꧁⎈Bäñk⎈꧂
+    line.me/ti/p/~bank39.com
+  ◄]·🇹🇭·[B̲̲̅̅a̲̲̅̅n̲̲̅̅k̲̲̅ ̲̲̅ʙ̲̲̅̅ᴏ̲̲̅̅ᴛ̲̲̅̅ ̲̲̲̲̅̅̅̅ ̲̲̅̅L̲̲̅̅i̲̲̅n̲̲̅̅e̲̲̲̅̅̅]·🇹🇭·[►
 """
 
 helpMessage ="""
-╔════════════════════
-║        ☆☞ H E L P ☜☆
-╠════════════════════
-〘Help protect〙 ชุดป้องกัน
-〘Help self〙 ชุดช่วนเหลือเซลบอท
-〘Help bot〙 ชุดช่สนเหลือสำกรับคิกเก้อ
-〘Help group〙ชุดช่วยเหลือการใล้ในกลุ่ม
-〘Help set〙 ชุดช่วยเหลือการตั้งค่า
-〘Help media〙 ชุดช่วยเหลือมีเดี่ยร์
-〘Help admin〙 ชุดช่วยเหลือ แอดมิน
-〘Help creator〙 ชุดช่วยเหลือผู้คุม
-〘Owner〙 ผู้สร้างบอท
-〘Pap owner〙 รูปแอดมินบอท
-〘Admin〙 รายลื่อแอดมินบอท
-〘Speed〙 ดูความเร็วหลอก
-〘Speed test〙 ดูความเร็วที่แท้จริง
-〘Status〙 เช็คการตั้งค่า
-╠════════════════════
-║      💠 By : TOMEBOTLINE💠
-║  〽️ line.me/ti/p/~tomebotline〽️
-╚════════════════════
+
+         ☆☞ ชุดคำสั่ง ☜☆
+
+✍✾͜͜͡〘คำสั่งกัน〙
+✍✾͜͜͡〘คำสั่งเซล〙
+✍✾͜͜͡〘คำสั่งคิก〙
+✍✾͜͜͡〘คำสั่งกลุ่ม〙
+✍✾͜͜͡〘คำสั่งล็อค〙 
+✍✾͜͜͡〘คำสั่งมีเดี่ยร์〙
+✍✾͜͜͡〘คำสั่งแอดมิน〙
+✍✾͜͜͡〘คำสั่งผู้คุม〙
+✍✾͜͜͡〘ผู้สร้าง〙
+✍✾͜͜͡〘รูปแอดมินบอท〙
+✍✾͜͜͡〘รายชื่อแอดบอท〙
+✍✾͜͜͡〘ความเร็ว1〙
+✍✾͜͜͡〘ความเร็ว2〙 
+✍✾͜͜͡〘เช็คตั้งค่า〙 
+
+        By :꧁⎈Bäñk⎈꧂
+    line.me/ti/p/~bank39.com
+  ◄]·🇹🇭·[B̲̲̅̅a̲̲̅̅n̲̲̅̅k̲̲̅ ̲̲̅ʙ̲̲̅̅ᴏ̲̲̅̅ᴛ̲̲̅̅ ̲̲̲̲̅̅̅̅ ̲̲̅̅L̲̲̅̅i̲̲̅n̲̲̅̅e̲̲̲̅̅̅]·🇹🇭·[►
 """
 
 protectMessage ="""
@@ -355,10 +351,10 @@ protectMessage ="""
 〘Autokick on/off〙 ปิด/เปิดเตะ
 〘Ghost on/off〙 เปิด/ปิด การใช้งาน คิกเก้อผี
 〘Invitepro on/off〙 การอนุญาตุเชิญ
-╠════════════════════
-║     💠 By : TOMEBITLINE💠
-║  〽️ line.me/ti/p/~tomebotline〽️
-╚════════════════════
+
+     By :꧁⎈Bäñk⎈꧂
+    line.me/ti/p/~bank39.com
+  ◄]·🇹🇭·[B̲̲̅̅a̲̲̅̅n̲̲̅̅k̲̲̅ ̲̲̅ʙ̲̲̅̅ᴏ̲̲̅̅ᴛ̲̲̅̅ ̲̲̲̲̅̅̅̅ ̲̲̅̅L̲̲̅̅i̲̲̅n̲̲̅̅e̲̲̲̅̅̅]·🇹🇭·[►
 """
 
 
@@ -370,12 +366,12 @@ Cmid = kc.getProfile().mid
 Dmid = kr.getProfile().mid
 Emid = km.getProfile().mid
 Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid]
-Creator=["ue0d25974d7242e56c49ad1d2e5b118e4"]
-admin=["ue0d25974d7242e56c49ad1d2e5b118e4","","","","","","",""]
-admsa = ["ue0d25974d7242e56c49ad1d2e5b118e4"]
-self = ["ue0d25974d7242e56c49ad1d2e5b118e4"]
-owner = ["ue0d25974d7242e56c49ad1d2e5b118e4"]
-Creator = ["ue0d25974d7242e56c49ad1d2e5b118e4"]
+Creator=["u6e2ec37dbe96a68bed4acf361b2439de"]
+admin=["u6e2ec37dbe96a68bed4acf361b2439de","","","","","","",""]
+admsa = ["u6e2ec37dbe96a68bed4acf361b2439de"]
+self = ["u6e2ec37dbe96a68bed4acf361b2439de"]
+owner = ["u6e2ec37dbe96a68bed4acf361b2439de"]
+Creator = ["u6e2ec37dbe96a68bed4acf361b2439de"]
 
 contact = cl.getProfile()
 backup1 = cl.getProfile()
@@ -442,7 +438,7 @@ wait = {
     "comment2":"Wkwkwk ＼（○＾ω＾○）／",
     "comment3":"Lucu Banget!!! ヘ(^_^)ヘ",
     "comment4":"Nice Kak (^_^)",
-    "comment5":"Bot Auto Like ©By : TOMEBOTLINE\nContact Me : 👉 line.me/ti/p/~tomebotline",    
+    "comment5":"By :꧁⎈Bäñk⎈꧂\nline.me/ti/p/~bank39.com",    
     "commentOn":True,
     "acommentOn":False,
     "bcommentOn":False,
@@ -767,11 +763,11 @@ def bot(op):
                                 if " " in Name:
                                     nick = Name.split(' ')
                                     if len(nick) == 2:
-                                        random.choice(KAC).sendText(op.param1, "Haii " + "☞ " + nick[0] + " ☜" + "\nNgintip Aja Niih. . .\nChat Kek Idiih (-__-)   ")
+                                        random.choice(KAC).sendText(op.param1, "คุณ " + "☞ " + nick[0] + " ☜" + "\nแอบมาส่องหราา. . .\nเห็นอยู่น่ะอิอิ🤗 (-__-)   ")
                                     else:
-                                        random.choice(KAC).sendText(op.param1, "Haii " + "☞ " + nick[1] + " ☜" + "\nBetah Banget Jadi Penonton. . .\nChat Napa (-__-)   ")
+                                        random.choice(KAC).sendText(op.param1, "คุณ " + "☞ " + nick[1] + " ☜" + "\nแอบมาส่องหราา. . .\nเห็นอยู่น่ะอิอิ🤗 (-__-)   ")
                                 else:
-                                    random.choice(KAC).sendText(op.param1, "Haii " + "☞ " + Name + " ☜" + "\nNgapain Kak Ngintip Aja???\nSini Gabung Chat...   ")
+                                    random.choice(KAC).sendText(op.param1, "คุณ " + "☞ " + Name + " ☜" + "\nแอบมาส่องหราา. . .\nเห็นอยู่น่ะอิอิ🤗 (-__-)   ")
                         else:
                             pass
                     else:
@@ -1285,7 +1281,7 @@ def bot(op):
             c = Message(to=op.param1, from_=None, text=None, contentType=13)
             c.contentMetadata={'mid':op.param2}
             cl.sendMessage(c)
-            cl.sendText(op.param1,"Hallo " + cl.getContact(op.param2).displayName + "\nWelcome To ☞ " + str(ginfo.name) + " ☜" + "\nBudayakan Cek Note\nDan Semoga Betah Disini ^_^")
+            cl.sendText(op.param1,"คุณ " + cl.getContact(op.param2).displayName + "\nได้เข้าร่วม กลุ่ม ☞ " + str(ginfo.name) + " ☜" + "\nทักได้คุยได้ฉีกยาแย้ว ^_^")
             cl.sendImageWithURL(op.param1,image)
             print "MEMBER JOIN TO GROUP"
             
@@ -1302,7 +1298,7 @@ def bot(op):
           if wait["Sambutan"] == True:
             if op.param2 in admin:
                 return
-            cl.sendText(op.param1,"Good Bye " + cl.getContact(op.param2).displayName +  "\nSee You Next Time . . . (p′︵‵。) 🤗")
+            cl.sendText(op.param1,"คุณ ☞ " + cl.getContact(op.param2).displayName +  "\nได้ออก จากกลุ่มแล้ว . . . (p′︵‵。) 🤗")
             random.choice(KAC).inviteIntoGroup(op.param1,[op.param2])
             print "MEMBER HAS LEFT THE GROUP"
 
@@ -1961,34 +1957,34 @@ def bot(op):
                                       break
                                   
  
-            elif msg.text in ["ผู้ดูแลบอท","help creator","Help creator"]:
+            elif msg.text in ["Key creator","คำสั่งกัน","Help creator"]:
                 cl.sendText(msg.to,creatorMessage)
 
-            elif msg.text in ["ตั้งค่ากลุ่ม","help group","Help group"]:
+            elif msg.text in ["Key group","คำสั่งกลุ่ม","Help group"]:
                 cl.sendText(msg.to,groupMessage)
 
-            elif msg.text in ["ช่วยเหลือ","help","Help"]:
+            elif msg.text in ["Key","help","คำสั่ง"]:
                 cl.sendText(msg.to,helpMessage)
 
-            elif msg.text in ["ตั้งค่าเซล","help self","Help self"]:
+            elif msg.text in ["Key self","คำสั่งเซล","Help self"]:
                 cl.sendText(msg.to,selfMessage)
 
-            elif msg.text in ["ตั้งค่าบอท","help bot","Help bot"]:
+            elif msg.text in ["Key bot","คำสั่งคิก","Help bot"]:
                 cl.sendText(msg.to,botMessage)
 
-            elif msg.text in ["ตั้งค่าการเซ็ต","help set","Help set"]:
+            elif msg.text in ["Key set","คำสั่งล็อค","Help set"]:
                 cl.sendText(msg.to,setMessage)
 
-            elif msg.text in ["ตั้งค่ามีเดีย","help media","Help media"]:
+            elif msg.text in ["Key media","คำสั่งมีเดี่ยร์","Help media"]:
                 cl.sendText(msg.to,mediaMessage)
                 
-            elif msg.text in ["ตั้งค่าแอดมิน","help admin","Help admin"]:
+            elif msg.text in ["Key admin","คำสั่งแอดมิน","Help admin"]:
                 cl.sendText(msg.to,adminMessage)    
                 
-            elif msg.text in ["ตั้งค่าการป้องกัน","help protect","Help protect"]:
+            elif msg.text in ["Key protect","คำสั่งผู้คุม","Help protect"]:
                 cl.sendText(msg.to,protectMessage)                 
+ 
                 
-
  
             elif msg.text in ["List group"]:
                     gid = cl.getGroupIdsJoined()
