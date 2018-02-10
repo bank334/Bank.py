@@ -64,46 +64,12 @@ def sendMessage(to, text, contentMetadata={}, contentType=0):
     messageReq[to] += 1
     client._client.sendMessage(messageReq[to], mes)
 
-def NOTIFIED_ADD_CONTACT(op):
-    try:
-        sendMessage(op.param1, client.getContact(op.param1).displayName + "Thanks for add")
-    except Exception as e:
-        print e
-        print ("\n\nNOTIFIED_ADD_CONTACT\n\n")
-        return
-
-tracer.addOpInterrupt(5,NOTIFIED_ADD_CONTACT)
-
-def NOTIFIED_ACCEPT_GROUP_INVITATION(op):
-    #print op
-    try:
-        sendMessage(op.param1, client.getContact(op.param2).displayName + "WELCOME to " + group.name)
-    except Exception as e:
-        print e
-        print ("\n\nNOTIFIED_ACCEPT_GROUP_INVITATION\n\n")
-        return
-
-tracer.addOpInterrupt(17,NOTIFIED_ACCEPT_GROUP_INVITATION)
-
-def NOTIFIED_KICKOUT_FROM_GROUP(op):
-    try:
-        sendMessage(op.param1, client.getContact(op.param3).displayName + "ได้ออกจากกลุ่มแล้ว\n (*´･ω･*)")
-    except Exception as e:
-        print e
-        print ("\n\nNOTIFIED_KICKOUT_FROM_GROUP\n\n")
-        return
-
-tracer.addOpInterrupt(19,NOTIFIED_KICKOUT_FROM_GROUP)
-
-def NOTIFIED_LEAVE_GROUP(op):
-    try:
-        sendMessage(op.param1, client.getContact(op.param2).displayName + " Good Bye\n(*´･ω･*)")
-    except Exception as e:
-        print e
-        print ("\n\nNOTIFIED_LEAVE_GROUP\n\n")
-        return
-
-tracer.addOpInterrupt(15,NOTIFIED_LEAVE_GROUP)
+if len(nick) == 2:
+                                        random.choice(KAC).sendText(op.param1, "Haii " + "☞ " + nick[0] + " ☜" + "\nNgintip Aja Niih. . .\nChat Kek Idiih (-__-)   ")
+                                    else:
+                                        random.choice(KAC).sendText(op.param1, "Haii " + "☞ " + nick[1] + " ☜" + "\nBetah Banget Jadi Penonton. . .\nChat Napa (-__-)   ")
+                                else:
+                                    random.choice(KAC).sendText(op.param1, "Haii " + "☞ " + Name + " ☜" + "\nNgapain Kak Ngintip Aja???\nSini Gabung Chat...   ")
 
 def NOTIFIED_READ_MESSAGE(op):
     #print op
