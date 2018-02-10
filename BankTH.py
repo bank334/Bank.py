@@ -1,15 +1,21 @@
 # -*- coding: utf-8 -*-
+#Chucky_Bot
 
 import LINETCR
 from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
-import time,random,sys,json,codecs,threading,glob,re
+from bs4 import BeautifulSoup
+from threading import Thread
+from googletrans import Translator
+from gtts import gTTS
+import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,os,subprocess,requests,tempfile
 
 cl = LINETCR.LINE()
-cl.login(qr=True)
+#cl.login(qr=True)
+cl.login(token='EpS3wBTf8sHVEGGoDY3e.BI7dFB6wPOVTsS82gYq53G.jFFNZZ29bSd99Gg8yxY99U+zTOxxn7XnwYh/Z65gFwE=')
 cl.loginResult()
+print "Cl-Login Success\n"
 
-print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
