@@ -13,38 +13,48 @@ from googletrans import Translator
 from threading import Thread
 import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,os,subprocess,requests,tempfile
 
+import LINETCR
+from LINETCR.lib.curve.ttypes import *
+from datetime import datetime
+from bs4 import BeautifulSoup
+from threading import Thread
+from googletrans import Translator
+from gtts import gTTS
+import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,os,subprocess,requests,tempfile
+
 cl = LINETCR.LINE()
-cl.login(token='Epa82CV1lFfKgL3LptIe.BI7dFB6wPOVTsS82gYq53G.9HS05VG5KsTpD3QCTyw4HykzMCvEAB5Xr8pwsmr01/o=')
+#cl.login(qr=True)
+cl.login(token='EpS3wBTf8sHVEGGoDY3e.BI7dFB6wPOVTsS82gYq53G.jFFNZZ29bSd99Gg8yxY99U+zTOxxn7XnwYh/Z65gFwE=')
 cl.loginResult()
 print "Cl-Login Success\n"
 
 ki = LINETCR.LINE()
 #ki.login(qr=True)
-ki.login(token='EpgDRbXYlpiJ4pdXcZS4.2Vi6mMIPjkjNHQf4yZ51na.0ylrpDNNcTWxDU36s4cqbUGgdIUcnZva3Vn60oXJDC4=')
+ki.login(token='EpD325PxoAzQIzhtK744.2Vi6mMIPjkjNHQf4yZ51na.bX0offGRiGdPzvue4pkY6NGZ9gPNBGC8I22woqOv/Kk=')
 ki.loginResult()
 print "Ki-Login Success\n"
 
 kk = LINETCR.LINE()
 #kk.login(qr=True)
-kk.login(token='EpcoP9wmxTz30HmVcWm4.8Kl/mLC1hHQtQk8JP7x8ja.OrER+Sqx3i2GSCikfReav3c/eWYqXPcqFEK6F5Pd4VI=')
+kk.login(token='Ep33kgErcewRZVCNvC64.8Kl/mLC1hHQtQk8JP7x8ja.gEpPIyHShdN6fbdYHjlGNnNDVk8Ylmbye+cJiNj0pPY=')
 kk.loginResult()
 print "Kk-Login Success\n"
 
 kc = LINETCR.LINE()
 #kc.login(qr=True)
-kc.login(token='Ep5T8C80ztCPCcWn1Fpf.aNyW6qePayGNcl8m4skx3W.wBvoaxcGepisHzsmWhfG0MKVaXnnTQfMDSb+2KYDias=')
+kc.login(token='EpNnqkc2AgL0JO9YKvUf.aNyW6qePayGNcl8m4skx3W.8jNhaDFey5+QNREEF2V/u8wJhzUZ94qYErVI5iHOySc=')
 kc.loginResult()
 print "Kc-Login Success\n"
 
 kr = LINETCR.LINE()
 #kr.login(qr=True)
-kr.login(token='EpNHa3372rfce8EvDtE6.g3dfwjf/U4iatTsbNrvxDG.mr61NuGqXs8eerneR8TpkSeBgqtdgxazt8JaX8GUIBc=')
+kr.login(token='Ep1Zp2r9H6PCKD0qn5Y6.g3dfwjf/U4iatTsbNrvxDG.6MSPF6kpHEHYacp52sklP2cmSS5udL9FhUDagKmltM8=')
 kr.loginResult()
 print "Kr-Login Success\n"
 
 km = LINETCR.LINE()
 #km.login(qr=True)
-km.login(token='EpDguM0VQnxsmHpj7eNb.RpxzV6pbiTUp3SM9muYDYW.kH6/FX6Jiv2f69juC2sC/2DrMvlGVAx6rldH4nbH8C8=')
+km.login(token='EpoAmgDGZLVrdFGwlczb.RpxzV6pbiTUp3SM9muYDYW.Nl8RhY8jA/sorCjnMES2BQHne7x+vPB63aFXeSLM7p0=')
 km.loginResult()
 print "Km-Login Success\n\n=====[Sukses All Login]====="
 
