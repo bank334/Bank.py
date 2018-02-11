@@ -18,35 +18,6 @@ cl.login(token='Epa82CV1lFfKgL3LptIe.BI7dFB6wPOVTsS82gYq53G.9HS05VG5KsTpD3QCTyw4
 cl.loginResult()
 print "Cl-Login Success\n"
 
-ki = LINETCR.LINE()
-#ki.login(qr=True)
-ki.login(token='EpgDRbXYlpiJ4pdXcZS4.2Vi6mMIPjkjNHQf4yZ51na.0ylrpDNNcTWxDU36s4cqbUGgdIUcnZva3Vn60oXJDC4=')
-ki.loginResult()
-print "Ki-Login Success\n"
-
-kk = LINETCR.LINE()
-#kk.login(qr=True)
-kk.login(token='EpcoP9wmxTz30HmVcWm4.8Kl/mLC1hHQtQk8JP7x8ja.OrER+Sqx3i2GSCikfReav3c/eWYqXPcqFEK6F5Pd4VI=')
-kk.loginResult()
-print "Kk-Login Success\n"
-
-kc = LINETCR.LINE()
-#kc.login(qr=True)
-kc.login(token='Ep5T8C80ztCPCcWn1Fpf.aNyW6qePayGNcl8m4skx3W.wBvoaxcGepisHzsmWhfG0MKVaXnnTQfMDSb+2KYDias=')
-kc.loginResult()
-print "Kc-Login Success\n"
-
-ks = LINETCR.LINE()
-#kr.login(qr=True)
-ks.login(token='EpNHa3372rfce8EvDtE6.g3dfwjf/U4iatTsbNrvxDG.mr61NuGqXs8eerneR8TpkSeBgqtdgxazt8JaX8GUIBc=')
-ks.loginResult()
-print "Kr-Login Success\n"
-
-ka = LINETCR.LINE()
-#km.login(qr=True)
-ka.login(token='EpDguM0VQnxsmHpj7eNb.RpxzV6pbiTUp3SM9muYDYW.kH6/FX6Jiv2f69juC2sC/2DrMvlGVAx6rldH4nbH8C8=')
-ka.loginResult()
-print "Km-Login Success\n\n=====[Sukses All Login]====="
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -5827,20 +5798,7 @@ def bot(op):
                     cl.sendText(msg.to,"The automatic appending information is set as follows。\n\n" + wait["welmsg"])
 
     #-------------Fungsi Leave Group Start---------------#
-            elif msg.text in ["Bye waifuku","Bye semua"]:
-              if msg.from_ in creator + peminjam:	
-                if msg.toType == 2:
-                    ginfo = cl.getGroup(msg.to)
-                    try:
-                        ki.leaveGroup(msg.to)
-                        kk.leaveGroup(msg.to)
-                        ks.leaveGroup(msg.to)
-                        ka.leaveGroup(msg.to)
-                        kc.leaveGroup(msg.to)	
-                        kb.leaveGroup(msg.to)	
-                        cl.leaveGroup(msg.to)			
-                    except:
-                        pas
+
             elif msg.text in ["Bye all","Bye sayang"]:
               if msg.from_ in creator + peminjam:	
                 if msg.toType == 2:
@@ -5860,30 +5818,7 @@ def bot(op):
                         kb.leaveGroup(msg.to)						
                     except:
                         pass
-            elif msg.text in ["Bye _Second"]:
-              if msg.from_ in creator + peminjam:
-                if msg.toType == 2:
-                    ginfo = cl.getGroup(msg.to)
-                    try:
-                        ki.leaveGroup(msg.to)
-                    except:
-                        pass
-            elif msg.text in ["Bye _Third"]:
-              if msg.from_ in creator + peminjam:
-                if msg.toType == 2:
-                    ginfo = cl.getGroup(msg.to)
-                    try:
-                        kk.leaveGroup(msg.to)
-                    except:
-                        pass
-            elif msg.text in ["Bye _Fourth"]:
-              if msg.from_ in creator + peminjam:
-                if msg.toType == 2:
-                    ginfo = cl.getGroup(msg.to)
-                    try:
-                        kc.leaveGroup(msg.to)
-                    except:
-                        pass
+            
     #-------------Fungsi Leave Group Finish---------------#
             elif "Gift @" in msg.text:
                 _name = msg.text.replace("Gift @","")
@@ -5898,54 +5833,7 @@ def bot(op):
                         cl.dendMessage(msg,g)
 
 #==================================================
-            elif "All rename:" in msg.text:
-              if msg.from_ in creator:
-                string = msg.text.replace("All rename:","")
-                if len(string.decode('utf-8')) <= 20:
-                    profile = cl.getProfile()
-                    profile.displayName = string
-                    cl.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 20:
-                    profile = ki.getProfile()
-                    profile.displayName = string
-                    ki.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 20:
-                    profile = kk.getProfile()
-                    profile.displayName = string
-                    kk.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 20:
-                    profile = ka.getProfile()
-                    profile.displayName = string
-                    ka.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 20:
-                    profile = ke.getProfile()
-                    profile.displayName = string
-                    ke.updateProfile(profile)
-            elif msg.text.lower() == 'allbio:':
-              if msg.from_ in creator:
-                string = msg.text.lower().replace("allbio:","")
-                if len(string.decode('utf-8')) <= 500:
-                    profile = ki.getProfile()
-                    profile.statusMessage = string
-                    ki.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 500:
-                    profile = kk.getProfile()
-                    profile.statusMessage = string
-                    kk.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 500:
-                    profile = ke.getProfile()
-                    profile.statusMessage = string
-                    ke.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 500:
-                    profile = cl.getProfile()
-                    profile.statusMessage = string
-                    cl.updateProfile(profile)
-                    kk.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 500:
-                    profile = ka.getProfile()
-                    profile.statusMessage = string
-                    ka.updateProfile(profile)
-                    cl.sendText(msg.to,"successfully turn it into: " + string + "")
+            
             elif "My name:" in msg.text:
               if msg.from_ in creator:
                 string = msg.text.replace("My name:","")
@@ -5953,65 +5841,9 @@ def bot(op):
                     profile = cl.getProfile()
                     profile.displayName = string
                     cl.updateProfile(profile)
-                    cl.sendText(msg.to,"change name: "+string+"\nsucces")
-            elif "Bot2 rename:" in msg.text:
-              if msg.from_ in creator:
-                string = msg.text.replace("Bot2 rename:","")
-                if len(string.decode('utf-8')) <= 20:
-                    profile = ki.getProfile()
-                    profile.displayName = string
-                    ki.updateProfile(profile)
-                    ki.sendText(msg.to,"change name: "+string+"\nsucces")
-            elif "Bot3 rename:" in msg.text:
-              if msg.from_ in creator:
-                string = msg.text.replace("Bot3 rename:","")
-                if len(string.decode('utf-8')) <= 20:
-                    profile = kk.getProfile()
-                    profile.displayName = string
-                    kk.updateProfile(profile)
-                    kk.sendText(msg.to,"change name: "+string+"\nsucces")
-            elif "Bot4 rename:" in msg.text:
-              if msg.from_ in creator:
-                string = msg.text.replace("Bot4 rename:","")
-                if len(string.decode('utf-8')) <= 20:
-                    profile = ke.getProfile()
-                    profile.displayName = string
-                    ke.updateProfile(profile)
-                    ke.sendText(msg.to,"change name: "+string+"\nsucces")
-            elif "Bot5 rename:" in msg.text:
-              if msg.from_ in creator:
-                string = msg.text.replace("Bot5 rename:","")
-                if len(string.decode('utf-8')) <= 20:
-                    profile = ka.getProfile()
-                    profile.displayName = string
-                    ka.updateProfile(profile)
-                    ka.sendText(msg.to,"change name: "+string+"\nsucces")											
-            elif "Bot6 rename:" in msg.text:
-              if msg.from_ in creator:
-                string = msg.text.replace("Bot6 rename:","")
-                if len(string.decode('utf-8')) <= 20:
-                    profile = satpam.getProfile()
-                    profile.displayName = string
-                    satpam.updateProfile(profile)
-                    satpam.sendText(msg.to,"change name: "+string+"\nsucces") 
-            elif "Bot7 rename:" in msg.text:
-              if msg.from_ in creator:
-                    string = msg.text.replace("Bot5 rename:","")
-                    if len(string.decode('utf-8')) <= 20:												
-                     profile = km.getProfile()
-                     profile.displayName = string		
-                     G = random.choice(KAC).getGroup(op.param1)
-                     G.preventJoinByTicket = False
-	             cl.updateGroup(G)
-                     Ticket = cl.reissueGroupTicket(op.param1)
-                     km.acceptGroupInvitationByTicket(op.param1,Ticket)
-	             G.preventJoinByTicket = True
-                     km.updateGroup(G)												
-                     km.updateProfile(profile)
-                     km.sendText(msg.to,"change name: "+string+"\nsucces")
-                     km.leaveGroup(msg.to)												  
+                    cl.sendText(msg.to,"change name: "+string+"\nsucces")											  
     #-------------Fungsi Tag All Start---------------#
-            elif msg.text in ["kiwkiw","Tagall","Kuchiyose no jutsu","Summon all member","Kuchiyose"]:
+            elif msg.text in ["kiwkiw","แท็ก","Kuchiyose no jutsu","Summon all member","Kuchiyose"]:
                   group = cl.getGroup(msg.to)
                   nama = [contact.mid for contact in group.members]
 
@@ -6062,36 +5894,6 @@ def bot(op):
                             pass
          #----------------Fungsi Banned Kick Target Finish----------------------#                
 
-            elif "cleansemua" in msg.text:
-              if msg.from_ in creator + peminjam:
-                if msg.toType == 2:
-                    print "ok"
-                    _name = msg.text.replace("cleansemua","")
-                    gs = ki.getGroup(msg.to)
-                    gs = kk.getGroup(msg.to)
-                    gs = kc.getGroup(msg.to)
-                    ki.sendText(msg.to,"maaf kalo gak sopan")
-                    kk.sendText(msg.to,"dasar kalian jones..")
-                    kc.sendText(msg.to,"wkwk grup jones")
-                    msg.contentType = 13
-                    msg.contentMetadata = {'mid': mid}
-                    ks.sendMessage(msg)
-                    targets = []
-                    for g in gs.members:
-                        if _name in g.displayName:
-                            targets.append(g.mid)
-                    if targets == []:
-                        ki.sendText(msg.to,"Not found")
-                    else:
-                        for target in targets:
-                          if target not in Bots:
-                            try:
-                                klist=[ki,kk,cl,ke,ka,kc]
-                                kicker=random.choice(klist)
-                                kicker.kickoutFromGroup(msg.to,[target])
-                                print (msg.to,[g.mid])
-                            except:
-				 pass
 
             elif "Cleanse" in msg.text:
 	      if msg.from_ in creator + peminjam:
@@ -6340,78 +6142,16 @@ def bot(op):
            #----------------Fungsi Unbanned User Target Finish-----------------------#
            
         #-------------Fungsi Spam Start---------------------#
-            elif msg.text in ["Upchat","upchat"]:
-                cl.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
-                kc.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
-                ko.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
-                cl.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
-                kc.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
-                ko.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
-                cl.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
-                kc.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
-                ko.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
-                cl.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
-                kc.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
-                ko.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
-                cl.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
-                kc.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
-                ko.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
-                cl.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
-                kc.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
-                ko.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
-                cl.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
-                kc.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
-                ko.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
-                cl.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
-                kc.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
-                ko.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
-                cl.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
-                kc.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
-                ko.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
-                cl.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
-                kc.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
-                ko.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
         #-------------Fungsi Spam Finish---------------------#
 
         #-------------Fungsi Broadcast Start------------#
-            elif "Bc " in msg.text:
-				bctxt = msg.text.replace("Bc ","")
-				ki.sendText(msg.to,(bctxt))
-				kk.sendText(msg.to,(bctxt))
-				kc.sendText(msg.to,(bctxt))
-       #--------------Fungsi Broadcast Finish-----------#
+            
 
-            elif msg.text in ["Cv say hi"]:
-                ki.sendText(msg.to,"Hi buddy 􀜁􀅔Har Har􏿿")
-                kk.sendText(msg.to,"Hi buddy 􀜁􀅔Har Har􏿿")
-                kc.sendText(msg.to,"Hi buddy 􀜁􀅔Har Har􏿿")
 
 #-----------------------------------------------
 
-            elif msg.text in ["Salam jones"]:
-                ki.sendText(msg.to,"salam jones juga 􀜁􀅔Har Har􏿿")
-                kc.sendText(msg.to,"salam jones juga 􀜁􀅔Har Har􏿿")
-                ko.sendText(msg.to,"salam jones juga 􀜁􀅔Har Har􏿿")
-            elif msg.text in ["Sayang dmn"]:
-                ki.sendText(msg.to,"disinii beb")
-                kc.sendText(msg.to,"disni jugaa yang")
-                ko.sendText(msg.to,"kenapa beb?")
-            elif msg.text in ["Bobo ah","Bobo dulu ah"]:
-                ki.sendText(msg.to,"Selamat malam yang")
-                kk.sendText(msg.to,"Have a nice dream beb 􀜁􀅔Har Har􏿿")
-                kc.sendText(msg.to,"dadah beb")
-            elif msg.text in ["Cv say chomel pekok"]:
-                ki.sendText(msg.to,"Chomel pekok 􀜁􀅔Har Har􏿿")
-                kk.sendText(msg.to,"Chomel pekok 􀜁􀅔Har Har􏿿")
-                kc.sendText(msg.to,"Chomel pekok 􀜁􀅔Har Har􏿿")
-            elif msg.text in ["#welcome"]:
-                ki.sendText(msg.to,"Selamat datang di jones Family Room")
-                kk.sendText(msg.to,"Jangan nakal ok!")
+
 #-----------------------------------------------
-            elif msg.text in ["PING","Ping","ping"]:
-                ki.sendText(msg.to,"PONG 􀨁􀄻double thumbs up􏿿􀜁􀅔Har Har􏿿")
-                kk.sendText(msg.to,"PONG 􀨁􀄻double thumbs up􏿿􀜁􀅔Har Har􏿿")
-                kc.sendText(msg.to,"PONG 􀨁􀄻double thumbs up􏿿􀜁􀅔Har Har􏿿")
 #-----------------------------------------------
 #-------------------------------- WELCOME -----------------------------------
             if msg.text.lower() in ["wc","welcome"]:
@@ -6426,17 +6166,7 @@ def bot(op):
 #-----------------------------------------------
 					
        #-------------Fungsi Respon Start---------------------#
-            elif msg.text in ["Respon","respon","Respon Dong","respon dong"]:
-                cl.sendText(msg.to,"...")
-                ki.sendText(msg.to,"......")
-                kk.sendText(msg.to,"..........")
-                kc.sendText(msg.to,"..............")
-                ks.sendText(msg.to,"...................")
-                ka.sendText(msg.to,"......................")
-                kb.sendText(msg.to,"...........................")
-                ko.sendText(msg.to,"...............................")
-                ke.sendText(msg.to,"Complete 100%")
-      #-------------Fungsi Respon Finish---------------------#
+
 #------------------------------- Kerang Ajaib -------------------------------#
             elif "/apakah " in msg.text.lower():
                 apk = msg.text.replace("/apakah ","")
@@ -6468,26 +6198,7 @@ def bot(op):
                                 print error
                                 cl.sendText(msg.to,"Upload image failed.")
 
-            elif "Cover @" in msg.text:
-                if msg.toType == 2:
-                    cover = msg.text.replace("Cover @","")
-                    _nametarget = cover.rstrip('  ')
-                    gs = cl.getGroup(msg.to)
-                    targets = []
-                    for g in gs.members:
-                        if _nametarget == g.displayName:
-                            targets.append(g.mid)
-                    if targets == []:
-                        cl.sendText(msg.to,"Not found")
-                    else:
-                        for target in targets:
-                            try:
-                                h = cl.channel.getHome(target)
-                                objId = h["result"]["homeInfo"]["objectId"]
-                                cl.sendImageWithURL(msg.to,"http://dl.profile.line-cdn.net/myhome/c/download.nhn?userid=" + target + "&oid=" + objId)
-                            except Exception as error:
-                                print error
-                                cl.sendText(msg.to,"Upload image failed.")
+
 #----------------------------------------------------------------------------
 #-------------------------------- PP BY TAG ---------------------------------
             elif "pp @" in msg.text:
@@ -6828,71 +6539,7 @@ def bot(op):
 #-----------------------------------------------
 
 #-----------------------------------------------
-            elif "Admin add @" in msg.text:
-                if msg.from_ in creator + peminjam:
-                    print "[Command]Staff add executing"
-                    _name = msg.text.replace("Admin add @","")
-                    _nametarget = _name.rstrip('  ')
-                    gs = cl.getGroup(msg.to)
-                    gs = ki.getGroup(msg.to)
-                    gs = kk.getGroup(msg.to)
-                    gs = kc.getGroup(msg.to)
-                    targets = []
-                    for g in gs.members:
-                        if _nametarget == g.displayName:
-                            targets.append(g.mid)
-                    if targets == []:
-                        ki.sendText(msg.to,"Contact not found")
-                    else:
-                        for target in targets:
-                            try:
-                                admin.append(target)
-                                cl.sendText(msg.to,"Admin Ditambahkan")
-                            except:
-                                pass
-                    print "[Command]Staff add executed"
-                else:
-                    cl.sendText(msg.to,"Command DiTolak")
-                    cl.sendText(msg.to,"Admin Tidak Bisa Menggunakan")
-
-            elif "Admin remove @" in msg.text:
-                if msg.from_ in creator + peminjam:
-                    print "[Command]Staff remove executing"
-                    _name = msg.text.replace("Admin remove @","")
-                    _nametarget = _name.rstrip('  ')
-                    gs = cl.getGroup(msg.to)
-                    gs = ki.getGroup(msg.to)
-                    gs = kk.getGroup(msg.to)
-                    gs = kc.getGroup(msg.to)
-                    targets = []
-                    for g in gs.members:
-                        if _nametarget == g.displayName:
-                            targets.append(g.mid)
-                    if targets == []:
-                        ki.sendText(msg.to,"Contact not found")
-                    else:
-                        for target in targets:
-                            try:
-                                admin.remove(target)
-                                cl.sendText(msg.to,"Admin Dihapus")
-                            except:
-                                pass
-                    print "[Command]Staff remove executed"
-                else:
-                    cl.sendText(msg.to,"Command DiTolak")
-                    cl.sendText(msg.to,"Admin Tidak Bisa Menggunakan")
-
-            elif msg.text in ["Adminlist","adminlist"]:
-              if msg.from_ in admin + creator + peminjam:	
-                if admin == []:
-                    cl.sendText(msg.to,"The adminlist is empty")
-                else:
-                    cl.sendText(msg.to,"Tunggu...")
-                    mc = ""
-                    for mi_d in admin:
-                        mc += "->" +cl.getContact(mi_d).displayName + "\n"
-                    cl.sendText(msg.to,mc)
-                    print "[Command]Stafflist executed" 
+            
 #-----------------------------------------------
             elif "Checkdate " in msg.text:
                 tanggal = msg.text.replace("Checkdate ","")
@@ -7051,80 +6698,7 @@ def bot(op):
                     for mi_d in wait["blacklist"]:
                         mc += "->" +cl.getContact(mi_d).displayName + "\n"
                     cl.sendText(msg.to,mc)
-      #-------------Fungsi Bannlist Finish------------------#  
-      
-            elif msg.text in ["Cek banned"]:
-                if msg.toType == 2:
-                    group = cl.getGroup(msg.to)
-                    gMembMids = [contact.mid for contact in group.members]
-                    matched_list = []
-                    for tag in wait["blacklist"]:
-                        matched_list+=filter(lambda str: str == tag, gMembMids)
-                    cocoa = ""
-                    for mm in matched_list:
-                        cocoa += mm + "\n"
-                    cl.sendText(msg.to,cocoa + "")
-            elif msg.text in ["Kill ban"]:
-              if msg.from_ in admin + creator + peminjam:	
-                if msg.toType == 2:
-                    group = cl.getGroup(msg.to)
-                    gMembMids = [contact.mid for contact in group.members]
-                    matched_list = []
-                    for tag in wait["blacklist"]:
-                        matched_list+=filter(lambda str: str == tag, gMembMids)
-                    if matched_list == []:
-                        cl.sendText(msg.to,"There was no blacklist user")
-                        ki.sendText(msg.to,"There was no blacklist user")
-                        kk.sendText(msg.to,"There was no blacklist user")
-                        kc.sendText(msg.to,"There was no blacklist user")
-                        return
-                    for jj in matched_list:
-                        cl.kickoutFromGroup(msg.to,[jj])
-                        ki.kickoutFromGroup(msg.to,[jj])
-                        kk.kickoutFromGroup(msg.to,[jj])
-                        kc.kickoutFromGroup(msg.to,[jj])
-                    cl.sendText(msg.to,"Blacklist gw kik aja")
-                    ko.sendText(msg.to,"kok?")
-                    ku.sendText(msg.to,"knp?")
-                    kc.sendText(msg.to,"parah")
-            elif msg.text in ["Clear"]:
-              if msg.from_ in admin + staff + creator + peminjam:				
-                if msg.toType == 2:
-                    group = cl.getGroup(msg.to)
-                    gMembMids = [contact.mid for contact in group.invitee]
-                    for _mid in gMembMids:
-                        cl.cancelGroupInvitation(msg.to,[_mid])
-                    cl.sendText(msg.to,"I pretended to cancel and canceled.")
-            elif "random: " in msg.text:
-              if msg.from_ in admin + creator + peminjam:	
-                if msg.toType == 2:
-                    strnum = msg.text.replace("random: ","")
-                    source_str = 'abcdefghijklmnopqrstuvwxyz1234567890@:;./_][!&%$#)(=~^|'
-                    try:
-                        num = int(strnum)
-                        group = cl.getGroup(msg.to)
-                        for var in range(0,num):
-                            name = "".join([random.choice(source_str) for x in xrange(10)])
-                            time.sleep(0.01)
-                            group.name = name
-                            cl.updateGroup(group)
-                    except:
-                        cl.sendText(msg.to,"Error")
-            elif msg.text in ["Kalender","Time","Waktu"]:
-                timeNow = datetime.now()
-                timeHours = datetime.strftime(timeNow,"(%H:%M)")
-                day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"]
-                hari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"]
-                bulan = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"]
-                inihari = datetime.today()
-                hr = inihari.strftime('%A')
-                bln = inihari.strftime('%m')
-                for i in range(len(day)):
-                    if hr == day[i]: hasil = hari[i]
-                for k in range(0, len(bulan)):
-                    if bln == str(k): blan = bulan[k-1]
-                rst = hasil + ", " + inihari.strftime('%d') + " - " + blan + " - " + inihari.strftime('%Y') + "\nJam : [ " + inihari.strftime('%H:%M:%S') + " ]"
-                cl.sendText(msg.to, rst)												  
+      #-------------Fungsi Bannlist Finish------------------#   											  
             elif "albumat'" in msg.text:
                 try:
                     albumtags = msg.text.replace("albumat'","")
@@ -7172,42 +6746,6 @@ def nameUpdate():
                 profile = cl.getProfile()
                 profile.displayName = wait["cName"]
                 cl.updateProfile(profile)
-
-                profile2 = ki.getProfile()
-                profile2.displayName = wait["cName2"]
-                ki.updateProfile(profile2)
-
-                profile3 = kk.getProfile()
-                profile3.displayName = wait["cName3"]
-                kk.updateProfile(profile3)
-
-                profile4 = kc.getProfile()
-                profile4.displayName = wait["cName4"]
-                kc.updateProfile(profile4)
-
-                profile5 = ks.getProfile()
-                profile5.displayName = wait["cName5"]
-                ks.updateProfile(profile5a)
-
-                profile6 = ka.getProfile()
-                profile6.displayName = wait["cName6"]
-                ka.updateProfile(profile6)
-
-                profile7 = kb.getProfile()
-                profile7.displayName = wait["cName7"]
-                kb.updateProfile(profile7)
-
-                profile8 = ko.getProfile()
-                profile8.displayName = wait["cName8"]
-                ko.updateProfile(profile8)
-                
-                profile9 = ke.getProfile()
-                profile9.displayName = wait["cName9"]
-                ke.updateProfile(profile9)
-                
-                profile10 = ku.getProfile()
-                profile10.displayName = wait["cName10"]
-                ku.updateProfile(profile10)
             time.sleep(600)
         except:
             pass
